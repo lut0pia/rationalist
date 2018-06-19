@@ -1,23 +1,73 @@
+:focus {
+  outline: none;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
+  background: #f9f9f9;
   margin: auto;
-  width: 1024px;
+  width: calc(100% - 190px);
 }
+
 h1 {
-  font-size: 64px;
+  font-size: 62px;
   text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 #menu {
+  background: #eaeaea;
   text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  width: 370px;
+  margin: auto;
+}
+
+#menu select {
+  font-size: 16px;
+  padding-left: 3px;
+  font-family: Scada;
+  font-style: italic;
+}
+
+
+#separator {
+  padding: 0px 6px;
+  display: inline-block;
+}
+
+#menu span {
+  padding-right: 3px;
+}
+
+
+#search_button {
+  padding: 5px 34px;
+  color: #fff;
+  border: none;
+  background-color: #000; /* #ff1212; */
+  cursor: help;
+  display: block;
+  margin: 6px auto;
+  font-size: 18px;
+  font-family: Scada;
+}
+
+/*RESULT*/
+
+#results {
+  padding-top: 38px;
 }
 
 #results article {
-  background-color: lightgray;
+  background-color: #f3f3f3;
   clear: both;
   height: 64px;
-  margin: 1px 0px 1px 0px;
+  margin: 4px 0px 4px 0px;
 }
 #results article index {
+  background: #eaeaea;
   display: block;
   float: left;
   line-height: 64px;
@@ -25,14 +75,25 @@ h1 {
   width: 128px;
 }
 #results article title {
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 700;
   display: inline;
-  font-size: 32px;
+  font-size: 16px;
   line-height: 64px;
   margin-left: 16px;
 }
+
 #results article a {
   float: right;
+  text-decoration: none;
   line-height: 64px;
   text-align: center;
-  width: 128px;
+  padding-right: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+#results article a:hover {
+   font-style: italic;
 }
