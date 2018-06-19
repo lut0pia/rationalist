@@ -26,7 +26,7 @@ window.onload = function() {
         '<article>'
         +'<index>'+index+'</index>'
         +'<title>'+entry.title+'</title>'
-        +'<a href="'+url+'" target="_blank" rel="noopener">Check it out!</a>'
+        +'<a href="'+url+'" target="_blank" rel="noopener">☞ Check it out!</a>'
         +'</article>';
     }
   }  
