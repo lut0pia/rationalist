@@ -77,18 +77,35 @@ var db_criteria = {
     sanitation: function(str) {
       if(this.regex.test(str)) {
         var i = parseInt(str, 16);
-        return {
-          r: (i >> 16) & 0xff,
-          g: (i >> 8) & 0xff,
-          b: (i >> 0) & 0xff,
-        };
+        return this.from_rgb(
+          (i >> 16) & 0xff,
+          (i >> 8) & 0xff,
+          (i >> 0) & 0xff,
+        );
+        
       }
     },
-    to_hex: function(value) {
-      return ((1<<24)+(value.r<<16)+(value.g<<8)+value.b).toString(16).slice(1);
+    from_rgb: function(r, g, b) {
+      var hsl = rbg_to_hsl(r, g, b);
+      hsl[0] = Math.ceil(hsl[0]*255);
+      hsl[1] = Math.ceil(hsl[1]*255);
+      hsl[2] = Math.ceil(hsl[2]*255);
+      return (hsl[0]<<16)+(hsl[1]<<8)+hsl[2];
+    },
+    to_hsl: function(value) {
+      var hsl = [];
+      hsl[0] = (value>>16 & 0xff) / 255.0;
+      hsl[1] = (value>>8 & 0xff) / 255.0;
+      hsl[2] = (value>>0 & 0xff) / 255.0;
+      return hsl;
+    },
+    to_rgb_hex: function(value) {
+      var hsl = this.to_hsl(value);
+      var rgb = hsl_to_rgb(hsl[0], hsl[1], hsl[2]);
+      return ((1<<24)+(rgb[0]<<16)+(rgb[1]<<8)+rgb[2]).toString(16).slice(1);
     },
     print: function(value) {
-      return '<div style="width: 100%; height: 100%; background-color: #'+this.to_hex(value)+';"></div>';
+      return '<div style="width: 100%; height: 100%; background-color: #'+this.to_rgb_hex(value)+';"></div>';
     },
   },
   date: {
