@@ -50,26 +50,6 @@ var db = [
   {type:'music',title:'Vanessa Carlton - A Thousand Miles',number:1000,distance:"1000 miles"},
   {type:'shows',title:'13 Reasons Why',number:13},
 ];
-var db_types = {
-  movie: {
-    plural: 'movies',
-    url: function(entry) {
-      return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
-    },
-  },
-  music: {
-    plural: 'songs',
-    url: function(entry) {
-      return 'https://www.youtube.com/results?search_query='+encodeURIComponent(entry.title);
-    },
-  },
-  shows: {
-    plural: 'shows',
-    url: function(entry) {
-      return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
-    },
-  },
-};
 
 var db_criteria = {
   color: {
