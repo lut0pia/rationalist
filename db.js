@@ -51,6 +51,10 @@ var db = [
   {type:'music',title:'Mac DeMarco - Blue Boy',color:'0000ff'},
   {type:'music',title:'The Proclaimers - I\'m Gonna Be (500 Miles)',number:500,distance:"500 miles"},
   {type:'music',title:'Vanessa Carlton - A Thousand Miles',number:1000,distance:"1000 miles"},
+  {type:'music',title:'Coldplay - Yellow', color:'ffff00'},
+  {type:'music',title:'Eiffel 65 - Blue', color: '0000ff'},
+  {type:'music',title:'Blur - Song 2', number:2},
+  {type:'music',title:'The Rolling Stones - Paint It, Black', color: '000000'},
   {type:'shows',title:'13 Reasons Why',number:13},
   {type:'movie',title:'Around the World in 80 Days', number:80, duration:'80d', distance:'40075 km', speed:'5.79788773 m s'},
   {type:'movie',title:'From Dusk till Dawn', duration:'12h'},
@@ -60,6 +64,8 @@ var db = [
   {type:'book', title:'The Two Towers', number:2},
   {type:'movie',title:'The Lord of the Rings: The Two Towers', number:2},
   {type:'movie',title:'Seven', number:7},
-  {type:'movie',title:'Million Dollar Baby', number:1000000}
-
+  {type:'movie',title:'Million Dollar Baby', number:1000000},
+  {type:'movie',title:'Black Swan', color:'000000'},
+  {type:'movie',title:'Black Panther', color:'000000'},
+  {type:'movie',title:'Goldfinger', color:'FFD700'}
 ];
