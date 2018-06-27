@@ -27,6 +27,7 @@ var db = [
   {type:'movie',title:'District 9',number:9},
   {type:'movie',title:'Fantastic Four',number:4},
   {type:'movie',title:'Friday the 13th',number:13},
+  {type:'movie',title:'Lilac Time',color:'C8A2C8'},
   {type:'movie',title:'Ocean\'s Eleven',number:11},
   {type:'movie',title:'One Day',number:1,duration:'1d'},
   {type:'movie',title:'One Hundred and One Dalmatians',number:101},
@@ -37,8 +38,10 @@ var db = [
   {type:'movie',title:'THX 1138',number:1138},
   {type:'movie',title:'The 40 Year-Old Virgin',number:40},
   {type:'movie',title:'The 400 Blows',number:400},
+  {type:'movie',title:'The Crimson Rivers',color:'DC143C'},
   {type:'movie',title:'The Day After Tomorrow',date:'d+2'},
   {type:'movie',title:'The Fifth Element',number:5},
+  {type:'movie',title:'The Name of the Rose',color:'FF007F'},
   {type:'movie',title:'The Next Three Days',number:3},
   {type:'movie',title:'The Number 23',number:23},
   {type:'movie',title:'The Sixth Sense',number:6},
@@ -60,125 +63,3 @@ var db = [
   {type:'movie',title:'Million Dollar Baby', number:1000000}
 
 ];
-var db_types = {
-  movie: {
-    plural: 'movies',
-    url: function(entry) {
-      return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
-    },
-  },
-  music: {
-    plural: 'songs',
-    url: function(entry) {
-      return 'https://www.youtube.com/results?search_query='+encodeURIComponent(entry.title);
-    },
-  },
-  shows: {
-    plural: 'shows',
-    url: function(entry) {
-      return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
-    },
-  },
-  book: {
-    plural: 'books',
-    url: function(entry) {
-      return 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title);
-    }
-  }
-};
-
-function time_unit(u) {
-  var seconds = 1;
-  switch(u) {
-    case 'w': seconds *= 7;
-    case 'd': seconds *= 24;
-    case 'h': seconds *= 60;
-    case 'm': seconds *= 60;
-    //case 's': seconds *= 1;
-    break;
-  }
-  return seconds;
-}
-var db_criteria = {
-  color: {
-    regex: new RegExp(/^[a-f\d]{6}$/i),
-    sanitation: function(str) {
-      if(this.regex.test(str)) {
-        var i = parseInt(str, 16);
-        return {
-          r: (i >> 16) & 0xff,
-          g: (i >> 8) & 0xff,
-          b: (i >> 0) & 0xff,
-        };
-      }
-    },
-    to_hex: function(value) {
-      return ((1<<24)+(value.r<<16)+(value.g<<8)+value.b).toString(16).slice(1);
-    },
-    print: function(value) {
-      return '<div style="width: 100%; height: 100%; background-color: #'+this.to_hex(value)+';"></div>';
-    },
-  },
-  date: {
-    relative_regex: new RegExp(/(\S)(\+|\-)(\d+)/i),
-    sanitation: function(str) {
-      var relative = this.relative_regex.exec(str);
-      if(relative) {
-        var add_ms = 1000;
-        add_ms *= time_unit(relative[1]);
-        if(relative[2]=='-') add_ms *= -1;
-        add_ms *= parseFloat(relative[3]);
-        return new Date(Date.now()+add_ms);
-      } else {
-        return new Date(str);
-      }
-    },
-    print: function(value) {
-      return value.toLocaleDateString();
-    },
-  },
-  distance: {
-    regex: new RegExp(/(\d+)\s+(\S+)/i),
-    units: {
-      m: 1,
-      km: 1000,
-      meters:1,
-      miles:1609.344,
-      leagues: 5556 // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
-    },
-    sanitation: function(str) {
-      var value_unit = this.regex.exec(str);
-      return parseFloat(value_unit[1])*this.units[value_unit[2]];
-    },
-    print: function(value) {
-      return value+'m';
-    },
-  },
-  duration: {
-    regex: new RegExp(/(\d+)(\S)/i),
-    sanitation: function(str) {
-      var seconds = 1;
-      var dur_parts = this.regex.exec(str);
-      if(dur_parts) {
-        seconds *= time_unit(dur_parts[2]);
-        seconds *= parseFloat(dur_parts[1]);
-      }
-      return seconds;
-    },
-    print: function(value) {
-      return value+'s';
-    }
-  },
-  number: {
-    print: function(value) {
-      return value;
-    }
-  },
-};
-
-for(var i=0;i<db.length;i++) {
-  var entry = db[i];
-  for(var key in entry)
-    if(db_criteria[key] && db_criteria[key].sanitation)
-      entry[key] = db_criteria[key].sanitation(entry[key]);
-}

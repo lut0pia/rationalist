@@ -11,7 +11,7 @@ function search(query) {
   var results = [];
   for(var i=0;i<db.length;i++) {
     var entry = db[i];
-    if(entry[query.criterion] && (!query.type || entry.type==query.type)) {
+    if(entry.hasOwnProperty(query.criterion) && (!query.type || entry.type==query.type)) {
       results.push(i);
     }
   }
