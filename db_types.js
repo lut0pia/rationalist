@@ -17,4 +17,10 @@ var db_types = {
       return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
     },
   },
+  book: {
+    plural: 'books',
+    url: function(entry) {
+      return 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title);
+    }
+  },
 };
