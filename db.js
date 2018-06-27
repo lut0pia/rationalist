@@ -5,7 +5,7 @@ var db = [
   {type:'movie',title:'17 Again',number:17},
   {type:'movie',title:'1941',number:1941,date:'1941'},
   {type:'movie',title:'1984',number:1984,date:'1984'},
-  {type:'movie',title:'20,000 Leagues Under the Sea',number:20000},
+  {type:'movie',title:'20,000 Leagues Under the Sea',number:20000, distance:'20000 leagues'},
   {type:'movie',title:'2001: A Space Odyssey',date:'2001',number:2001},
   {type:'movie',title:'2012',number:2012,date:'2012'},
   {type:'movie',title:'2046',number:2046,date:'2046'},
@@ -49,6 +49,16 @@ var db = [
   {type:'music',title:'The Proclaimers - I\'m Gonna Be (500 Miles)',number:500,distance:"500 miles"},
   {type:'music',title:'Vanessa Carlton - A Thousand Miles',number:1000,distance:"1000 miles"},
   {type:'shows',title:'13 Reasons Why',number:13},
+  {type:'movie',title:'Around the World in 80 Days', number:80, duration:'80d', distance:'40075 km', speed:'5.79788773 m s'},
+  {type:'movie',title:'From Dusk till Dawn', duration:'12h'},
+  {type:'movie',title:'The Green Mile', distance:'1 miles', color:'00ff00'},
+  {type:'book', title:'From the Earth to the Moon', distance: '384400 km'},
+  {type:'book', title:'The Fifth Elephant', number:5},
+  {type:'book', title:'The Two Towers', number:2},
+  {type:'movie',title:'The Lord of the Rings: The Two Towers', number:2},
+  {type:'movie',title:'Seven', number:7},
+  {type:'movie',title:'Million Dollar Baby', number:1000000}
+
 ];
 var db_types = {
   movie: {
@@ -69,6 +79,12 @@ var db_types = {
       return 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title);
     },
   },
+  book: {
+    plural: 'books',
+    url: function(entry) {
+      return 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title);
+    }
+  }
 };
 
 function time_unit(u) {
@@ -128,6 +144,7 @@ var db_criteria = {
       km: 1000,
       meters:1,
       miles:1609.344,
+      leagues: 5556 // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
     },
     sanitation: function(str) {
       var value_unit = this.regex.exec(str);
