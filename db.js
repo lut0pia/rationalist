@@ -67,5 +67,5 @@ var db = [
   {type:'movie',title:'Million Dollar Baby', number:1000000},
   {type:'movie',title:'Black Swan', color:'000000'},
   {type:'movie',title:'Black Panther', color:'000000'},
-  {type:'movie',title:'Goldfinger', color:'FFD700'}
+  {type:'movie',title:'Goldfinger', color:'FFD700'},
 ];

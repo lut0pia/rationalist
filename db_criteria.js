@@ -60,7 +60,7 @@ var db_criteria = {
       km: 1000,
       meters:1,
       miles:1609.344,
-      leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
+      leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit) 
     },
     sanitation: function(str) {
       var value_unit = this.regex.exec(str);

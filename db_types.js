@@ -22,5 +22,5 @@ var db_types = {
     url: function(entry) {
       return 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title);
     }
-  }
+  },
 };
