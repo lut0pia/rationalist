@@ -65,7 +65,6 @@ var db = [
   {type:'movie',title:'The Lord of the Rings: The Two Towers', number:2},
   {type:'movie',title:'Seven', number:7},
   {type:'movie',title:'Million Dollar Baby', number:1000000},
-  {type:'movie',title:'Black Swan', color:'000000'},
   {type:'movie',title:'Black Panther', color:'000000'},
   {type:'movie',title:'Goldfinger', color:'FFD700'},
 ];
