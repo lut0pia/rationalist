@@ -67,4 +67,6 @@ var db = [
   {type:'movie',title:'Million Dollar Baby', number:1000000},
   {type:'movie',title:'Black Panther', color:'000000'},
   {type:'movie',title:'Goldfinger', color:'FFD700'},
+  {type:'book', title:'One Thousand and One Nights', number:1001, duration:'12012d'},
+  {type:'game', title:'Cyberpunk 2077', number:2077, date:'2077'}
 ];
