@@ -23,4 +23,11 @@ var db_types = {
       return 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title);
     }
   },
+  game: {
+    plural: 'video games',
+    url: function(entry)
+    {
+      return 'https://www.igdb.com/search?q='+encodeURIComponent(entry.title);
+    }
+  }
 };
