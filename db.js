@@ -11,6 +11,7 @@ var db = [
   {type:'movie',title:'2046',number:2046,date:'2046'},
   {type:'movie',title:'21 Grams',number:21},
   {type:'movie',title:'21 Jump Street',number:21},
+  {type:'movie',title:'21',number:21},
   {type:'movie',title:'27 Dresses',number:27},
   {type:'movie',title:'28 Days Later',date:'d+28',number:28,duration:'28d'},
   {type:'movie',title:'28 Weeks Later',date:'w+28',number:28,duration:'28w'},
