@@ -54,7 +54,7 @@ var db_criteria = {
     },
   },
   distance: {
-    regex: new RegExp(/(\d+)\s+(\S+)/i),
+    regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     units: {
       m: 1,
       km: 1000,
@@ -71,7 +71,7 @@ var db_criteria = {
     },
   },
   duration: {
-    regex: new RegExp(/(\d+)(\S)/i),
+    regex: new RegExp(/([\d\.]+)\s*(\S)/i),
     sanitation: function(str) {
       var seconds = 1;
       var dur_parts = this.regex.exec(str);
