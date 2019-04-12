@@ -60,6 +60,7 @@ const db = [
   {type:'movie', title:'From Dusk till Dawn', duration:'12h'},
   {type:'movie', title:'G-Force', letter:'g'},
   {type:'movie', title:'Goldfinger', color:'FFD700', element:79},
+  {type:'movie', title:'Gone in 60 Seconds', duration:'60s', number:60},
   {type:'movie', title:'Helium', element:2},
   {type:'movie', title:'House of D', letter:'d'},
   {type:'movie', title:'I Am Number Four', number:4},
