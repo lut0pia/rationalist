@@ -56,15 +56,16 @@ var db_criteria = {
   distance: {
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     units: {
-      m: 1,
+      cm: 0.01,
+      feet: 0.3048,
       km: 1000,
-      meters:1,
-      miles:1609.344,
-      feet:0.3048,
       leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
+      m: 1,
+      meters: 1,
+      miles: 1609.344,
     },
     sanitation: function(str) {
-      var value_unit = this.regex.exec(str);
+      const value_unit = this.regex.exec(str);
       return parseFloat(value_unit[1])*this.units[value_unit[2]];
     },
     print: function(value) {
