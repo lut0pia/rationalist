@@ -14,6 +14,7 @@ const db = [
   {type:'movie', title:'1984', number:1984, date:'1984'},
   {type:'movie', title:'20 Centimeters', distance:'20cm', number:20},
   {type:'movie', title:'20, 000 Leagues Under the Sea', number:20000, distance:'20000 leagues'},
+  {type:'movie', title:'200 Cigarettes', number:200},
   {type:'movie', title:'2001: A Space Odyssey', date:'2001', number:2001},
   {type:'movie', title:'2012', number:2012, date:'2012'},
   {type:'movie', title:'2046', number:2046, date:'2046'},
