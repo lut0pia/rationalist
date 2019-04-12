@@ -95,6 +95,14 @@ var db_criteria = {
       return value;
     },
   },
+  letter: {
+    sanitation: function(value) {
+      return value.toUpperCase().charCodeAt(0);
+    },
+    print: function(value) {
+      return String.fromCharCode(value);
+    },
+  },
   number: {
     print: function(value) {
       return value;
