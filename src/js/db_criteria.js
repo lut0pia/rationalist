@@ -9,7 +9,7 @@ var db_criteria = {
           (i >> 8) & 0xff,
           (i >> 0) & 0xff,
         );
-        
+
       }
     },
     from_rgb: function(r, g, b) {
@@ -61,7 +61,7 @@ var db_criteria = {
       meters:1,
       miles:1609.344,
       feet:0.3048,
-      leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit) 
+      leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
     },
     sanitation: function(str) {
       var value_unit = this.regex.exec(str);
@@ -85,6 +85,14 @@ var db_criteria = {
     print: function(value) {
       return value+'s';
     }
+  },
+  element: {
+    sanitation: function(str) {
+      return Number(str);
+    },
+    print: function(value) {
+      return value;
+    },
   },
   number: {
     print: function(value) {
