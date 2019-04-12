@@ -110,9 +110,10 @@ var db_criteria = {
   },
 };
 
-for(var i=0;i<db.length;i++) {
-  var entry = db[i];
-  for(var key in entry)
-    if(db_criteria[key] && db_criteria[key].sanitation)
+for(let entry of db) {
+  for(let key in entry) {
+    if(db_criteria[key] && db_criteria[key].sanitation) {
       entry[key] = db_criteria[key].sanitation(entry[key]);
+    }
+  }
 }
