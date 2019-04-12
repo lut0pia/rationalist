@@ -35,6 +35,7 @@ const db = [
   {type:'movie', title:'500 Days of Summer', number:500, duration:'500d'},
   {type:'movie', title:'8 and a Half', number:8.5},
   {type:'movie', title:'8 Mile', number:8, distance:"8 miles"},
+  {type:'movie', title:'8 Seconds', duration:'8s', number:8},
   {type:'movie', title:'9', number:9},
   {type:'movie', title:'9/11', number:911, date:'September 11, 2001'},
   {type:'movie', title:'A Clockwork Orange', color:'ffa500'},
