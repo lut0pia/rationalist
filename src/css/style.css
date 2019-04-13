@@ -91,3 +91,23 @@ h1 {
 #results article a {
   color: #000;
 }
+
+/* Mobile support */
+@media (max-width: 760px) {
+  body {
+    width: 100%;
+  }
+
+  #menu {
+    width: initial;
+  }
+
+  #results article index {
+    font-size: 12px;
+    width: 64px;
+  }
+
+  #results article title {
+    font-size: 12px;
+  }
+}
