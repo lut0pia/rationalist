@@ -113,6 +113,28 @@ const db_criteria = {
       node.innerText = String.fromCharCode(value);
     },
   },
+  mass: {
+    regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
+    units: {
+      g: 1,
+      kg: 1000,
+      lb: 453.5924,
+    },
+    sanitation: function(str) {
+      const value_unit = this.regex.exec(str);
+      return parseFloat(value_unit[1])*this.units[value_unit[2]];
+    },
+    print: function(value, node) {
+      let unit;
+      if(value > 2000) {
+        unit = 'kg';
+        value /= 1000;
+      } else if(value > 1) {
+        unit = 'g';
+      }
+      node.innerText = value.toFixed() + unit;
+    },
+  },
   number: {
     print: function(value, node) {
       node.innerText = value;
