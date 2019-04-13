@@ -69,7 +69,17 @@ const db_criteria = {
       return parseFloat(value_unit[1])*this.units[value_unit[2]];
     },
     print: function(value, node) {
-      node.innerText = value+'m';
+      let unit;
+      if(value > 2000) {
+        unit = 'km';
+        value /= 1000;
+      } else if(value > 1) {
+        unit = 'm';
+      } else if(value > 0.01) {
+        unit = 'cm';
+        value *= 100;
+      }
+      node.innerText = value.toFixed() + unit;
     },
   },
   duration: {
