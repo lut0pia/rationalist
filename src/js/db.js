@@ -46,7 +46,6 @@ const db = [
   {type:'movie', title:'Arsenic and Old Lace', element:33},
   {type:'movie', title:'Black Panther', color:'000000'},
   {type:'movie', title:'Black Swan', color:'000000'},
-  {type:'movie', title:'Black Swan', color:'000000'},
   {type:'movie', title:'Blue is the Warmest Color', color:'0000ff'},
   {type:'movie', title:'Blue Velvet', color: '0000ff'},
   {type:'movie', title:'Catch 22', number:22},
