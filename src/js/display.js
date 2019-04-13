@@ -10,7 +10,7 @@ window.onload = function() {
   for(let crit in db_criteria)
     search_criterion_select.innerHTML += '<option value="'+crit+'">'+crit+'</option>';
 
-  document.getElementById('search_button').onclick = function() {
+  document.getElementById('search_button').onclick = async function() {
     const query = {
       type: search_type_select.value,
       criterion: search_criterion_select.value
@@ -21,6 +21,10 @@ window.onload = function() {
     const criterion = db_criteria[query.criterion];
     for(let i of results) {
       const entry = db[i];
+
+      if(!entry.info) {
+        entry.info = await db_types[entry.type].info(entry);
+      }
 
       const article = document.createElement('article');
       results_div.appendChild(article);
@@ -38,7 +42,7 @@ window.onload = function() {
       a.target = '_blank';
       a.rel = 'noopener';
       a.innerText = '☞ Check it out!';
-      a.href = db_types[entry.type].url(entry)
+      a.href = entry.info.url;
     }
   }
 }
