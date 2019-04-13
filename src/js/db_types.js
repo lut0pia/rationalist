@@ -2,9 +2,7 @@ const db_types = {
   movie: {
     plural: 'movies',
     info: async function(entry) {
-      return {
-        url:'https://www.imdb.com/find?q='+encodeURIComponent(entry.title),
-      };
+      return imdb_info(entry, 'feature');
     },
   },
   music: {
@@ -18,9 +16,7 @@ const db_types = {
   show: {
     plural: 'shows',
     info: function(entry) {
-      return {
-        url: 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title),
-      };
+      return imdb_info(entry, 'TV series');
     },
   },
   book: {
@@ -32,3 +28,22 @@ const db_types = {
     }
   },
 };
+
+async function imdb_info(entry, type) {
+  const var_safe_title = entry.title.replace(/ /gi, '_').replace(/\W/gi, '');
+  const first_letter = var_safe_title.substr(0, 1).toLowerCase();
+  const request_url = 'https://sg.media-imdb.com/suggests/' + first_letter + '/' + var_safe_title + '.json';
+  const func_name = 'imdb$' + var_safe_title;
+  const imdb = await jsonp(request_url, func_name);
+  const content = imdb.d.find(function(content) {
+    return content.q == type && content.l == entry.title;
+  }) || imdb.d.find(function(content) {
+    return content.q == type;
+  });
+  return content ? {
+    img: content.i[0],
+    url:'https://www.imdb.com/title/' + content.id,
+  } : {
+    url: 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title),
+  };
+}
