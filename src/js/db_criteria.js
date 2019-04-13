@@ -1,4 +1,4 @@
-var db_criteria = {
+const db_criteria = {
   color: {
     regex: new RegExp(/^[a-f\d]{6}$/i),
     sanitation: function(str) {
@@ -31,8 +31,8 @@ var db_criteria = {
       var rgb = hsl_to_rgb(hsl[0], hsl[1], hsl[2]);
       return ((1<<24)+(rgb[0]<<16)+(rgb[1]<<8)+rgb[2]).toString(16).slice(1);
     },
-    print: function(value) {
-      return '<div style="width: 100%; height: 100%; background-color: #'+this.to_rgb_hex(value)+';"></div>';
+    print: function(value, node) {
+      node.style.backgroundColor = '#'+this.to_rgb_hex(value);
     },
   },
   date: {
@@ -49,8 +49,8 @@ var db_criteria = {
         return new Date(str);
       }
     },
-    print: function(value) {
-      return value.toLocaleDateString();
+    print: function(value, node) {
+      node.innerText = value.toLocaleDateString();
     },
   },
   distance: {
@@ -68,8 +68,8 @@ var db_criteria = {
       const value_unit = this.regex.exec(str);
       return parseFloat(value_unit[1])*this.units[value_unit[2]];
     },
-    print: function(value) {
-      return value+'m';
+    print: function(value, node) {
+      node.innerText = value+'m';
     },
   },
   duration: {
@@ -83,29 +83,29 @@ var db_criteria = {
       }
       return seconds;
     },
-    print: function(value) {
-      return value+'s';
+    print: function(value, node) {
+      node.innerText = value+'s';
     }
   },
   element: {
     sanitation: function(str) {
       return Number(str);
     },
-    print: function(value) {
-      return value;
+    print: function(value, node) {
+      node.innerText = value;
     },
   },
   letter: {
     sanitation: function(value) {
       return value.toUpperCase().charCodeAt(0);
     },
-    print: function(value) {
-      return String.fromCharCode(value);
+    print: function(value, node) {
+      node.innerText = String.fromCharCode(value);
     },
   },
   number: {
-    print: function(value) {
-      return value;
+    print: function(value, node) {
+      node.innerText = value;
     }
   },
 };

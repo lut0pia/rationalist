@@ -73,6 +73,7 @@ h1 {
   line-height: 64px;
   text-align: center;
   width: 128px;
+  height: 100%;
 }
 #results article title {
   font-family: Merriweather;
