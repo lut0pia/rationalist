@@ -22,27 +22,35 @@ window.onload = function() {
     for(let i of results) {
       const entry = db[i];
 
-      if(!entry.info) {
-        entry.info = await db_types[entry.type].info(entry);
-      }
-
       const article = document.createElement('article');
       results_div.appendChild(article);
 
-      const index = document.createElement('index');
-      article.appendChild(index);
-      criterion.print(entry[query.criterion], index);
-
-      const title = document.createElement('title');
-      title.innerText = entry.title;
-      article.appendChild(title);
-
-      const a = document.createElement('a');
-      article.appendChild(a);
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.innerText = '☞ Check it out!';
-      a.href = entry.info.url;
+      entry_article(query, criterion, entry, article);
     }
   }
+}
+
+async function entry_article(query, criterion, entry, article) {
+  const index = document.createElement('index');
+  article.appendChild(index);
+  criterion.print(entry[query.criterion], index);
+
+  const img = document.createElement('img');
+  article.appendChild(img);
+
+  const a = document.createElement('a');
+  article.appendChild(a);
+  a.target = '_blank';
+  a.rel = 'noopener';
+
+  const title = document.createElement('title');
+  title.innerText = entry.title;
+  a.appendChild(title);
+
+  if(!entry.info) {
+    entry.info = await db_types[entry.type].info(entry);
+  }
+
+  img.src = entry.info.img || '';
+  a.href = entry.info.url;
 }
