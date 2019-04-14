@@ -129,7 +129,7 @@ const db_criteria = {
       if(value > 2000) {
         unit = 'kg';
         value /= 1000;
-      } else if(value > 1) {
+      } else {
         unit = 'g';
       }
       node.innerText = value.toFixed() + unit;
