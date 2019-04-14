@@ -70,6 +70,7 @@ const db = [
   {type:'movie', title:'K-19: The Widowmaker', number:19},
   {type:'movie', title:'K-PAX', letter:'k'},
   {type:'movie', title:'Lilac Time', color:'C8A2C8'},
+  {type:'movie', title:'M', letter:'m'},
   {type:'movie', title:'Mercury Rising', element:80},
   {type:'movie', title:'Million Dollar Baby', number:1000000},
   {type:'movie', title:'Nine', number:9},
