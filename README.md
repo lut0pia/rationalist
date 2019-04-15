@@ -2,7 +2,7 @@
 
 ## What is this?
 
-Useless database/website to sort movies/songs/shows by absurd criteria based on title only (colors, numbers, etc.).
+Rationalist is a useless database/website to sort movies/songs/shows/books by absurd criteria based on title only (colors, numbers, etc.).
 
 Live at [rationalist.lucien.cat](http://rationalist.lucien.cat)
 
@@ -10,7 +10,7 @@ Live at [rationalist.lucien.cat](http://rationalist.lucien.cat)
 
 Rationalist is open to contributions, especially content additions, but also style modifications or new functionality. There are some rules below but they're subject to change and up for discussion.
 
-Generally, all values should be deterministic, which doesn't necessarily mean that they wouldn't change over time (some dates change) or are exact, but that the result would always be consistent (for instance someone else wouldn't interpret it differently).
+All values must be derived from title only, you should not have to know the content of the piece to deduce the value. All values should be deterministic, which doesn't necessarily mean that they wouldn't change over time (some dates change) or are exact, but that the result would always be consistent (for instance someone else wouldn't interpret it differently).
 
 - Dependencies
   - Do not include any dependency on other software
