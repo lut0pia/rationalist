@@ -3,33 +3,62 @@ const db_criteria = {
     regex: new RegExp(/^[a-f\d]{6}$/i),
     sanitation: function(str) {
       if(this.regex.test(str)) {
-        var i = parseInt(str, 16);
-        return this.from_rgb(
-          (i >> 16) & 0xff,
-          (i >> 8) & 0xff,
-          (i >> 0) & 0xff,
-        );
+        const i = parseInt(str, 16);
+        const r = ((i >> 16) & 0xff) / 255;
+        const g = ((i >> 8) & 0xff) / 255;
+        const b = ((i >> 0) & 0xff) / 255;
+        const max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h, s, l = (max + min) / 2;
 
+        if(max == min) {
+            h = s = 0; // achromatic
+        } else {
+            var d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch(max){
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+
+        h = Math.ceil(h * 255);
+        s = Math.ceil(s * 255);
+        l = Math.ceil(l * 255);
+        return (h << 16) + (s << 8) + l;
       }
     },
-    from_rgb: function(r, g, b) {
-      var hsl = rgb_to_hsl(r, g, b);
-      hsl[0] = Math.ceil(hsl[0]*255);
-      hsl[1] = Math.ceil(hsl[1]*255);
-      hsl[2] = Math.ceil(hsl[2]*255);
-      return (hsl[0]<<16)+(hsl[1]<<8)+hsl[2];
-    },
-    to_hsl: function(value) {
-      var hsl = [];
-      hsl[0] = (value>>16 & 0xff) / 255.0;
-      hsl[1] = (value>>8 & 0xff) / 255.0;
-      hsl[2] = (value>>0 & 0xff) / 255.0;
-      return hsl;
-    },
     to_rgb_hex: function(value) {
-      var hsl = this.to_hsl(value);
-      var rgb = hsl_to_rgb(hsl[0], hsl[1], hsl[2]);
-      return ((1<<24)+(rgb[0]<<16)+(rgb[1]<<8)+rgb[2]).toString(16).slice(1);
+      const h = (value>>16 & 0xff) / 255.0;
+      const s = (value>>8 & 0xff) / 255.0;
+      const l = (value>>0 & 0xff) / 255.0;
+      let r, g, b;
+
+      if(s == 0){
+          r = g = b = l; // achromatic
+      } else {
+          const hue2rgb = function hue2rgb(p, q, t){
+              if(t < 0) t += 1;
+              if(t > 1) t -= 1;
+              if(t < 1/6) return p + (q - p) * 6 * t;
+              if(t < 1/2) return q;
+              if(t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+              return p;
+          }
+
+          const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+          const p = 2 * l - q;
+          r = hue2rgb(p, q, h + 1/3);
+          g = hue2rgb(p, q, h);
+          b = hue2rgb(p, q, h - 1/3);
+      }
+
+      r = Math.ceil(r * 255);
+      g = Math.ceil(g * 255);
+      b = Math.ceil(b * 255);
+
+      return ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
     },
     print: function(value, node) {
       node.style.backgroundColor = '#'+this.to_rgb_hex(value);
