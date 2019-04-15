@@ -11,7 +11,7 @@ function time_unit(u) {
   }
   return seconds;
 }
-function rbg_to_hsl(r, g, b){
+function rgb_to_hsl(r, g, b){
   r /= 255, g /= 255, b /= 255;
   var max = Math.max(r, g, b), min = Math.min(r, g, b);
   var h, s, l = (max + min) / 2;

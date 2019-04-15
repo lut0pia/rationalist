@@ -13,7 +13,7 @@ const db_criteria = {
       }
     },
     from_rgb: function(r, g, b) {
-      var hsl = rbg_to_hsl(r, g, b);
+      var hsl = rgb_to_hsl(r, g, b);
       hsl[0] = Math.ceil(hsl[0]*255);
       hsl[1] = Math.ceil(hsl[1]*255);
       hsl[2] = Math.ceil(hsl[2]*255);
