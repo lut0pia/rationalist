@@ -5,6 +5,7 @@ const db = [
   {type:'book', title:'The Two Towers', number:2},
   {type:'movie', title:'10 Things I Hate About You', number:10},
   {type:'movie', title:'10, 000 BC', number:10000},
+  {type:'movie', title:'12 Years a Slave', number:12, duration:'12y'},
   {type:'movie', title:'127 Hours', number:127, duration:'127h'},
   {type:'movie', title:'14 Days to Life', duration:'14d', number:14},
   {type:'movie', title:'15 Minutes', number:15, duration:'15m'},
