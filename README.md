@@ -12,6 +12,8 @@ Rationalist is open to contributions, especially content additions, but also sty
 
 All values must be derived from title only, you should not have to know the content of the piece to deduce the value. All values should be deterministic, which doesn't necessarily mean that they wouldn't change over time (some dates change) or are exact, but that the result would always be consistent (for instance someone else wouldn't interpret it differently).
 
+Any entry has to at least bring one unique value for its type/criterion pair. In case of competing entries (both bring the same value for the same type/criterion pair), the more well-known or appreciated entry remains while the other is removed. Trusted sources are preferred to determine the entry that will remain. For instance, `Black Swan` and `Black Panther` are both movies with the color black, one must be removed, according to IMDB, `Black Swan` has the better reviews, therefore it remains.
+
 - Dependencies
   - Do not include any dependency on other software
   - Remote API requests are more likely to be accepted
