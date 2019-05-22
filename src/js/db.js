@@ -48,7 +48,6 @@ const db = [
   {type:'movie', title:'Around the World in 80 Days', number:80, duration:'80d', distance:'40075 km', speed:'5.79788773 m s'},
   {type:'movie', title:'Arsenic and Old Lace', element:33},
   {type:'movie', title:'Avengers: Infinity War', number:Infinity},
-  {type:'movie', title:'Black Panther', color:'000000'},
   {type:'movie', title:'Black Swan', color:'000000'},
   {type:'movie', title:'Blue is the Warmest Color', color:'0000ff'},
   {type:'movie', title:'Blue Velvet', color: '0000ff'},
