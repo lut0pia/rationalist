@@ -29,10 +29,8 @@ const db_types = {
   },
   vgame: {
     plural: 'video games',
-    info: async function(entry) {
-      return {
-        url: 'https://www.youtube.com/results?search_query='+encodeURIComponent(entry.title),
-      };
+    info: function(entry) {
+      return imdb_info(entry, 'video game');
     },
   },
 };
