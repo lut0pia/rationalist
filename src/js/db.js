@@ -57,7 +57,6 @@ const db = [
   {type:'movie', title:'Blade Runner 2049', number:2049, date:'20'},
   {type:'movie', title:'Blue is the Warmest Color', color:'0000ff'},
   {type:'movie', title:'Blue Velvet', color: '0000ff'},
-  {type:'movie', title:'Boy A', letter:'a'},
   {type:'movie', title:'Catch 22', number:22},
   {type:'movie', title:'Dial M for Murder', letter:'m'},
   {type:'movie', title:'District 9', number:9},
