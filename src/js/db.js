@@ -98,7 +98,6 @@ const db = [
   {type:'movie', title:'Pretty in Pink', color:'FFC0CB'},
   {type:'movie', title:'Purple Rain', color:'800080'},
   {type:'movie', title:'Salmon Fishing in the Yemen', color:'FA8072'},
-  {type:'movie', title:'Salt', element:11},
   {type:'movie', title:'Sapphire', color:'0F52BA'},
   {type:'movie', title:'Seven Pounds', mass:'7lb', number:7, price:'7 GBP'},
   {type:'movie', title:'Seven Psychopaths', number:7},
