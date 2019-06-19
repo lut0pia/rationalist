@@ -169,12 +169,36 @@ const db_criteria = {
       node.innerText = value;
     }
   },
+  price: {
+    regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
+    sanitation: async function(str) {
+      const value_code = this.regex.exec(str);
+      let value = parseFloat(value_code[1]);
+      let code = value_code[2];
+
+      if(code == 'FRF') {
+        value /= 6.55957;
+        code = 'EUR';
+      }
+
+      const request_url = 'https://api.exchangeratesapi.io/latest?base=USD&symbols=' + code;
+      const exra = JSON.parse(await xhr(request_url));
+      const rate = exra.rates[code];
+
+      return (value / rate).toFixed(2);
+    },
+    print: function(value, node) {
+      node.innerText = value + ' USD';
+    }
+  },
 };
 
-for(let entry of db) {
-  for(let key in entry) {
-    if(db_criteria[key] && db_criteria[key].sanitation) {
-      entry[key] = db_criteria[key].sanitation(entry[key]);
+window.addEventListener('load', async function() {
+  for(let entry of db) {
+    for(let key in entry) {
+      if(db_criteria[key] && db_criteria[key].sanitation) {
+        entry[key] = await db_criteria[key].sanitation(entry[key]);
+      }
     }
   }
-}
+});
