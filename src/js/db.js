@@ -167,7 +167,6 @@ const db = [
   {type:'music', title:'Jay-Z - 99 Problems', number:99},
   {type:'music', title:'Kindness - 8th Wonder', number:8},
   {type:'music', title:'Linkin Park - One Step Closer', distance:"1 step"},
-  {type:'music', title:'Mac DeMarco - Blue Boy', color:'0000ff'},
   {type:'music', title:'Mellowhype - 67', number:67},
   {type:'music', title:'Moderat - 3 Minutes Of', duration:"3m"},
   {type:'music', title:'Mr. Carmack - 2084', date:'2084'},
