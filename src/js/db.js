@@ -175,7 +175,7 @@ const db = [
   {type:'music', title:'Odezenne - 1 gramme', mass:'1g'},
   {type:'music', title:'Paul Simon - 50 Ways To Leave Your Lover', number:50},
   {type:'music', title:'Phantogram - 10,000 Claps', number:10000},
-  {type:'music', title:'POND - 30000 Megatons', mass:'30000000000000kg'},
+  {type:'music', title:'POND - 30000 Megatons', mass:'30000000000000kg', number:30000},
   {type:'music', title:'Propellerheads - 360 ? (Oh Yeah?)', number:360},
   {type:'music', title:'Red Hot Chili Peppers - 21st Century', date:'2001'},
   {type:'music', title:'Stupeflip - 1993', date:'1993'},
