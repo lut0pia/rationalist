@@ -92,6 +92,7 @@ const db_criteria = {
       m: 1,
       meters: 1,
       miles: 1609.344,
+      step: 0.74, // https://en.wikipedia.org/wiki/Step_(unit) 
     },
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
