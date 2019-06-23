@@ -1,4 +1,24 @@
-window.onload = function() {
+window.addEventListener('load', async function() {
+  { // Sanitize database criteria
+    // Start all requests
+    for(let entry of db) {
+      for(let key in entry) {
+        if(db_criteria[key] && db_criteria[key].sanitation) {
+          entry[key] = db_criteria[key].sanitation(entry[key]);
+        }
+      }
+    }
+
+    // Await them all
+    for(let entry of db) {
+      for(let key in entry) {
+        if(db_criteria[key] && db_criteria[key].sanitation) {
+          entry[key] = await entry[key];
+        }
+      }
+    }
+  }
+
   const search_type_select = document.getElementById('search_type');
   const search_criterion_select = document.getElementById('search_criterion');
   const results_div = document.getElementById('results');
@@ -28,7 +48,7 @@ window.onload = function() {
       entry_article(query, criterion, entry, article);
     }
   }
-}
+});
 
 async function entry_article(query, criterion, entry, article) {
   const index = document.createElement('index');

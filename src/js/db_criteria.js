@@ -193,13 +193,3 @@ const db_criteria = {
     }
   },
 };
-
-window.addEventListener('load', async function() {
-  for(let entry of db) {
-    for(let key in entry) {
-      if(db_criteria[key] && db_criteria[key].sanitation) {
-        entry[key] = await db_criteria[key].sanitation(entry[key]);
-      }
-    }
-  }
-});
