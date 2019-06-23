@@ -1,21 +1,23 @@
 window.addEventListener('load', async function() {
-  { // Sanitize database criteria
-    // Start all requests
+  { // Sanitize database
     for(let entry of db) {
       for(let key in entry) {
-        if(db_criteria[key] && db_criteria[key].sanitation) {
-          entry[key] = db_criteria[key].sanitation(entry[key]);
-        }
-      }
-    }
+        if(db_criteria[key]) {
+          // Sanitize arrays
+          if(!Array.isArray(entry[key])) {
+            entry[key] = [entry[key]];
+          }
 
-    // Await them all
-    for(let entry of db) {
-      for(let key in entry) {
-        if(db_criteria[key] && db_criteria[key].sanitation) {
-          entry[key] = await entry[key];
+          // Start sanitation requests
+          if(db_criteria[key].sanitation) {
+            for(let i in entry[key]) {
+              entry[key][i] = db_criteria[key].sanitation(entry[key][i]);
+            }
+          }
         }
       }
+
+      entry.info = db_types[entry.type].info(entry);
     }
   }
 
@@ -36,24 +38,25 @@ window.addEventListener('load', async function() {
       criterion: search_criterion_select.value
     };
 
-    const results = search(query);
+    const results = await search(query);
     results_div.innerHTML = '';
     const criterion = db_criteria[query.criterion];
     for(let i of results) {
-      const entry = db[i];
+      const entry = db[i.index];
+      const value = entry[query.criterion][i.subindex];
 
       const article = document.createElement('article');
       results_div.appendChild(article);
 
-      entry_article(query, criterion, entry, article);
+      entry_article(criterion, value, entry, article);
     }
   }
 });
 
-async function entry_article(query, criterion, entry, article) {
+async function entry_article(criterion, value, entry, article) {
   const index = document.createElement('index');
   article.appendChild(index);
-  criterion.print(entry[query.criterion], index);
+  criterion.print(value, index);
 
   const img = document.createElement('img');
   article.appendChild(img);
@@ -67,8 +70,8 @@ async function entry_article(query, criterion, entry, article) {
   title.innerText = entry.title;
   a.appendChild(title);
 
-  if(!entry.info) {
-    entry.info = await db_types[entry.type].info(entry);
+  if(entry.info instanceof Promise) {
+    entry.info = await entry.info;
   }
 
   img.src = entry.info.img || '';
