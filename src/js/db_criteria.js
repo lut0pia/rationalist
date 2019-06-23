@@ -66,20 +66,46 @@ const db_criteria = {
   },
   date: {
     relative_regex: new RegExp(/(\S)(\+|\-)(\d+)/i),
+    bc_regex: new RegExp(/\-(\d+)/i),
+    pack_date: function(d, m, y) {
+      return d + (m << 5) + (y << 14);
+    },
+    unpack_date: function(p) {
+      return {
+        d: p % 32,
+        m: (p >> 5) & 0xf,
+        y: (p >> 14),
+      };
+    },
     sanitation: function(str) {
-      var relative = this.relative_regex.exec(str);
+      const bc = this.bc_regex.exec(str);
+      if(bc) {
+        return - (bc[1] << 14);
+      }
+
+      const relative = this.relative_regex.exec(str);
+      let date;
       if(relative) {
-        var add_ms = 1000;
+        let add_ms = 1000;
         add_ms *= time_unit(relative[1]);
         if(relative[2]=='-') add_ms *= -1;
         add_ms *= parseFloat(relative[3]);
-        return new Date(Date.now()+add_ms);
+        date = new Date(Date.now()+add_ms);
       } else {
-        return new Date(str);
+        date = new Date(str);
       }
+
+      return this.pack_date(date.getDate(), date.getMonth() + 1, date.getFullYear());
     },
     print: function(value, node) {
-      node.innerText = value.toLocaleDateString();
+      const date = this.unpack_date(value);
+      if(value >= 0) {
+        node.innerText = date.d.toString().padStart(2, '0')
+          + '/' + date.m.toString().padStart(2, '0')
+          + '/' + date.y.toString();
+      } else {
+        node.innerText = Math.abs(date.y) + ' BC';
+      }
     },
   },
   distance: {
