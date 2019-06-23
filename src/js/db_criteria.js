@@ -92,7 +92,7 @@ const db_criteria = {
       m: 1,
       meters: 1,
       miles: 1609.344,
-      step: 0.74, // https://en.wikipedia.org/wiki/Step_(unit) 
+      step: 0.74, // https://en.wikipedia.org/wiki/Step_(unit)
     },
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
@@ -149,18 +149,29 @@ const db_criteria = {
       g: 1,
       kg: 1000,
       lb: 453.5924,
+      t: 1000000,
+      kt: 1000000000,
+      Mt: 1000000000000,
     },
+    metric_units: [
+      {mul: 1, unit: 'g'},
+      {mul: 1000, unit: 'kg'},
+      {mul: 1000000, unit: 't'},
+      {mul: 1000000000, unit: 'kt'},
+      {mul: 1000000000000, unit: 'Mt'},
+    ],
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
       return parseFloat(value_unit[1])*this.units[value_unit[2]];
     },
     print: function(value, node) {
       let unit;
-      if(value > 2000) {
-        unit = 'kg';
-        value /= 1000;
-      } else {
-        unit = 'g';
+      for(let i = this.metric_units.length - 1; i >= 0; i--) {
+        if(i == 0 || Math.abs(value) >= this.metric_units[i].mul * 2) {
+          unit = this.metric_units[i].unit;
+          value /= this.metric_units[i].mul;
+          break;
+        }
       }
       node.innerText = value.toFixed() + unit;
     },
