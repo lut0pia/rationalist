@@ -47,7 +47,7 @@ async function imdb_info(entry, type) {
     return content.q == type;
   });
   return content ? {
-    img: content.i[0],
+    img: content.i[0].replace("._V1_.jpg", "._V1_UX182_CR0,0,182,268_AL_.jpg"),
     url:'https://www.imdb.com/title/' + content.id,
   } : {
     url: 'https://www.imdb.com/find?q='+encodeURIComponent(entry.title),
