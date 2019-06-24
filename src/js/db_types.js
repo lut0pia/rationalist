@@ -36,7 +36,7 @@ const db_types = {
 };
 
 async function imdb_info(entry, type) {
-  const var_safe_title = entry.title.replace(/ /gi, '_').replace(/\W/gi, '');
+  const var_safe_title = entry.imdb || entry.title.replace(/ /gi, '_').replace(/\W/gi, '');
   const first_letter = var_safe_title.substr(0, 1).toLowerCase();
   const request_url = 'https://sg.media-imdb.com/suggests/' + first_letter + '/' + var_safe_title + '.json';
   const func_name = 'imdb$' + var_safe_title;
