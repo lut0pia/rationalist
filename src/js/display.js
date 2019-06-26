@@ -58,8 +58,12 @@ async function entry_article(criterion, value, entry, article) {
   article.appendChild(index);
   criterion.print(value, index);
 
+  const img_wrapper = document.createElement('div');
+  article.appendChild(img_wrapper)
+
   const img = document.createElement('img');
-  article.appendChild(img);
+  img_wrapper.classList.add('img_wrapper');
+  img_wrapper.appendChild(img);
 
   const a = document.createElement('a');
   article.appendChild(a);

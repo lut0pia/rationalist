@@ -73,12 +73,22 @@ h1 {
   height: 100%;
 }
 
-#results article img {
-  max-height: 64px;
-  max-width: 64px;
-  position: absolute;
+#results article .img_wrapper {
+  width: 64px;
+  height: 64px;
+  float: left;
+  text-align: center;
+  background-color: white;
 }
 
+#results article img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+#results article a {
+  margin-left: 24px;
+}
 #results article title {
   font-family: Merriweather;
   font-style: italic;
@@ -86,7 +96,6 @@ h1 {
   display: inline;
   font-size: 16px;
   line-height: 64px;
-  margin-left: 72px;
 }
 
 #results article a {
