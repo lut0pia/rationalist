@@ -110,19 +110,9 @@ const db_criteria = {
   },
   distance: {
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
-    units: {
-      cm: 0.01,
-      feet: 0.3048,
-      km: 1000,
-      leagues: 5556, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
-      m: 1,
-      meters: 1,
-      miles: 1609.344,
-      step: 0.74, // https://en.wikipedia.org/wiki/Step_(unit)
-    },
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
-      return parseFloat(value_unit[1])*this.units[value_unit[2]];
+      return parseFloat(value_unit[1]) * dist_unit(value_unit[2]);
     },
     print: function(value, node) {
       let unit;
@@ -227,6 +217,18 @@ const db_criteria = {
     },
     print: function(value, node) {
       node.innerText = value + ' USD';
+    }
+  },
+  speed: {
+    regex: new RegExp(/([\d\.]+)\s*(\S+)\s*([\d\.]+)?\s*(\S+)/i), // number / distance unit / time unit
+    sanitation: async function(str) {
+      const value_dist_time = this.regex.exec(str);
+      const meters = parseFloat(value_dist_time[1]) * dist_unit(value_dist_time[2]);
+      const seconds = parseFloat(value_dist_time[3] || 1) * time_unit(value_dist_time[4])
+      return (meters / seconds).toFixed(2);
+    },
+    print: function(value, node) {
+      node.innerText = value + ' ms⁻¹';
     }
   },
 };
