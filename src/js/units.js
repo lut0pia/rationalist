@@ -8,6 +8,7 @@ const dist_units = [
   {sym:'meters', mul:1},
   {sym:'km', mul:1000, display:true},
   {sym:'miles', mul:1609.344},
+  {sym:'M', mul:1852}, // https://en.wikipedia.org/wiki/Nautical_mile
   {sym:'leagues', mul:5556}, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)
   {sym:'Mm', mul:1000000, display:true},
 ];
