@@ -124,6 +124,9 @@ const db_criteria = {
       } else if(value > 0.01) {
         unit = 'cm';
         value *= 100;
+      } else {
+        unit = 'mm';
+        value *= 1000;
       }
       node.innerText = value.toFixed() + unit;
     },

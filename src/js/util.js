@@ -21,6 +21,7 @@ function dist_unit(u) {
     m: 1,
     meters: 1,
     miles: 1609.344,
+    mm: 0.001,
     step: 0.74, // https://en.wikipedia.org/wiki/Step_(unit)
   }[u];
 }
