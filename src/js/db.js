@@ -130,6 +130,7 @@ const db = [
   {type:'movie', title:'The Fifth Element', number:5},
   {type:'movie', title:'The Green Mile', distance:'1 miles', color:'00ff00'},
   {type:'movie', title:'The Grey', color:'808080'},
+  {type:'movie', title:'The Knot', speed:'1 M h'},
   {type:'movie', title:'The Lord of the Rings: The Two Towers', number:2},
   {type:'movie', title:'The Name of the Rose', color:'FF007F'},
   {type:'movie', title:'The Next Three Days', duration:'3d', number:3},
