@@ -87,7 +87,7 @@ const db_criteria = {
       let date;
       if(relative) {
         let add_ms = 1000;
-        add_ms *= time_unit(relative[1]);
+        add_ms *= unit_mul(time_units, relative[1]);
         if(relative[2]=='-') add_ms *= -1;
         add_ms *= parseFloat(relative[3]);
         date = new Date(Date.now()+add_ms);
@@ -112,20 +112,10 @@ const db_criteria = {
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
-      return parseFloat(value_unit[1]) * dist_unit(value_unit[2]);
+      return parseFloat(value_unit[1]) * unit_mul(dist_units, value_unit[2]);
     },
     print: function(value, node) {
-      let unit;
-      if(value > 2000) {
-        unit = 'km';
-        value /= 1000;
-      } else if(value > 1) {
-        unit = 'm';
-      } else if(value > 0.01) {
-        unit = 'cm';
-        value *= 100;
-      }
-      node.innerText = value.toFixed() + unit;
+      node.innerText = unit_display(dist_units, value);
     },
   },
   duration: {
@@ -134,13 +124,13 @@ const db_criteria = {
       var seconds = 1;
       var dur_parts = this.regex.exec(str);
       if(dur_parts) {
-        seconds *= time_unit(dur_parts[2]);
+        seconds *= unit_mul(time_units, dur_parts[2]);
         seconds *= parseFloat(dur_parts[1]);
       }
       return seconds;
     },
     print: function(value, node) {
-      node.innerText = value+'s';
+      node.innerText = unit_display(time_units, value);
     }
   },
   element: {
@@ -161,36 +151,12 @@ const db_criteria = {
   },
   mass: {
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
-    units: {
-      g: 1,
-      kg: 1000,
-      lb: 453.5924,
-      t: 1000000,
-      kt: 1000000000,
-      Mt: 1000000000000,
-    },
-    metric_units: [
-      {mul: 1, unit: 'g'},
-      {mul: 1000, unit: 'kg'},
-      {mul: 1000000, unit: 't'},
-      {mul: 1000000000, unit: 'kt'},
-      {mul: 1000000000000, unit: 'Mt'},
-      {mul: 1000000000000000, unit: 'Gt'},
-    ],
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
-      return parseFloat(value_unit[1])*this.units[value_unit[2]];
+      return parseFloat(value_unit[1]) * unit_mul(mass_units, value_unit[2]);
     },
     print: function(value, node) {
-      let unit;
-      for(let i = this.metric_units.length - 1; i >= 0; i--) {
-        if(i == 0 || Math.abs(value) >= this.metric_units[i].mul * 2) {
-          unit = this.metric_units[i].unit;
-          value /= this.metric_units[i].mul;
-          break;
-        }
-      }
-      node.innerText = value.toFixed() + unit;
+      node.innerText = unit_display(mass_units, value);
     },
   },
   number: {
@@ -224,8 +190,8 @@ const db_criteria = {
     regex: new RegExp(/([\d\.]+)\s*(\S+)\s*([\d\.]+)?\s*(\S+)/i), // number / distance unit / time unit
     sanitation: async function(str) {
       const value_dist_time = this.regex.exec(str);
-      const meters = parseFloat(value_dist_time[1]) * dist_unit(value_dist_time[2]);
-      const seconds = parseFloat(value_dist_time[3] || 1) * time_unit(value_dist_time[4])
+      const meters = parseFloat(value_dist_time[1]) * unit_mul(dist_units, value_dist_time[2]);
+      const seconds = parseFloat(value_dist_time[3] || 1) * unit_mul(time_units, value_dist_time[4])
       return (meters / seconds).toFixed(2);
     },
     print: function(value, node) {

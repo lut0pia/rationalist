@@ -119,7 +119,7 @@ const db = [
   {type:'movie', title:'Sixteen Candles', number:16},
   {type:'movie', title:'Soylent Green', color:'00ff00'},
   {type:'movie', title:'Super 8', number:8},
-  {type:'movie', title:'The 39 Steps', number:39, distance:"39 step"},
+  {type:'movie', title:'The 39 Steps', number:39, distance:"39 steps"},
   {type:'movie', title:'The 40 Year-Old Virgin', number:40, duration:'40y'},
   {type:'movie', title:'The 400 Blows', number:400},
   {type:'movie', title:'The Blue Lagoon', color:'ACE5EE'},
