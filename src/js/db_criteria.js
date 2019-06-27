@@ -175,6 +175,7 @@ const db_criteria = {
       {mul: 1000000, unit: 't'},
       {mul: 1000000000, unit: 'kt'},
       {mul: 1000000000000, unit: 'Mt'},
+      {mul: 1000000000000000, unit: 'Gt'},
     ],
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
