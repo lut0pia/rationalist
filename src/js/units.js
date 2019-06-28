@@ -57,7 +57,7 @@ function unit_mul(units, sym) {
 function unit_display(units, value) {
   for(let i = units.length -1; i >= 0; i--) {
     const unit = units[i];
-    if(unit.display && (value > unit.mul * 2 || i == 0)) {
+    if(unit.display && (value >= unit.mul || i == 0)) {
       value /= unit.mul;
       if(Math.floor(value) != value) {
         value = value.toFixed(2);
