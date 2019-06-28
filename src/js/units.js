@@ -43,8 +43,10 @@ const time_units = [
   {sym:'hour', mul:60*60},
   {sym:'d', mul:60*60*24, display:true},
   {sym:'day', mul:60*60*24},
-  {sym:'w', mul:60*60*24*7},
+  {sym:'w', mul:60*60*24*7, display:true},
   {sym:'week', mul:60*60*24*7},
+  {sym:'mo', mul:31557600/12, display:true},
+  {sym:'month', mul:31557600/12},
   {sym:'y', mul:31557600, display:true},
 ];
 
