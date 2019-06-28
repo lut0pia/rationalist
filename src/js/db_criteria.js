@@ -195,7 +195,7 @@ const db_criteria = {
       return (meters / seconds).toFixed(2);
     },
     print: function(value, node) {
-      node.innerText = value + ' ms⁻¹';
+      node.innerText = unit_display(speed_units, value);
     }
   },
 };

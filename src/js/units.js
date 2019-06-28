@@ -30,6 +30,11 @@ const price_units = [
   {sym:'B USD', mul:1000000000, display:true},
 ];
 
+const speed_units = [
+  {sym:'ms⁻¹', mul:1, display:true},
+  {sym:'kms⁻¹', mul:1000, display:true},
+];
+
 const time_units = [
   {sym:'s', mul:1, display:true},
   {sym:'m', mul:60, display:true},
