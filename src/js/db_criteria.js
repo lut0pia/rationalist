@@ -183,7 +183,7 @@ const db_criteria = {
       return (value / rate).toFixed(2);
     },
     print: function(value, node) {
-      node.innerText = value + ' USD';
+      node.innerText = unit_display(price_units, value)
     }
   },
   speed: {
