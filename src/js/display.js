@@ -1,4 +1,6 @@
 window.addEventListener('load', async function() {
+  storage.entry_infos = storage.entry_infos || {};
+
   { // Sanitize database
     for(let entry of db) {
       for(let key in entry) {
@@ -17,7 +19,14 @@ window.addEventListener('load', async function() {
         }
       }
 
-      entry.info = db_types[entry.type].info(entry);
+      if(entry.title in storage.entry_infos) {
+        entry.info = storage.entry_infos[entry.title];
+      } else {
+        entry.info = db_types[entry.type].info(entry);
+        entry.info.then(function(info) {
+          storage.entry_infos[entry.title] = info;
+        })
+      }
     }
   }
 
