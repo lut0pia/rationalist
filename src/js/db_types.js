@@ -15,13 +15,13 @@ const db_types = {
   },
   show: {
     plural: 'shows',
-    info: function(entry) {
-      return imdb_info(entry, 'TV series');
+    info: async function(entry) {
+      return await imdb_info(entry, 'TV series');
     },
   },
   book: {
     plural: 'books',
-    info: function(entry) {
+    info: async function(entry) {
       return {
         url: 'https://en.wikipedia.org/wiki/Special:Search/'+encodeURIComponent(entry.title),
       };
@@ -29,8 +29,8 @@ const db_types = {
   },
   vgame: {
     plural: 'video games',
-    info: function(entry) {
-      return imdb_info(entry, 'video game');
+    info: async function(entry) {
+      return await imdb_info(entry, 'video game');
     },
   },
 };
