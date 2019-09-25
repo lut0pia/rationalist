@@ -197,6 +197,7 @@ const db = [
   {type:'show', title:'Silicon Valley', element:14},
   {type:'show', title:'Six Feet Under', distance: '6 feet'},
   {type:'show', title:'The Six Million Dollar Man', number:6000000, price:'6000000 USD'},
+  {type:'show', title:'Two and a Half Men', number:2.5},
   {type:'vgame', title:'50 Cent: Blood on the Sand', number: 50, price:'0.50 USD'},
   {type:'vgame', title:'Battlefield 1942', date: '1942', number:1942},
   {type:'vgame', title:'Battlefield 2142', date: '2142', number:2142},
