@@ -164,6 +164,16 @@ const db_criteria = {
       node.innerText = value;
     }
   },
+  ordinal: {
+    print: function(value, node) {
+      switch(value) {
+        case 1: node.innerText = value+'st'; break;
+        case 2: node.innerText = value+'nd'; break;
+        case 3: node.innerText = value+'rd'; break;
+        default: node.innerText = value+'th'; break;
+      }
+    }
+  },
   price: {
     rates: {
       USD: 1,
