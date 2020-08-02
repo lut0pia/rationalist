@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap');
+
 body {
   font-family: "Fira Sans", sans-serif;
   background: #f9f9f9;
@@ -23,34 +25,24 @@ h1 {
 #menu select {
   font-size: 16px;
   padding-left: 3px;
-  font-family: Scada;
+  font-family: Scada, serif;
   font-style: italic;
+  border: none;
 }
-
-
-#separator {
-  padding: 0px 6px;
-  display: inline-block;
-}
-
-#menu span {
-  padding-right: 3px;
-}
-
 
 #search_button {
+  display: block;
   padding: 5px 34px;
+  margin: 6px auto;
   color: #fff;
   border: none;
-  background-color: #000; /* #ff1212; */
-  cursor: help;
-  display: block;
-  margin: 6px auto;
-  font-size: 18px;
-  font-family: Scada;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
 }
 
-/*RESULT*/
+/* Results */
 
 #results {
   padding-top: 38px;
@@ -90,7 +82,7 @@ h1 {
   margin-left: 24px;
 }
 #results article title {
-  font-family: Merriweather;
+  font-family: Merriweather, serif;
   font-style: italic;
   font-weight: 700;
   display: inline;
@@ -103,6 +95,7 @@ h1 {
 }
 
 /* Mobile support */
+
 @media (max-width: 760px) {
   body {
     width: 100%;
