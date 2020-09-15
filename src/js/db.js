@@ -1,6 +1,6 @@
 const db = [
   {type:'book', title:'From the Earth to the Moon', distance: '384400 km'},
-  {type:'book', title:'The Fifth Elephant', number:5},
+  {type:'book', title:'The Fifth Elephant', number:5, ordinal:5},
   {type:'book', title:'The Two Sources of Morality and Religion', number:2},
   {type:'book', title:'The Two Towers', number:2},
   {type:'movie', title:'\'71', date:'1971', number:71},
