@@ -212,6 +212,7 @@ const db = [
   {type:'music', title:'The Wombats - 1996', date:'1996'},
   {type:'music', title:'Two Fingers - 101 South', number:101},
   {type:'music', title:'Vanessa Carlton - A Thousand Miles', number:1000, distance:"1000 miles"},
+  {type:'show', title:'100 Deeds for Eddie McDowd', number:100},
   {type:'show', title:'13 Reasons Why', number:13},
   {type:'show', title:'Altered Carbon', element:6},
   {type:'show', title:'Brooklyn 99', number:99},
