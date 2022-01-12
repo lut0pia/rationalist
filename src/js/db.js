@@ -34,7 +34,6 @@ const db = [
   {type:'movie', title:'21', number:21},
   {type:'movie', title:'24 Hour Party People', number:24, duration:'24h'},
   {type:'movie', title:'25th Hour', number:25, ordinal:25},
-  {type:'movie', title:'25th Hour', number:25},
   {type:'movie', title:'26 Years', number:26, duration:'26y'},
   {type:'movie', title:'27 Dresses', number:27},
   {type:'movie', title:'28 Days Later', date:'d+28', number:28, duration:'28d'},
