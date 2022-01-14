@@ -50,7 +50,6 @@ const db = [
   {type:'movie', title:'28 Days Later', date:'d+28', number:28, duration:'28d'},
   {type:'movie', title:'28 Weeks Later', date:'w+28', number:28, duration:'28w'},
   {type:'movie', title:'29th Street', number:29, ordinal:29},
-  {type:'movie', title:'29th Street', number:29, ordinal:29},
   {type:'movie', title:'3 Days to Kill', number:3, duration:'3d'},
   {type:'movie', title:'30 Days of Night', number:30, duration:'30d'},
   {type:'movie', title:'30 Minutes or Less', number:30, duration:'30m'},
