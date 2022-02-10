@@ -4,7 +4,11 @@
 
 Rationalist is a useless database/website to sort movies/songs/shows/books by absurd criteria based on title only (colors, numbers, etc.).
 
-Live at [rationalist.lucien.cat](http://rationalist.lucien.cat)
+Live at [rationalist.lutopia.net](http://rationalist.lutopia.net)
+
+## Why?
+
+TODO
 
 ## Contributing
 
@@ -25,11 +29,16 @@ Any entry has to at least bring one unique value for its type/criterion pair. In
   - Distance
   - Duration
   - Element
+    - The number from the [periodic table](https://en.wikipedia.org/wiki/Periodic_table) that corresponds to the chemical element in the title
   - Letter
     - The letter in the title should be pronounced as the sole letter would, `a boy` does not count for the letter `A`, but `Boy A` does
   - Mass
   - Number
     - Saga numbering (e.g. `Iron Man 2`) is forbidden
     - No restriction on the format of the number (e.g. Roman numerals are ok)
+  - Ordinal
+  - Price
+    - Currently broken because of dependency to obsolete currency conversion API
+  - Speed
 - Titles
   - Currently all in english, but may change to original only
