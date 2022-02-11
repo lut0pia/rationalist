@@ -28,6 +28,7 @@ const price_units = [
   {sym:'K USD', mul:1000, display:true},
   {sym:'M USD', mul:1000000, display:true},
   {sym:'B USD', mul:1000000000, display:true},
+  {sym:'T USD', mul:1000000000000, display:true},
 ];
 
 const speed_units = [
