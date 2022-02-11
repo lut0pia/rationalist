@@ -175,28 +175,27 @@ const db_criteria = {
     }
   },
   price: {
-    rates: {
-      USD: 1,
-    },
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     sanitation: async function(str) {
       const value_code = this.regex.exec(str);
       let value = parseFloat(value_code[1]);
       let code = value_code[2];
-      let rate;
-      if(this.rates[code]) {
-        rate = this.rates[code]
-      } else {
-        if(code == 'FRF') {
-          value /= 6.55957;
-          code = 'EUR';
-        }
 
-        const request_url = 'https://api.exchangeratesapi.io/latest?base=USD&symbols=' + code;
-        const exra = JSON.parse(await xhr(request_url));
-        rate = this.rates[code] = exra.rates[code];
+      if(code == 'FRF') { // Could handle other dead currencies but no title mentions them yet so...
+        value /= 6.55957;
+        code = 'EUR';
       }
-      return (value / rate).toFixed(2);
+
+      if(!this.rates) {
+        try {
+          this.rates = JSON.parse(await xhr('https://freecurrencyapi.net/api/v2/latest?apikey=11fdc150-8b73-11ec-bee3-75b6d7af5f26')).data;
+        } catch(e) {
+          this.rates = {};
+        }
+        this.rates.USD = 1;
+      }
+
+      return code in this.rates ?  (value / this.rates[code]).toFixed(2) : 0;
     },
     print: function(value, node) {
       node.innerText = unit_display(price_units, value)
