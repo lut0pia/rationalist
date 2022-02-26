@@ -103,6 +103,13 @@ article a {
   color: #000;
 }
 
+/* Alphabet letter indices */
+
+.letter article index {
+  font-size: 64px;
+  color: #333;
+}
+
 /* Periodic element indices */
 
 .element article index:hover {
