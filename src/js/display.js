@@ -59,6 +59,7 @@ window.addEventListener('load', async function() {
 
     const results = await search(query);
     results_div.innerHTML = '';
+    results_div.className = query.criterion;
     const criterion = db_criteria[query.criterion];
     for(let i of results) {
       const entry = db[i.index];

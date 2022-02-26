@@ -105,7 +105,7 @@ article a {
 
 /* Periodic element indices */
 
-article index.element:hover {
+.element article index:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -119,15 +119,15 @@ article index.post-transition-metal { background-color: rgba(0, 255, 0, 0.2); }
 article index.transition-metal { background-color: rgba(0, 128, 255, 0.2); }
 article index.lanthanide { background-color: rgba(0, 204, 204, 0.2); }
 article index.actinide { background-color: rgba(64, 255, 192, 0.2); }
-article index.element number,
-article index.element name,
-article index.element category {
+.element article index number,
+.element article index name,
+.element article index category {
   display: block;
   margin-top: 2px;
   line-height: 10px;
   font-size: 10px;
 }
-article index.element symbol {
+.element article index symbol {
   display: block;
   line-height: 26px;
   font-size: 24px;

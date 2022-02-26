@@ -156,7 +156,7 @@ const db_criteria = {
 
       if(this.elements.length >= value) {
         const element = this.elements[value - 1];
-        node.classList.add('element', element.category.replace(' ', '-'));
+        node.classList.add(element.category.replace(' ', '-'));
         node.addEventListener('click', e => window.open(element.source, '_blank'));
 
         const element_number = document.createElement('number');
