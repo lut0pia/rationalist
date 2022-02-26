@@ -198,7 +198,10 @@ const db_criteria = {
 
       if(!this.rates) {
         try {
-          this.rates = JSON.parse(await xhr('https://freecurrencyapi.net/api/v2/latest?apikey=11fdc150-8b73-11ec-bee3-75b6d7af5f26')).data;
+          if(!this.rates_request) {
+            this.rates_request = xhr('https://freecurrencyapi.net/api/v2/latest?apikey=11fdc150-8b73-11ec-bee3-75b6d7af5f26');
+          }
+          this.rates = JSON.parse(await this.rates_request).data;
         } catch(e) {
           this.rates = {};
         }
