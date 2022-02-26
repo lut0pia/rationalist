@@ -78,6 +78,18 @@ h1 {
   max-height: 64px;
 }
 
+#results article icon {
+  display: block;
+  float: left;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  font-size: 32px;
+  opacity: 0.2;
+  padding-top: 16px;
+  margin-bottom: -16px;
+}
+
 #results article a {
   margin-left: 24px;
 }

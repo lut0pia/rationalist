@@ -66,15 +66,19 @@ window.addEventListener('load', async function() {
       const entry = db[i.index];
       const value = entry[query.criterion][i.subindex];
 
-      const article = document.createElement('article');
+      const article = await entry_article(criterion, value, entry);
       results_div.appendChild(article);
-
-      entry_article(criterion, value, entry, article);
     }
   }
 });
 
-async function entry_article(criterion, value, entry, article) {
+async function entry_article(criterion, value, entry) {
+  const article = document.createElement('article');
+
+  const icon = document.createElement('icon');
+  icon.innerText = db_types[entry.type].icon;
+  article.appendChild(icon);
+
   const index = document.createElement('index');
   article.appendChild(index);
   criterion.print(value, index);
@@ -101,4 +105,6 @@ async function entry_article(criterion, value, entry, article) {
 
   img.src = entry.info.img || '';
   a.href = entry.info.url;
+
+  return article;
 }
