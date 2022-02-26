@@ -1,11 +1,13 @@
 const db_types = {
   movie: {
+    icon: '🎥',
     plural: 'movies',
     info: async function(entry) {
       return imdb_info(entry, 'feature');
     },
   },
   music: {
+    icon: '🎵',
     plural: 'music artists',
     info: async function(entry) {
       const info = {
@@ -28,12 +30,14 @@ const db_types = {
     },
   },
   show: {
+    icon: '📺',
     plural: 'shows',
     info: async function(entry) {
       return await imdb_info(entry, 'TV series');
     },
   },
   book: {
+    icon: '📖',
     plural: 'books',
     info: async function(entry) {
       return {
@@ -42,6 +46,7 @@ const db_types = {
     }
   },
   vgame: {
+    icon: '🎮',
     plural: 'video games',
     info: async function(entry) {
       return await imdb_info(entry, 'video game');

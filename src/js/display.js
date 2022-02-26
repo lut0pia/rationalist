@@ -34,9 +34,17 @@ window.addEventListener('load', async function() {
   const search_criterion_select = document.getElementById('search_criterion');
   const results_div = document.getElementById('results');
 
-  search_type_select.innerHTML += '<option value="">everything</option>';
-  for(let type in db_types)
-    search_type_select.innerHTML += '<option value="'+type+'">'+db_types[type].plural+'</option>';
+  const everything_option = document.createElement('option');
+  everything_option.value = "",
+  everything_option.innerText = "✨ everything";
+  search_type_select.appendChild(everything_option);
+
+  for(let type in db_types) {
+    const option = document.createElement('option');
+    option.value = type;
+    option.innerText = `${db_types[type].icon} ${db_types[type].plural}`;
+    search_type_select.appendChild(option);
+  }
 
   for(let crit in db_criteria)
     search_criterion_select.innerHTML += '<option value="'+crit+'">'+crit+'</option>';
