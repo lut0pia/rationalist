@@ -74,6 +74,7 @@ window.addEventListener('load', async function() {
 
 async function entry_article(criterion, value, entry) {
   const article = document.createElement('article');
+  article.classList.add(entry.type);
 
   const icon = document.createElement('icon');
   icon.innerText = db_types[entry.type].icon;
