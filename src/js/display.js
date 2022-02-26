@@ -46,8 +46,12 @@ window.addEventListener('load', async function() {
     search_type_select.appendChild(option);
   }
 
-  for(let crit in db_criteria)
-    search_criterion_select.innerHTML += '<option value="'+crit+'">'+crit+'</option>';
+  for(let crit in db_criteria) {
+    const option = document.createElement('option');
+    option.value = crit;
+    option.innerText = `${db_criteria[crit].icon} ${crit}`;
+    search_criterion_select.appendChild(option);
+  }
 
   document.getElementById('search_button').onclick = async function() {
     const query = {

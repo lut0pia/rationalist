@@ -1,5 +1,6 @@
 const db_criteria = {
   color: {
+    icon: '🎨',
     regex: new RegExp(/^[a-f\d]{6}$/i),
     sanitation: function(str) {
       if(this.regex.test(str)) {
@@ -65,6 +66,7 @@ const db_criteria = {
     },
   },
   date: {
+    icon: '📅',
     relative_regex: new RegExp(/(\S)(\+|\-)(\d+)/i),
     bc_regex: new RegExp(/\-(\d+)/i),
     pack_date: function(d, m, y) {
@@ -109,6 +111,7 @@ const db_criteria = {
     },
   },
   distance: {
+    icon: '📏',
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
@@ -119,6 +122,7 @@ const db_criteria = {
     },
   },
   duration: {
+    icon: '⏲️',
     regex: new RegExp(/([\d\.]+)\s*(\S)/i),
     sanitation: function(str) {
       var seconds = 1;
@@ -134,6 +138,7 @@ const db_criteria = {
     }
   },
   element: {
+    icon: '🧪',
     sanitation: function(str) {
       return Number(str);
     },
@@ -142,6 +147,7 @@ const db_criteria = {
     },
   },
   letter: {
+    icon: '🔤',
     sanitation: function(value) {
       return value.toUpperCase().charCodeAt(0);
     },
@@ -150,6 +156,7 @@ const db_criteria = {
     },
   },
   mass: {
+    icon: '⚖️',
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
@@ -160,11 +167,13 @@ const db_criteria = {
     },
   },
   number: {
+    icon: '#️⃣',
     print: function(value, node) {
       node.innerText = value;
     }
   },
   ordinal: {
+    icon: '🥇',
     print: function(value, node) {
       switch(value) {
         case 1: node.innerText = value+'st'; break;
@@ -175,6 +184,7 @@ const db_criteria = {
     }
   },
   price: {
+    icon: '🪙',
     regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
     sanitation: async function(str) {
       const value_code = this.regex.exec(str);
@@ -202,6 +212,7 @@ const db_criteria = {
     }
   },
   speed: {
+    icon: '🏎️',
     regex: new RegExp(/([\d\.]+)\s*(\S+)\s*([\d\.]+)?\s*(\S+)/i), // number / distance unit / time unit
     sanitation: async function(str) {
       const value_dist_time = this.regex.exec(str);
