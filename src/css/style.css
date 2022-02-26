@@ -108,6 +108,10 @@ article a {
 
 /* Periodic element indices */
 
+article index.element:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 article index.diatomic-nonmetal { background-color: rgba(255, 255, 0, 0.2); }
 article index.polyatomic-nonmetal { background-color: rgba(255, 255, 0, 0.2); }
 article index.noble-gas { background-color: rgba(255, 152, 0, 0.2); }
