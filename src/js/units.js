@@ -1,6 +1,9 @@
 const dist_units = [
   {sym:'mm', mul:0.001, display:true},
   {sym:'cm', mul:0.01, display:true},
+  {sym:'in', mul:0.0254},
+  {sym:'inch', mul:0.0254},
+  {sym:'inches', mul:0.0254},
   {sym:'feet', mul:0.3048},
   {sym:'step', mul:0.74},
   {sym:'steps', mul:0.74}, // https://en.wikipedia.org/wiki/Step_(unit)
