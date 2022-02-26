@@ -13,7 +13,7 @@ if(!storage.version || storage.version < current_storage_version) {
   };
 }
 
-window.addEventListener('unload', function() {
+window.addEventListener('unload', () => {
   try {
     localStorage.json = JSON.stringify(storage);
   } catch(e) {}

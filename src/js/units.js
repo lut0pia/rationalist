@@ -55,7 +55,7 @@ const time_units = [
 ];
 
 function unit_mul(units, sym) {
-  return units.find(function(unit) {
+  return units.find(unit => {
     return unit.sym == sym;
   }).mul;
 }

@@ -21,7 +21,7 @@ async function search(query) {
     }
   }
 
-  results.sort(function(a, b) {
+  results.sort((a, b) => {
     return db[a.index][query.criterion][a.subindex] - db[b.index][query.criterion][b.subindex];
   });
 

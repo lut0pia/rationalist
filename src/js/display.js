@@ -23,9 +23,7 @@ window.addEventListener('load', async function() {
         entry.info = storage.entry_infos[entry.title];
       } else {
         entry.info = db_types[entry.type].info(entry);
-        entry.info.then(function(info) {
-          storage.entry_infos[entry.title] = info;
-        })
+        entry.info.then(info => storage.entry_infos[entry.title] = info);
       }
     }
   }
