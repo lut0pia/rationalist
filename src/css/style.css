@@ -48,13 +48,13 @@ h1 {
   padding-top: 38px;
 }
 
-#results article {
+article {
   background-color: #f3f3f3;
   clear: both;
   height: 64px;
   margin: 4px 0px 4px 0px;
 }
-#results article index {
+article index {
   background: #eaeaea;
   display: block;
   float: left;
@@ -65,7 +65,7 @@ h1 {
   height: 100%;
 }
 
-#results article .img_wrapper {
+article .img_wrapper {
   width: 64px;
   height: 64px;
   float: left;
@@ -73,12 +73,12 @@ h1 {
   background-color: white;
 }
 
-#results article img {
+article img {
   max-width: 64px;
   max-height: 64px;
 }
 
-#results article icon {
+article icon {
   display: block;
   float: left;
   width: 64px;
@@ -90,10 +90,10 @@ h1 {
   margin-bottom: -16px;
 }
 
-#results article a {
+article a {
   margin-left: 24px;
 }
-#results article title {
+article title {
   font-family: Merriweather, serif;
   font-style: italic;
   font-weight: 700;
@@ -102,7 +102,7 @@ h1 {
   line-height: 64px;
 }
 
-#results article a {
+article a {
   color: #000;
 }
 
@@ -117,12 +117,12 @@ h1 {
     width: initial;
   }
 
-  #results article index {
+  article index {
     font-size: 12px;
     width: 64px;
   }
 
-  #results article title {
+  article title {
     font-size: 12px;
   }
 }
