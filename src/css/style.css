@@ -106,6 +106,32 @@ article a {
   color: #000;
 }
 
+/* Periodic element indices */
+
+article index.diatomic-nonmetal { background-color: rgba(255, 255, 0, 0.2); }
+article index.polyatomic-nonmetal { background-color: rgba(255, 255, 0, 0.2); }
+article index.noble-gas { background-color: rgba(255, 152, 0, 0.2); }
+article index.alkali-metal { background-color: rgba(255, 0, 0, 0.2); }
+article index.alkaline-earth-metal { background-color: rgba(64, 64, 255, 0.2); }
+article index.metalloid { background-color: rgba(140, 190, 0, 0.2); }
+article index.post-transition-metal { background-color: rgba(0, 255, 0, 0.2); }
+article index.transition-metal { background-color: rgba(0, 128, 255, 0.2); }
+article index.lanthanide { background-color: rgba(0, 204, 204, 0.2); }
+article index.actinide { background-color: rgba(64, 255, 192, 0.2); }
+article index.element number,
+article index.element name,
+article index.element category {
+  display: block;
+  margin-top: 2px;
+  line-height: 10px;
+  font-size: 10px;
+}
+article index.element symbol {
+  display: block;
+  line-height: 26px;
+  font-size: 24px;
+}
+
 /* Mobile support */
 
 @media (max-width: 760px) {

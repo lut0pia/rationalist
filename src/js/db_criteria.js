@@ -142,8 +142,34 @@ const db_criteria = {
     sanitation: function(str) {
       return Number(str);
     },
-    print: function(value, node) {
-      node.innerText = value;
+    print: async function(value, node) {
+      if(!this.elements) {
+        try {
+          if(!this.elements_request) {
+            this.elements_request = xhr('https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json');
+          }
+          this.elements = JSON.parse(await this.elements_request).elements;
+        } catch(e) {
+          this.elements = [];
+        }
+      }
+
+      if(this.elements.length >= value) {
+        const element = this.elements[value - 1];
+        node.classList.add('element', element.category.replace(' ', '-'));
+
+        const element_number = document.createElement('number');
+        element_number.innerText = element.number;
+        const element_symbol = document.createElement('symbol');
+        element_symbol.innerText = element.symbol;
+        const element_name = document.createElement('name');
+        element_name.innerText = element.name;
+        const element_category = document.createElement('category');
+        element_category.innerText = element.category.replace(/\w+/g, w => w.replace(/^\w/, c => c.toUpperCase()));
+        node.append(element_number, element_symbol, element_name, element_category);
+      } else {
+        node.innerText = value;
+      }
     },
   },
   letter: {
