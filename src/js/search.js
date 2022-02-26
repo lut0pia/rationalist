@@ -1,4 +1,4 @@
-var searches = {}
+const searches = {}
 
 async function search(query) {
   // Check for already stored results

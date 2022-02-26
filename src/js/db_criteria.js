@@ -14,7 +14,7 @@ const db_criteria = {
         if(max == min) {
             h = s = 0; // achromatic
         } else {
-            var d = max - min;
+            let d = max - min;
             s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
             switch(max){
                 case r: h = (g - b) / d + (g < b ? 6 : 0); break;
@@ -125,8 +125,8 @@ const db_criteria = {
     icon: '⏲️',
     regex: new RegExp(/([\d\.]+)\s*(\S)/i),
     sanitation: function(str) {
-      var seconds = 1;
-      var dur_parts = this.regex.exec(str);
+      let seconds = 1;
+      let dur_parts = this.regex.exec(str);
       if(dur_parts) {
         seconds *= unit_mul(time_units, dur_parts[2]);
         seconds *= parseFloat(dur_parts[1]);
