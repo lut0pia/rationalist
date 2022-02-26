@@ -6,37 +6,25 @@ const db_types = {
     },
   },
   music: {
-    plural: 'songs',
+    plural: 'music artists',
     info: async function(entry) {
-      let img = undefined;
-      for(let i = 0; i < 10 && !img; i++) {
-        try {
-          const artist = entry.title.split(' - ')[0].trim();
-          const track = entry.title.split(' - ')[1].trim();
-          const recordings_xml = await xhr('https://musicbrainz.org/ws/2/recording/?query=artist:' + encodeURIComponent(artist) + '%20AND%20recording:' + encodeURIComponent(track) + '%20AND%20type:album%20AND%20status:official');
-          const dom_parser = new DOMParser();
-          const recordings = dom_parser.parseFromString(recordings_xml, 'text/xml');
-          const release_groups = recordings.getElementsByTagName('release-group');
-          for(let r = 0; r < release_groups.length; r++) {
-            const release_group = release_groups[r];
-            if(release_group.getAttribute('type') == 'Album') {
-              const release_group_id = release_group.getAttribute('id');
-              try {
-                const release_group_cover = JSON.parse(await xhr('https://coverartarchive.org/release-group/' + release_group_id));
-                img = release_group_cover.images[0].thumbnails.small;
-                console.log(img);
-                break;
-              } catch(e) {}
-            }
-          }
-        } catch(e) {
-          await new Promise((r) => setTimeout(r, 10000));
-        }
-      }
-      return {
-        img: img,
-        url: 'https://www.youtube.com/results?search_query='+encodeURIComponent(entry.title),
+      const info = {
+        url: `https://www.youtube.com/results?search_query=${encodeURIComponent(entry.title)}`,
       };
+      const search_query = JSON.parse(await xhr(`https://musicbrainz.org/ws/2/artist/?query=${encodeURIComponent(entry.title)}&fmt=json`));
+      if(search_query.artists.length == 0) {
+        return info;
+      }
+      const artist = search_query.artists[0];
+      const artist_query = JSON.parse(await xhr(`https://musicbrainz.org/ws/2/artist/${(artist.id)}?inc=release-groups+url-rels&fmt=json`));
+
+      try { // Getting album image as cover
+        const release_group = artist_query['release-groups'][0];
+        const release_group_cover = JSON.parse(await xhr(`https://coverartarchive.org/release-group/${release_group.id}`));
+        info.img = release_group_cover.images[0].thumbnails.small;
+      } catch(e) {}
+
+      return info;
     },
   },
   show: {
