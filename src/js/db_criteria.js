@@ -196,7 +196,11 @@ const db_criteria = {
   number: {
     icon: '#️⃣',
     print: function(value, node) {
-      node.innerText = value;
+      let value_str = value.toString();
+      if(Math.floor(value) != value) {
+        value_str = value.toFixed(8).replace(/0+$/, '');
+      }
+      node.innerText = value_str;
     }
   },
   ordinal: {

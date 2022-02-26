@@ -66,7 +66,7 @@ function unit_display(units, value) {
     if(unit.display && (value >= unit.mul || i == 0)) {
       value /= unit.mul;
       if(Math.floor(value) != value) {
-        value = value.toFixed(2);
+        value = value.toFixed(2).replace(/0+$/, '');
       }
       return value + unit.sym;
     }
