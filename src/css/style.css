@@ -87,7 +87,7 @@ article a {
   padding: 0px 1vw;
   float: left;
 }
-article a:hover {
+article a[href]:hover {
   text-decoration: underline;
 }
 article title {
