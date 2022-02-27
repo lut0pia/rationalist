@@ -7,15 +7,15 @@ const db_types = {
     icon: '🎵',
     plural: 'music artists',
   },
-  show: {
+  tv_show: {
     icon: '📺',
-    plural: 'shows',
+    plural: 'TV shows',
   },
   book: {
     icon: '📖',
     plural: 'books',
   },
-  vgame: {
+  video_game: {
     icon: '🎮',
     plural: 'video games',
   },

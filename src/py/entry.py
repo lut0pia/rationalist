@@ -158,12 +158,12 @@ class Music(Entry):
 class TVShow(Entry):
     async def to_json(self):
         out = Entry.to_json(self)
-        out["type"] = "show"
+        out["type"] = "tv_show"
         return {**out, **await self.to_json_imdb(["TV series", "TV mini-series"])}
 
 
 class VideoGame(Entry):
     async def to_json(self):
         out = Entry.to_json(self)
-        out["type"] = "vgame"
+        out["type"] = "video_game"
         return {**out, **await self.to_json_imdb(["video game"])}

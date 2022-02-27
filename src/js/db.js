@@ -65,7 +65,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BODA0ZDcwMGYtZGUzZi00MzQ3LWE5NzMtYzk3NDUzNzk1YmIyXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 100,
     "title": "100 Deeds for Eddie McDowd",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0218744"
   },
   {
@@ -143,7 +143,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMDYzZTRlNGEtZDc2Mi00ZGNjLTlmZDAtMmVjMDZkOThiODEwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 13,
     "title": "13 Reasons Why",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt1837492"
   },
   {
@@ -541,7 +541,7 @@ const db = [
     "number": 50,
     "price": "0.50 USD",
     "title": "50 Cent: Blood on the Sand",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt1209299"
   },
   {
@@ -620,7 +620,7 @@ const db = [
     "number": 87,
     "ordinal": 87,
     "title": "87th Precinct",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0054510"
   },
   {
@@ -698,7 +698,7 @@ const db = [
     "found_title": "Altered Carbon",
     "img": "https://m.media-amazon.com/images/M/MV5BMjU2ZGQwYTctNTk2Ny00ODNmLTkzNDQtMWY2ZjM4MDI5ZmM5XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Altered Carbon",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt2261227"
   },
   {
@@ -758,7 +758,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNjEzOWJhNzktNzkzZC00Y2Y1LWJjMGItMTc4NmY1YjQ5NmJmXkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 1942,
     "title": "Battlefield 1942",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0412486"
   },
   {
@@ -767,7 +767,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOGNlMDcwMDgtZGUxYS00NGM2LWJlYWMtMTA3OTc5YmJlZWU0XkEyXkFqcGdeQXVyMjU3MzI1NzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2142,
     "title": "Battlefield 2142",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0884025"
   },
   {
@@ -840,7 +840,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 99,
     "title": "Brooklyn 99",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt2467372"
   },
   {
@@ -857,7 +857,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMGU4ODVkZDYtYjNiNS00YmFiLWFmOWQtODM2NDRjZDAxNzliXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2077,
     "title": "Cyberpunk 2077",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt3810192"
   },
   {
@@ -1104,7 +1104,7 @@ const db = [
     "found_title": "Indigo Prophecy",
     "img": "https://m.media-amazon.com/images/M/MV5BOTA1ZTdlMGItYjgxYy00MzExLTgwMjEtNmIwOThlZjEyMmFlXkEyXkFqcGdeQXVyMjM2MzYwNjU@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Indigo Prophecy",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0476990"
   },
   {
@@ -1243,7 +1243,7 @@ const db = [
     "found_title": "Neon Genesis Evangelion",
     "img": "https://m.media-amazon.com/images/M/MV5BYjY1Y2ZmNDctZWQ3Yy00MTE3LTk2M2QtMjQ0MDA5ODVjMDEyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Neon Genesis Evangelion",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0112159"
   },
   {
@@ -1338,7 +1338,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTNiMDBmZWQtZDI4Ni00ZGViLWJlOWMtNTdkODNlMTFkZjc2XkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_UY64_0,0,64,64_AL_.jpg",
     "price": "0.01 GBP",
     "title": "Penny Dreadful",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt2628232"
   },
   {
@@ -1362,7 +1362,7 @@ const db = [
     "found_title": "Pok\u00e9mon Black Version",
     "img": "https://m.media-amazon.com/images/M/MV5BMjhiYmViMDYtN2E2Yi00NjkxLTk5MjctZWYyMTFjYmQ4MWE5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Black Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt1731222"
   },
   {
@@ -1370,7 +1370,7 @@ const db = [
     "found_title": "Pok\u00e9mon Blue Version",
     "img": "https://m.media-amazon.com/images/M/MV5BOGQ1NWVjMTItZjQ2ZS00MjIyLTkxZjQtMGIyODMwYzNjOWM4XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Blue Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217729"
   },
   {
@@ -1378,7 +1378,7 @@ const db = [
     "found_title": "Pok\u00e9mon Emerald Version",
     "img": "https://m.media-amazon.com/images/M/MV5BZWYyMjcwZTgtZjYyNC00ZTE0LTljNDItYjVkZTQ5M2JlZDgyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Emerald Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0478230"
   },
   {
@@ -1387,7 +1387,7 @@ const db = [
     "found_title": "Pok\u00e9mon Gold Version",
     "img": "https://m.media-amazon.com/images/M/MV5BZGNmZDY1ZTctNzAwZS00YjNiLTg5M2EtY2Y4ZTI4MGY4ZjkzXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Gold Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0310011"
   },
   {
@@ -1395,7 +1395,7 @@ const db = [
     "found_title": "Pok\u00e9mon Green Version",
     "img": "https://m.media-amazon.com/images/M/MV5BYTE4ZTMyOWEtZDUwZS00ODFlLWI0YzgtZmI3NDZhZWNhMzkyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Green Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217731"
   },
   {
@@ -1403,7 +1403,7 @@ const db = [
     "found_title": "Pok\u00e9mon Pearl Version",
     "img": "https://m.media-amazon.com/images/M/MV5BOWVjY2JjMjAtNjg3MS00MmM3LWE5MTEtOWRlMGU5ZDg2YmI2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Pearl Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt2016972"
   },
   {
@@ -1411,7 +1411,7 @@ const db = [
     "found_title": "Pok\u00e9mon Platinum Version",
     "img": "https://m.media-amazon.com/images/M/MV5BODU5OTA3ODktOWFhMy00NTBmLTljM2UtMzVmNTgyZjk3YWNjXkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Platinum Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt1293615"
   },
   {
@@ -1419,7 +1419,7 @@ const db = [
     "found_title": "Pok\u00e9mon Red Version",
     "img": "https://m.media-amazon.com/images/M/MV5BZDljNDgwOGItYzQ3NC00ZWJiLWI0Y2UtYWYxZWI0MzIzYTVhXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Red Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217733"
   },
   {
@@ -1427,7 +1427,7 @@ const db = [
     "found_title": "Pok\u00e9mon Ruby Version",
     "img": "https://m.media-amazon.com/images/M/MV5BODM2MTFlNTAtNDYzYS00ZGU1LWE0NmQtMmY3YmExZWU2ZWVkXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Ruby Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0344215"
   },
   {
@@ -1435,7 +1435,7 @@ const db = [
     "found_title": "Pok\u00e9mon Sapphire Version",
     "img": "https://m.media-amazon.com/images/M/MV5BY2Q2MTVjZTUtMTRjNS00OTA0LTljZDQtYWM5NTQ4M2U3Mzc0XkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Sapphire Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0344216"
   },
   {
@@ -1444,7 +1444,7 @@ const db = [
     "found_title": "Pok\u00e9mon Silver Version",
     "img": "https://m.media-amazon.com/images/M/MV5BY2RkMjM3NGYtMjFlMS00NmY4LTk3ZWEtYzgxYTAwYTA1YWFjXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Silver Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217730"
   },
   {
@@ -1452,7 +1452,7 @@ const db = [
     "found_title": "Pok\u00e9mon White Version",
     "img": "https://m.media-amazon.com/images/M/MV5BZjdlZDc0ZjYtNWJmMy00NTJmLThlMjgtNDFlMzZiMTRlYTcwXkEyXkFqcGdeQXVyNzQzOTQxMDc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon White Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt1731223"
   },
   {
@@ -1460,7 +1460,7 @@ const db = [
     "found_title": "Pok\u00e9mon Yellow Version: Special Pikachu Edition",
     "img": "https://m.media-amazon.com/images/M/MV5BMTk0ZGE5MjItMzA2Mi00ODI0LTlkMGUtZmVmOWVkODFhZTM2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Yellow Version",
-    "type": "vgame",
+    "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217732"
   },
   {
@@ -1524,7 +1524,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNjdjOGQ3OTktNjA0OS00YjQzLTkzN2QtZjAyZjUzNmZmYTlhXkEyXkFqcGdeQXVyNDM4Njg2Mzc@._V1_UY64_0,0,64,64_AL_.jpg",
     "ordinal": 2,
     "title": "Second Noah",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0115349"
   },
   {
@@ -1576,7 +1576,7 @@ const db = [
     "found_title": "Silicon Valley",
     "img": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Silicon Valley",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt2575988"
   },
   {
@@ -1593,7 +1593,7 @@ const db = [
     "found_title": "Six Feet Under",
     "img": "https://m.media-amazon.com/images/M/MV5BN2FmMjg0Y2YtYmMyYi00MTBjLTllYzMtN2VjYzRhOTVmNWRlXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Six Feet Under",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0248654"
   },
   {
@@ -1651,7 +1651,7 @@ const db = [
     "number": 10,
     "ordinal": 10,
     "title": "The 10th Kingdom",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0207275"
   },
   {
@@ -1863,7 +1863,7 @@ const db = [
     "number": 6000000,
     "price": "6000000 USD",
     "title": "The Six Million Dollar Man",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0071054"
   },
   {
@@ -1951,7 +1951,7 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOTI2MjIzN2ItZDg0OS00MTlhLWIzMTMtYWI4ZTA0NGE4NDJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2.5,
     "title": "Two and a Half Men",
-    "type": "show",
+    "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0369179"
   },
   {
