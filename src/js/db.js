@@ -456,14 +456,6 @@ const db = [
     "url": "https://www.imdb.com/title/tt3835080"
   },
   {
-    "found_title": "36 Farmhouse",
-    "img": "https://m.media-amazon.com/images/M/MV5BYzdhZDg2MTMtYjkwOC00ZGNjLWE0NWUtYTU0MzI3YWQxZWU1XkEyXkFqcGdeQXVyMTIzMzg0MTM2._V1_UY64_0,0,64,64_AL_.jpg",
-    "number": 36,
-    "title": "36",
-    "type": "movie",
-    "url": "https://www.imdb.com/title/tt14934060"
-  },
-  {
     "duration": "365d",
     "found_title": "365 Days",
     "img": "https://m.media-amazon.com/images/M/MV5BODljZTM3ODAtMDc0YS00NmI4LTlmZTUtM2I5MDAzNTQxZmMxXkEyXkFqcGdeQXVyMTEwMTY3NDI@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -586,15 +578,6 @@ const db = [
     "title": "65daysofstatic",
     "type": "music",
     "url": "http://65daysofstatic.com/"
-  },
-  {
-    "duration": "7s",
-    "found_title": "7 seconds away",
-    "img": "https://m.media-amazon.com/images/M/MV5BZTg5MzVjZDEtOTFjNy00ZTFjLThjZmYtNmUwNmY1YTNkNzhkXkEyXkFqcGdeQXVyNDIxODg1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
-    "number": 7,
-    "title": "7 Seconds",
-    "type": "movie",
-    "url": "https://www.imdb.com/title/tt7659708"
   },
   {
     "distance": "8 miles",
@@ -847,7 +830,7 @@ const db = [
     "found_title": "Catch-22",
     "img": "https://m.media-amazon.com/images/M/MV5BZjM2M2IzY2QtMWU4My00NmFlLWIwNDUtZmNiZjNmMDhmYThjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 22,
-    "title": "Catch 22",
+    "title": "Catch-22",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0065528"
   },
@@ -1563,6 +1546,14 @@ const db = [
     "url": "https://www.imdb.com/title/tt0047478"
   },
   {
+    "duration": "7s",
+    "found_title": "Seven Seconds",
+    "number": 7,
+    "title": "Seven Seconds",
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0332388"
+  },
+  {
     "duration": "7y",
     "found_title": "Seven Years in Tibet",
     "img": "https://m.media-amazon.com/images/M/MV5BYmM4ZDhhNmItMDEyZi00NDUyLTk3MzUtMzE5NTE1ZWM0N2UyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -1997,12 +1988,12 @@ const db = [
     "url": "https://www.imdb.com/title/tt0434409"
   },
   {
-    "found_title": "Tropic Thunder",
-    "img": "https://m.media-amazon.com/images/M/MV5BNDE5NjQzMDkzOF5BMl5BanBnXkFtZTcwODI3ODI3MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "W.",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTkzMzg3NjM3OV5BMl5BanBnXkFtZTcwNTY1MzUzMw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "w",
     "title": "W. (2008)",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0942385"
+    "url": "https://www.imdb.com/title/tt1175491"
   },
   {
     "found_title": "WALL\u00b7E",

@@ -92,12 +92,23 @@ class Entry:
         imdb = requests.get(request_url).text
         imdb = imdb.replace(func_name + "(", "")[:-1]
         imdb = json.loads(imdb)
-        content = (next(filter(lambda c: "q" in c and c["q"] in types and c["l"].lower() == self.title.lower(), imdb["d"]), None)
-                   or next(filter(lambda c: "q" in c and c["q"] in types, imdb["d"]), None))
+
+        def keep_letters(t):
+            return re.sub("[^a-z]", "", t, flags=re.IGNORECASE).lower()
+
+        def content_score(c):
+            score = ((c["l"].lower() == self.title.lower()) * 2
+                     + (keep_letters(c["l"]) == keep_letters(self.title))
+                     + ("i" in c))
+            return score
+        contents = list(filter(lambda c: "q" in c and c["q"] in types, imdb["d"]))
+        contents.sort(key=content_score, reverse=True)
+        content = next(iter(contents), None)
         if content != None:
             out["found_title"] = content["l"]
-            out["img"] = content["i"][0].replace("._V1_.jpg", "._V1_UY64_0,0,64,64_AL_.jpg")
             out["url"] = f"https://www.imdb.com/title/{content['id']}"
+            if "i" in content:
+                out["img"] = content["i"][0].replace("._V1_.jpg", "._V1_UY64_0,0,64,64_AL_.jpg")
 
         return out
 
@@ -113,7 +124,7 @@ class Movie(Entry):
     async def to_json(self):
         out = Entry.to_json(self)
         out["type"] = "movie"
-        return {**out, **await self.to_json_imdb(["feature", "TV movie"])}
+        return {**out, **await self.to_json_imdb(["feature", "TV movie", "video"])}
 
 
 class Music(Entry):
