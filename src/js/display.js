@@ -1,6 +1,4 @@
 window.addEventListener('load', function() {
-  storage.entry_infos = storage.entry_infos || {};
-
   { // Sanitize database
     for(let entry of db) {
       for(let key in entry) {
@@ -17,13 +15,6 @@ window.addEventListener('load', function() {
             }
           }
         }
-      }
-
-      if(entry.title in storage.entry_infos) {
-        entry.info = storage.entry_infos[entry.title];
-      } else {
-        entry.info = db_types[entry.type].info(entry);
-        entry.info.then(info => storage.entry_infos[entry.title] = info);
       }
     }
   }
@@ -88,23 +79,18 @@ async function entry_article(article, criterion, value, entry) {
 
   const img = document.createElement('img');
   img_wrapper.classList.add('img_wrapper');
+  img.src = entry.img || '';
   img_wrapper.appendChild(img);
 
   const a = document.createElement('a');
   article.appendChild(a);
+  a.href = entry.url;
   a.target = '_blank';
   a.rel = 'noopener';
 
   const title = document.createElement('title');
-  title.innerText = entry.title;
+  title.innerText = entry.found_title || entry.title;
   a.appendChild(title);
-
-  if(entry.info instanceof Promise) {
-    entry.info = await entry.info;
-  }
-
-  img.src = entry.info.img || '';
-  a.href = entry.info.url;
 
   return article;
 }
