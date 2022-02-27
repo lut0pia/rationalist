@@ -1,4 +1,4 @@
-window.addEventListener('load', async function() {
+window.addEventListener('load', function() {
   storage.entry_infos = storage.entry_infos || {};
 
   { // Sanitize database
@@ -65,14 +65,14 @@ window.addEventListener('load', async function() {
       const entry = db[i.index];
       const value = entry[query.criterion][i.subindex];
 
-      const article = await entry_article(criterion, value, entry);
+      const article = document.createElement('article');
+      entry_article(article, criterion, value, entry);
       results_div.appendChild(article);
     }
   }
 });
 
-async function entry_article(criterion, value, entry) {
-  const article = document.createElement('article');
+async function entry_article(article, criterion, value, entry) {
   article.classList.add(entry.type);
 
   const icon = document.createElement('icon');
