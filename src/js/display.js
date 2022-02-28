@@ -92,5 +92,11 @@ async function entry_article(article, criterion, value, entry) {
   title.innerText = entry.found_title || entry.title;
   a.appendChild(title);
 
+  if(entry.year) {
+    const about = document.createElement('about');
+    about.innerText = entry.year;
+    a.appendChild(about);
+  }
+
   return article;
 }

@@ -38,6 +38,7 @@ h1 {
 }
 
 article {
+  display: flex;
   background-color: #f3f3f3;
   clear: both;
   height: 64px;
@@ -48,22 +49,16 @@ article:hover {
 }
 
 article index {
+  flex: 0 0 128px;
   background: #ddd;
-  display: block;
-  float: left;
   line-height: 64px;
   text-align: center;
-  width: 128px;
-  height: 100%;
   overflow: hidden;
 }
 
 article .img_wrapper {
-  width: 64px;
-  height: 64px;
-  float: left;
+  flex: 0 0 64px;
   text-align: center;
-  background-color: white;
 }
 
 article img {
@@ -72,35 +67,37 @@ article img {
 }
 
 article icon {
-  display: block;
-  float: left;
-  width: 64px;
-  height: 64px;
+  flex: 0 0 64px;
   text-align: center;
   font-size: 32px;
-  padding-top: 16px;
-  margin-bottom: -16px;
+  line-height: 64px;
 }
 
 article a {
-  display: block;
-  padding: 0px 1vw;
-  float: left;
-}
-article a[href]:hover {
-  text-decoration: underline;
-}
-article title {
+  flex: 1 1 auto;
+  color: #000;
   font-family: Merriweather, serif;
   font-weight: 700;
-  display: inline;
   font-size: 16px;
   line-height: 64px;
   overflow: hidden;
 }
+article a[href]:hover title {
+  text-decoration: underline;
+}
 
-article a {
-  color: #000;
+article title {
+  display: block;
+  height: 40px;
+  margin: 8px 8px 0px 8px;
+}
+
+article about {
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  color: gray;
+  margin-right: 4px;
 }
 
 /* Alphabet letter indices */
@@ -144,11 +141,11 @@ article index.actinide { background-color: rgba(64, 255, 192, 0.2); }
 
 @media (max-width: 760px) {
   article index {
+    flex: 0 0 64px;
     font-size: 12px;
-    width: 64px;
   }
 
-  article title {
-    font-size: 2.4vw;
+  .element article index category {
+    font-size: 6px;
   }
 }
