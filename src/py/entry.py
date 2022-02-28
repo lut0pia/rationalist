@@ -109,6 +109,8 @@ class Entry:
             out["url"] = f"https://www.imdb.com/title/{content['id']}"
             if "i" in content:
                 out["img"] = content["i"][0].replace("._V1_.jpg", "._V1_UY64_0,0,64,64_AL_.jpg")
+            if "y" in content:
+                out["year"] = content["y"]
 
         return out
 
@@ -148,6 +150,19 @@ class Music(Entry):
             elif relation["type"] in url_types and url_types.index(relation["type"]) < url_score:
                 out["url"] = relation["url"]["resource"]
                 url_score = url_types.index(relation["type"])
+
+        first_release_group = None
+        for release_group in artist_query["release-groups"]:
+            if (release_group["first-release-date"] != ''
+                and (not first_release_group
+                     or release_group["first-release-date"] < first_release_group["first-release-date"])):
+                first_release_group = release_group
+
+        # Year
+        if artist_query["life-span"]["begin"] != None and len(artist_query["life-span"]["begin"]) == 4:
+            out["year"] = int(artist_query["life-span"]["begin"])
+        elif first_release_group:
+            out["year"] = int(first_release_group["first-release-date"][:4])
 
         # Follow wikidata to find info
         if wikidata_id != None:

@@ -6,7 +6,8 @@ const db = [
     "number": 71,
     "title": "'71",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2614684"
+    "url": "https://www.imdb.com/title/tt2614684",
+    "year": 2014
   },
   {
     "found_title": "Ms .45",
@@ -14,7 +15,8 @@ const db = [
     "number": 0.45,
     "title": ".45",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0082776"
+    "url": "https://www.imdb.com/title/tt0082776",
+    "year": 1981
   },
   {
     "distance": "0.5 mm",
@@ -23,7 +25,8 @@ const db = [
     "number": 0.5,
     "title": "0.5mm",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3825360"
+    "url": "https://www.imdb.com/title/tt3825360",
+    "year": 2014
   },
   {
     "found_title": "10 MPH",
@@ -32,7 +35,8 @@ const db = [
     "speed": "10 miles h",
     "title": "10 MPH",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0446083"
+    "url": "https://www.imdb.com/title/tt0446083",
+    "year": 2007
   },
   {
     "found_title": "10 Things I Hate About You",
@@ -40,7 +44,8 @@ const db = [
     "number": 10,
     "title": "10 Things I Hate About You",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0147800"
+    "url": "https://www.imdb.com/title/tt0147800",
+    "year": 1999
   },
   {
     "date": "y+10",
@@ -49,7 +54,8 @@ const db = [
     "number": 10,
     "title": "10 Years Later",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1079974"
+    "url": "https://www.imdb.com/title/tt1079974",
+    "year": 2010
   },
   {
     "date": "-10000",
@@ -58,7 +64,8 @@ const db = [
     "number": 10000,
     "title": "10, 000 BC",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0443649"
+    "url": "https://www.imdb.com/title/tt0443649",
+    "year": 2008
   },
   {
     "found_title": "100 Deeds for Eddie McDowd",
@@ -66,7 +73,8 @@ const db = [
     "number": 100,
     "title": "100 Deeds for Eddie McDowd",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0218744"
+    "url": "https://www.imdb.com/title/tt0218744",
+    "year": 1999
   },
   {
     "distance": "100 feet",
@@ -75,7 +83,8 @@ const db = [
     "number": 100,
     "title": "100 Feet",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0899128"
+    "url": "https://www.imdb.com/title/tt0899128",
+    "year": 2008
   },
   {
     "date": "y+10000",
@@ -84,7 +93,8 @@ const db = [
     "number": 10000,
     "title": "10000 Years Later",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4657400"
+    "url": "https://www.imdb.com/title/tt4657400",
+    "year": 2015
   },
   {
     "found_title": "12 Angry Men",
@@ -92,7 +102,8 @@ const db = [
     "number": 12,
     "title": "12 Angry Men",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0050083"
+    "url": "https://www.imdb.com/title/tt0050083",
+    "year": 1957
   },
   {
     "duration": "12y",
@@ -101,7 +112,8 @@ const db = [
     "number": 12,
     "title": "12 Years a Slave",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2024544"
+    "url": "https://www.imdb.com/title/tt2024544",
+    "year": 2013
   },
   {
     "found_title": "BPM (Beats Per Minute)",
@@ -109,7 +121,8 @@ const db = [
     "number": 120,
     "title": "120 BPM",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt6135348"
+    "url": "https://www.imdb.com/title/tt6135348",
+    "year": 2017
   },
   {
     "duration": "125y",
@@ -118,7 +131,8 @@ const db = [
     "number": 125,
     "title": "125 Years Memory",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3512072"
+    "url": "https://www.imdb.com/title/tt3512072",
+    "year": 2015
   },
   {
     "duration": "127h",
@@ -127,7 +141,8 @@ const db = [
     "number": 127,
     "title": "127 Hours",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1542344"
+    "url": "https://www.imdb.com/title/tt1542344",
+    "year": 2010
   },
   {
     "duration": "13h",
@@ -136,7 +151,8 @@ const db = [
     "number": 13,
     "title": "13 Hours: The Secret Soldiers of Benghazi",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4172430"
+    "url": "https://www.imdb.com/title/tt4172430",
+    "year": 2016
   },
   {
     "found_title": "13 Reasons Why",
@@ -144,7 +160,8 @@ const db = [
     "number": 13,
     "title": "13 Reasons Why",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt1837492"
+    "url": "https://www.imdb.com/title/tt1837492",
+    "year": 2017
   },
   {
     "duration": "14d",
@@ -153,7 +170,8 @@ const db = [
     "number": 14,
     "title": "14 Days to Life",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0118529"
+    "url": "https://www.imdb.com/title/tt0118529",
+    "year": 1997
   },
   {
     "date": "1492",
@@ -162,7 +180,8 @@ const db = [
     "number": 1492,
     "title": "1492: Conquest of Paradise",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0103594"
+    "url": "https://www.imdb.com/title/tt0103594",
+    "year": 1992
   },
   {
     "duration": "15m",
@@ -171,7 +190,8 @@ const db = [
     "number": 15,
     "title": "15 Minutes",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0179626"
+    "url": "https://www.imdb.com/title/tt0179626",
+    "year": 2001
   },
   {
     "found_title": "15th August",
@@ -180,7 +200,8 @@ const db = [
     "ordinal": 15,
     "title": "15th August",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0389715"
+    "url": "https://www.imdb.com/title/tt0389715",
+    "year": 1993
   },
   {
     "found_title": "17 Again",
@@ -188,7 +209,8 @@ const db = [
     "number": 17,
     "title": "17 Again",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0974661"
+    "url": "https://www.imdb.com/title/tt0974661",
+    "year": 2009
   },
   {
     "found_title": "17th Precinct",
@@ -197,7 +219,8 @@ const db = [
     "ordinal": 17,
     "title": "17th Precinct",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1828937"
+    "url": "https://www.imdb.com/title/tt1828937",
+    "year": 2011
   },
   {
     "found_title": "18 Again!",
@@ -205,7 +228,8 @@ const db = [
     "number": 18,
     "title": "18 Again!",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0094593"
+    "url": "https://www.imdb.com/title/tt0094593",
+    "year": 1988
   },
   {
     "date": "1917",
@@ -214,7 +238,8 @@ const db = [
     "number": 1917,
     "title": "1917",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt8579674"
+    "url": "https://www.imdb.com/title/tt8579674",
+    "year": 2019
   },
   {
     "date": "1941",
@@ -223,7 +248,8 @@ const db = [
     "number": 1941,
     "title": "1941",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0078723"
+    "url": "https://www.imdb.com/title/tt0078723",
+    "year": 1979
   },
   {
     "date": "1984",
@@ -232,7 +258,8 @@ const db = [
     "number": 1984,
     "title": "1984",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0087803"
+    "url": "https://www.imdb.com/title/tt0087803",
+    "year": 1984
   },
   {
     "distance": "20cm",
@@ -241,7 +268,8 @@ const db = [
     "number": 20,
     "title": "20 Centimeters",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0421528"
+    "url": "https://www.imdb.com/title/tt0421528",
+    "year": 2005
   },
   {
     "distance": "20 feet",
@@ -250,7 +278,8 @@ const db = [
     "number": 20,
     "title": "20 Feet from Stardom",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2396566"
+    "url": "https://www.imdb.com/title/tt2396566",
+    "year": 2013
   },
   {
     "distance": "20000000 miles",
@@ -259,7 +288,8 @@ const db = [
     "number": 20000000,
     "title": "20 Million Miles to Earth",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0050084"
+    "url": "https://www.imdb.com/title/tt0050084",
+    "year": 1957
   },
   {
     "distance": "20000 leagues",
@@ -276,7 +306,8 @@ const db = [
     "number": 200,
     "title": "200 Cigarettes",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0137338"
+    "url": "https://www.imdb.com/title/tt0137338",
+    "year": 1999
   },
   {
     "found_title": "200 Pounds Beauty",
@@ -285,7 +316,8 @@ const db = [
     "number": 200,
     "title": "200 Pounds Beauty",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0940642"
+    "url": "https://www.imdb.com/title/tt0940642",
+    "year": 2006
   },
   {
     "date": "2001",
@@ -294,7 +326,8 @@ const db = [
     "number": 2001,
     "title": "2001: A Space Odyssey",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0062622"
+    "url": "https://www.imdb.com/title/tt0062622",
+    "year": 1968
   },
   {
     "date": "2010",
@@ -303,7 +336,8 @@ const db = [
     "number": 2010,
     "title": "2010: The Year We Make Contact",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0086837"
+    "url": "https://www.imdb.com/title/tt0086837",
+    "year": 1984
   },
   {
     "date": "2012",
@@ -312,7 +346,8 @@ const db = [
     "number": 2012,
     "title": "2012",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1190080"
+    "url": "https://www.imdb.com/title/tt1190080",
+    "year": 2009
   },
   {
     "date": "2046",
@@ -321,7 +356,8 @@ const db = [
     "number": 2046,
     "title": "2046",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0212712"
+    "url": "https://www.imdb.com/title/tt0212712",
+    "year": 2004
   },
   {
     "found_title": "21",
@@ -329,7 +365,8 @@ const db = [
     "number": 21,
     "title": "21",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0478087"
+    "url": "https://www.imdb.com/title/tt0478087",
+    "year": 2008
   },
   {
     "found_title": "21 Grams",
@@ -338,7 +375,8 @@ const db = [
     "number": 21,
     "title": "21 Grams",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0315733"
+    "url": "https://www.imdb.com/title/tt0315733",
+    "year": 2003
   },
   {
     "found_title": "21 Jump Street",
@@ -346,7 +384,8 @@ const db = [
     "number": 21,
     "title": "21 Jump Street",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1232829"
+    "url": "https://www.imdb.com/title/tt1232829",
+    "year": 2012
   },
   {
     "duration": "24h",
@@ -355,7 +394,8 @@ const db = [
     "number": 24,
     "title": "24 Hour Party People",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0274309"
+    "url": "https://www.imdb.com/title/tt0274309",
+    "year": 2002
   },
   {
     "found_title": "25th Hour",
@@ -364,7 +404,8 @@ const db = [
     "ordinal": 25,
     "title": "25th Hour",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0307901"
+    "url": "https://www.imdb.com/title/tt0307901",
+    "year": 2002
   },
   {
     "duration": "26y",
@@ -373,7 +414,8 @@ const db = [
     "number": 26,
     "title": "26 Years",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2551894"
+    "url": "https://www.imdb.com/title/tt2551894",
+    "year": 2012
   },
   {
     "found_title": "27 Dresses",
@@ -381,7 +423,8 @@ const db = [
     "number": 27,
     "title": "27 Dresses",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0988595"
+    "url": "https://www.imdb.com/title/tt0988595",
+    "year": 2008
   },
   {
     "date": "d+28",
@@ -391,7 +434,8 @@ const db = [
     "number": 28,
     "title": "28 Days Later",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0289043"
+    "url": "https://www.imdb.com/title/tt0289043",
+    "year": 2002
   },
   {
     "date": "w+28",
@@ -401,7 +445,8 @@ const db = [
     "number": 28,
     "title": "28 Weeks Later",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0463854"
+    "url": "https://www.imdb.com/title/tt0463854",
+    "year": 2007
   },
   {
     "found_title": "29th Street",
@@ -410,7 +455,8 @@ const db = [
     "ordinal": 29,
     "title": "29th Street",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0101252"
+    "url": "https://www.imdb.com/title/tt0101252",
+    "year": 1991
   },
   {
     "duration": "3d",
@@ -419,7 +465,8 @@ const db = [
     "number": 3,
     "title": "3 Days to Kill",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2172934"
+    "url": "https://www.imdb.com/title/tt2172934",
+    "year": 2014
   },
   {
     "duration": "30d",
@@ -428,7 +475,8 @@ const db = [
     "number": 30,
     "title": "30 Days of Night",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0389722"
+    "url": "https://www.imdb.com/title/tt0389722",
+    "year": 2007
   },
   {
     "duration": "30m",
@@ -437,7 +485,8 @@ const db = [
     "number": 30,
     "title": "30 Minutes or Less",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1622547"
+    "url": "https://www.imdb.com/title/tt1622547",
+    "year": 2011
   },
   {
     "found_title": "300",
@@ -445,7 +494,8 @@ const db = [
     "number": 300,
     "title": "300",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0416449"
+    "url": "https://www.imdb.com/title/tt0416449",
+    "year": 2006
   },
   {
     "found_title": "31",
@@ -453,7 +503,8 @@ const db = [
     "number": 31,
     "title": "31",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3835080"
+    "url": "https://www.imdb.com/title/tt3835080",
+    "year": 2016
   },
   {
     "duration": "365d",
@@ -462,7 +513,8 @@ const db = [
     "number": 365,
     "title": "365 Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt10886166"
+    "url": "https://www.imdb.com/title/tt10886166",
+    "year": 2020
   },
   {
     "found_title": "36th Precinct",
@@ -471,7 +523,8 @@ const db = [
     "ordinal": 36,
     "title": "36th Precinct",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0390808"
+    "url": "https://www.imdb.com/title/tt0390808",
+    "year": 2004
   },
   {
     "duration": "37s",
@@ -480,7 +533,8 @@ const db = [
     "number": 37,
     "title": "37 Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt6156138"
+    "url": "https://www.imdb.com/title/tt6156138",
+    "year": 2019
   },
   {
     "duration": "40d",
@@ -489,7 +543,8 @@ const db = [
     "number": 40,
     "title": "40 Days & 40 Nights",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0243736"
+    "url": "https://www.imdb.com/title/tt0243736",
+    "year": 2002
   },
   {
     "found_title": "42nd Street",
@@ -498,7 +553,8 @@ const db = [
     "ordinal": 42,
     "title": "42nd Street",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0024034"
+    "url": "https://www.imdb.com/title/tt0024034",
+    "year": 1933
   },
   {
     "found_title": "47 Ronin",
@@ -506,7 +562,8 @@ const db = [
     "number": 47,
     "title": "47 Ronin",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1335975"
+    "url": "https://www.imdb.com/title/tt1335975",
+    "year": 2013
   },
   {
     "duration": "48h",
@@ -515,7 +572,8 @@ const db = [
     "number": 48,
     "title": "48 Hrs.",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0083511"
+    "url": "https://www.imdb.com/title/tt0083511",
+    "year": 1982
   },
   {
     "distance": "5cm",
@@ -525,7 +583,8 @@ const db = [
     "speed": "5 cm s",
     "title": "5 Centimeters per Second",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0983213"
+    "url": "https://www.imdb.com/title/tt0983213",
+    "year": 2007
   },
   {
     "found_title": "50 Cent: Blood on the Sand",
@@ -534,7 +593,8 @@ const db = [
     "price": "0.50 USD",
     "title": "50 Cent: Blood on the Sand",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt1209299"
+    "url": "https://www.imdb.com/title/tt1209299",
+    "year": 2009
   },
   {
     "found_title": "50 First Dates",
@@ -542,7 +602,8 @@ const db = [
     "number": 50,
     "title": "50 First Dates",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0343660"
+    "url": "https://www.imdb.com/title/tt0343660",
+    "year": 2004
   },
   {
     "found_title": "50/50",
@@ -550,7 +611,8 @@ const db = [
     "number": 50,
     "title": "50/50",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1306980"
+    "url": "https://www.imdb.com/title/tt1306980",
+    "year": 2011
   },
   {
     "duration": "500d",
@@ -559,7 +621,8 @@ const db = [
     "number": 500,
     "title": "500 Days of Summer",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1022603"
+    "url": "https://www.imdb.com/title/tt1022603",
+    "year": 2009
   },
   {
     "duration": "59s",
@@ -568,16 +631,18 @@ const db = [
     "number": 59,
     "title": "59 Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1720035"
+    "url": "https://www.imdb.com/title/tt1720035",
+    "year": 2016
   },
   {
     "duration": "65d",
     "found_title": "65daysofstatic",
-    "img": "http://coverartarchive.org/release/e0e6f524-90b3-400a-aa4c-ab89e9c172f0/13891715369-250.jpg",
+    "img": "http://coverartarchive.org/release/e7ef4d98-d448-4691-8441-2b7e5649d09f/7725790762-250.jpg",
     "number": 65,
     "title": "65daysofstatic",
     "type": "music",
-    "url": "http://65daysofstatic.com/"
+    "url": "http://65daysofstatic.com/",
+    "year": 2001
   },
   {
     "distance": "8 miles",
@@ -586,7 +651,8 @@ const db = [
     "number": 8,
     "title": "8 Mile",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0298203"
+    "url": "https://www.imdb.com/title/tt0298203",
+    "year": 2002
   },
   {
     "duration": "8s",
@@ -595,7 +661,8 @@ const db = [
     "number": 8,
     "title": "8 Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0109021"
+    "url": "https://www.imdb.com/title/tt0109021",
+    "year": 1994
   },
   {
     "found_title": "87th Precinct",
@@ -604,7 +671,8 @@ const db = [
     "ordinal": 87,
     "title": "87th Precinct",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0054510"
+    "url": "https://www.imdb.com/title/tt0054510",
+    "year": 1961
   },
   {
     "duration": "88m",
@@ -613,7 +681,8 @@ const db = [
     "number": 88,
     "title": "88 Minutes",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0411061"
+    "url": "https://www.imdb.com/title/tt0411061",
+    "year": 2007
   },
   {
     "distance": "8mm",
@@ -622,7 +691,8 @@ const db = [
     "number": 8,
     "title": "8mm",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0134273"
+    "url": "https://www.imdb.com/title/tt0134273",
+    "year": 1999
   },
   {
     "date": "September 11, 2001",
@@ -631,7 +701,8 @@ const db = [
     "number": 911,
     "title": "9/11",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4917224"
+    "url": "https://www.imdb.com/title/tt4917224",
+    "year": 2017
   },
   {
     "found_title": "99 francs",
@@ -640,7 +711,8 @@ const db = [
     "price": "99 FRF",
     "title": "99 Francs",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0875113"
+    "url": "https://www.imdb.com/title/tt0875113",
+    "year": 2007
   },
   {
     "duration": "9.5w",
@@ -649,7 +721,8 @@ const db = [
     "number": 9.5,
     "title": "9\u00bd Weeks",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0091635"
+    "url": "https://www.imdb.com/title/tt0091635",
+    "year": 1986
   },
   {
     "color": "ffa500",
@@ -657,7 +730,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "A Clockwork Orange",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0066921"
+    "url": "https://www.imdb.com/title/tt0066921",
+    "year": 1971
   },
   {
     "found_title": "Mille milliards de dollars",
@@ -666,15 +740,17 @@ const db = [
     "price": "1000000000000 USD",
     "title": "A Thousand Billion Dollars",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0082749"
+    "url": "https://www.imdb.com/title/tt0082749",
+    "year": 1982
   },
   {
     "found_title": "alt\u2010J",
-    "img": "http://coverartarchive.org/release/064fb15d-a667-48e5-9eaa-c8e9b8efcb8c/28074141914-250.jpg",
+    "img": "http://coverartarchive.org/release/fca9d159-8a1f-4a60-b2ad-1ab60b27ce64/21266432230-250.jpg",
     "letter": "J",
     "title": "alt-J",
     "type": "music",
-    "url": "http://www.altjband.com/"
+    "url": "http://www.altjband.com/",
+    "year": 2007
   },
   {
     "element": 6,
@@ -682,7 +758,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMjU2ZGQwYTctNTk2Ny00ODNmLTkzNDQtMWY2ZjM4MDI5ZmM5XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Altered Carbon",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt2261227"
+    "url": "https://www.imdb.com/title/tt2261227",
+    "year": 2018
   },
   {
     "found_title": "American History X",
@@ -690,7 +767,8 @@ const db = [
     "letter": "x",
     "title": "American History X",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0120586"
+    "url": "https://www.imdb.com/title/tt0120586",
+    "year": 1998
   },
   {
     "found_title": "Apollo 13",
@@ -698,7 +776,8 @@ const db = [
     "number": 13,
     "title": "Apollo 13",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0112384"
+    "url": "https://www.imdb.com/title/tt0112384",
+    "year": 1995
   },
   {
     "color": "00FFFF",
@@ -706,7 +785,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Aquaman",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1477834"
+    "url": "https://www.imdb.com/title/tt1477834",
+    "year": 2018
   },
   {
     "distance": "40075km",
@@ -717,7 +797,8 @@ const db = [
     "speed": "40075km 80d",
     "title": "Around the World in 80 Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0048960"
+    "url": "https://www.imdb.com/title/tt0048960",
+    "year": 1956
   },
   {
     "element": 33,
@@ -725,7 +806,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZDVlNTBjMjctNjAzNS00ZGJhLTg2NzMtNzIwYTIzYTBiMDkyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Arsenic and Old Lace",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0036613"
+    "url": "https://www.imdb.com/title/tt0036613",
+    "year": 1943
   },
   {
     "found_title": "Avengers: Infinity War",
@@ -733,7 +815,8 @@ const db = [
     "number": Infinity,
     "title": "Avengers: Infinity War",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4154756"
+    "url": "https://www.imdb.com/title/tt4154756",
+    "year": 2018
   },
   {
     "date": "1942",
@@ -742,7 +825,8 @@ const db = [
     "number": 1942,
     "title": "Battlefield 1942",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0412486"
+    "url": "https://www.imdb.com/title/tt0412486",
+    "year": 2002
   },
   {
     "date": "2142",
@@ -751,7 +835,8 @@ const db = [
     "number": 2142,
     "title": "Battlefield 2142",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0884025"
+    "url": "https://www.imdb.com/title/tt0884025",
+    "year": 2006
   },
   {
     "color": "000000",
@@ -759,7 +844,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Black Swan",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0947798"
+    "url": "https://www.imdb.com/title/tt0947798",
+    "year": 2010
   },
   {
     "date": "2049",
@@ -768,31 +854,33 @@ const db = [
     "number": 2049,
     "title": "Blade Runner 2049",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1856101"
+    "url": "https://www.imdb.com/title/tt1856101",
+    "year": 2017
   },
   {
     "found_title": "blink\u2010182",
-    "img": "http://coverartarchive.org/release/bc2669d8-735a-341a-8b52-4cf218196a9d/15549327880-250.jpg",
+    "img": "http://coverartarchive.org/release/e38e2042-6843-442b-94e5-7c774c2dc2c4/4063353058-250.jpg",
     "number": 182,
     "title": "blink-182",
     "type": "music",
-    "url": "https://www.blink182.com/"
+    "url": "https://www.blink182.com/",
+    "year": 1992
   },
   {
     "color": "C63927",
     "found_title": "Blood Orange",
-    "img": "http://coverartarchive.org/release/4741a4e6-e9e7-44c0-a340-45ac6f2245d9/19238873765-250.jpg",
     "title": "Blood Orange",
     "type": "music",
-    "url": "http://bloodorange.nyc/"
+    "url": "http://bloodorange.nyc/",
+    "year": 2011
   },
   {
     "color": "660000",
     "found_title": "Blood Red Shoes",
-    "img": "http://coverartarchive.org/release/3f5e1695-24d4-4b3b-8723-b8f460022a47/9465470022-250.jpg",
     "title": "Blood Red Shoes",
     "type": "music",
-    "url": "http://www.bloodredshoes.co.uk/"
+    "url": "http://www.bloodredshoes.co.uk/",
+    "year": 2006
   },
   {
     "color": "0000ff",
@@ -800,7 +888,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ5NTg5ODk4OV5BMl5BanBnXkFtZTgwODc4MTMzMDE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Blue is the Warmest Color",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2278871"
+    "url": "https://www.imdb.com/title/tt2278871",
+    "year": 2013
   },
   {
     "color": "0000ff",
@@ -808,7 +897,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMzExOTczNTgtN2Q1Yy00MmI1LWE0NjgtNmIwMzdmZGNlODU1XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Blue Velvet",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0090756"
+    "url": "https://www.imdb.com/title/tt0090756",
+    "year": 1986
   },
   {
     "color": "0000FF",
@@ -816,7 +906,8 @@ const db = [
     "img": "http://coverartarchive.org/release/d962dbb6-a033-38a4-a112-fe90531c68ff/2736362954-250.jpg",
     "title": "Blue \u00d6yster Cult",
     "type": "music",
-    "url": "http://www.blueoystercult.com/"
+    "url": "http://www.blueoystercult.com/",
+    "year": 1967
   },
   {
     "found_title": "Brooklyn Nine-Nine",
@@ -824,7 +915,8 @@ const db = [
     "number": 99,
     "title": "Brooklyn 99",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt2467372"
+    "url": "https://www.imdb.com/title/tt2467372",
+    "year": 2013
   },
   {
     "found_title": "Catch-22",
@@ -832,7 +924,8 @@ const db = [
     "number": 22,
     "title": "Catch-22",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0065528"
+    "url": "https://www.imdb.com/title/tt0065528",
+    "year": 1970
   },
   {
     "date": "2077",
@@ -841,16 +934,18 @@ const db = [
     "number": 2077,
     "title": "Cyberpunk 2077",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt3810192"
+    "url": "https://www.imdb.com/title/tt3810192",
+    "year": 2020
   },
   {
     "date": "3030",
     "found_title": "Deltron 3030",
-    "img": "http://coverartarchive.org/release/8f118f74-22ea-41dd-9e3d-3186203487f9/9783932475-250.jpg",
+    "img": "http://coverartarchive.org/release/040d0f9f-2178-4322-bd70-2b5cd84834d1/16418296786-250.jpg",
     "number": 3030,
     "title": "Deltron 3030",
     "type": "music",
-    "url": "https://open.spotify.com/artist/2efzHZrUGhawnSOTpyAHOQ"
+    "url": "https://open.spotify.com/artist/2efzHZrUGhawnSOTpyAHOQ",
+    "year": 2000
   },
   {
     "found_title": "Dial M for Murder",
@@ -858,7 +953,8 @@ const db = [
     "letter": "m",
     "title": "Dial M for Murder",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0046912"
+    "url": "https://www.imdb.com/title/tt0046912",
+    "year": 1954
   },
   {
     "found_title": "District 9",
@@ -866,7 +962,8 @@ const db = [
     "number": 9,
     "title": "District 9",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1136608"
+    "url": "https://www.imdb.com/title/tt1136608",
+    "year": 2009
   },
   {
     "found_title": "Easy A",
@@ -874,15 +971,17 @@ const db = [
     "letter": "a",
     "title": "Easy A",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1282140"
+    "url": "https://www.imdb.com/title/tt1282140",
+    "year": 2010
   },
   {
     "found_title": "Eiffel 65",
-    "img": "http://coverartarchive.org/release/c0cb5d9b-b019-3abb-8336-762311f14b14/16156034668-250.jpg",
+    "img": "http://coverartarchive.org/release/1b65231b-1ab8-4eef-848b-283011310fad/28251910517-250.jpg",
     "number": 65,
     "title": "Eiffel 65",
     "type": "music",
-    "url": "http://www.eiffel65.com/"
+    "url": "http://www.eiffel65.com/",
+    "year": 1998
   },
   {
     "found_title": "Eighth Grade",
@@ -891,7 +990,8 @@ const db = [
     "ordinal": 8,
     "title": "Eighth Grade",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt7014006"
+    "url": "https://www.imdb.com/title/tt7014006",
+    "year": 2018
   },
   {
     "found_title": "Fahrenheit 451",
@@ -899,7 +999,8 @@ const db = [
     "number": 451,
     "title": "Fahrenheit 451",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0360556"
+    "url": "https://www.imdb.com/title/tt0360556",
+    "year": 2018
   },
   {
     "date": "September 11, 2001",
@@ -908,7 +1009,8 @@ const db = [
     "number": 911,
     "title": "Fahrenheit 9/11",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0361596"
+    "url": "https://www.imdb.com/title/tt0361596",
+    "year": 2004
   },
   {
     "found_title": "Fantasia 2000",
@@ -916,7 +1018,8 @@ const db = [
     "number": 2000,
     "title": "Fantasia 2000",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0120910"
+    "url": "https://www.imdb.com/title/tt0120910",
+    "year": 1999
   },
   {
     "found_title": "Fantastic Four",
@@ -924,7 +1027,8 @@ const db = [
     "number": 4,
     "title": "Fantastic Four",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1502712"
+    "url": "https://www.imdb.com/title/tt1502712",
+    "year": 2015
   },
   {
     "found_title": "8\u00bd",
@@ -932,7 +1036,8 @@ const db = [
     "number": 8.5,
     "title": "Federico Fellini's 8\u00bd",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0056801"
+    "url": "https://www.imdb.com/title/tt0056801",
+    "year": 1963
   },
   {
     "distance": "5 feet",
@@ -941,7 +1046,8 @@ const db = [
     "number": 5,
     "title": "Five Feet Apart",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt6472976"
+    "url": "https://www.imdb.com/title/tt6472976",
+    "year": 2019
   },
   {
     "found_title": "Five Grand",
@@ -950,7 +1056,8 @@ const db = [
     "price": "5000 USD",
     "title": "Five Grand",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt5116314"
+    "url": "https://www.imdb.com/title/tt5116314",
+    "year": 2016
   },
   {
     "duration": "5m",
@@ -959,7 +1066,8 @@ const db = [
     "number": 5,
     "title": "Five Minutes of Heaven",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1238291"
+    "url": "https://www.imdb.com/title/tt1238291",
+    "year": 2009
   },
   {
     "duration": "5w",
@@ -974,7 +1082,8 @@ const db = [
     "number": 4,
     "title": "Four Tet",
     "type": "music",
-    "url": "http://www.fourtet.net/"
+    "url": "http://www.fourtet.net/",
+    "year": 1999
   },
   {
     "found_title": "Friday the 13th",
@@ -983,7 +1092,8 @@ const db = [
     "ordinal": 13,
     "title": "Friday the 13th",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0758746"
+    "url": "https://www.imdb.com/title/tt0758746",
+    "year": 2009
   },
   {
     "duration": "12h",
@@ -991,7 +1101,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZjk3YmZhMDAtOWUzMS00YjE5LTkxNzAtY2I1NGZjMDA2ZTk0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "From Dusk till Dawn",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0116367"
+    "url": "https://www.imdb.com/title/tt0116367",
+    "year": 1996
   },
   {
     "distance": "384400 km",
@@ -1005,7 +1116,8 @@ const db = [
     "letter": "g",
     "title": "G-Force",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0436339"
+    "url": "https://www.imdb.com/title/tt0436339",
+    "year": 2009
   },
   {
     "color": "FFD700",
@@ -1014,7 +1126,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ2MzE0OTU3NV5BMl5BanBnXkFtZTcwNjQxNTgzNA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Goldfinger",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0058150"
+    "url": "https://www.imdb.com/title/tt0058150",
+    "year": 1964
   },
   {
     "duration": "60s",
@@ -1023,7 +1136,8 @@ const db = [
     "number": 60,
     "title": "Gone in 60 Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0187078"
+    "url": "https://www.imdb.com/title/tt0187078",
+    "year": 2000
   },
   {
     "color": "00FF00",
@@ -1031,7 +1145,8 @@ const db = [
     "img": "http://coverartarchive.org/release/c1bea9b6-2aa2-4ae9-b1ac-c8d99c0e04fd/8608640150-250.jpg",
     "title": "Green Day",
     "type": "music",
-    "url": "http://www.greenday.com/"
+    "url": "http://www.greenday.com/",
+    "year": 1989
   },
   {
     "element": 2,
@@ -1039,7 +1154,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ4MjIwMDE4OV5BMl5BanBnXkFtZTgwNTcwMzk4MjE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Helium",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2511594"
+    "url": "https://www.imdb.com/title/tt2511594",
+    "year": 2014
   },
   {
     "found_title": "House of D",
@@ -1047,7 +1163,8 @@ const db = [
     "letter": "d",
     "title": "House of D (2004)",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0372334"
+    "url": "https://www.imdb.com/title/tt0372334",
+    "year": 2004
   },
   {
     "duration": "10d",
@@ -1056,7 +1173,8 @@ const db = [
     "number": 10,
     "title": "How to Lose a Guy in 10 Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0251127"
+    "url": "https://www.imdb.com/title/tt0251127",
+    "year": 2003
   },
   {
     "found_title": "I Am Number Four",
@@ -1064,7 +1182,8 @@ const db = [
     "number": 4,
     "title": "I Am Number Four",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1464540"
+    "url": "https://www.imdb.com/title/tt1464540",
+    "year": 2011
   },
   {
     "found_title": "I, Robot",
@@ -1072,7 +1191,8 @@ const db = [
     "letter": "i",
     "title": "I, Robot",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0343818"
+    "url": "https://www.imdb.com/title/tt0343818",
+    "year": 2004
   },
   {
     "date": "July 4, 1776",
@@ -1080,7 +1200,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMGQwNDNkMmItYWY1Yy00YTZmLWE5OTAtODU0MGZmMzQ1NDdkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Independance Day",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0116629"
+    "url": "https://www.imdb.com/title/tt0116629",
+    "year": 1996
   },
   {
     "color": "3F00FF",
@@ -1088,7 +1209,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOTA1ZTdlMGItYjgxYy00MzExLTgwMjEtNmIwOThlZjEyMmFlXkEyXkFqcGdeQXVyMjM2MzYwNjU@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Indigo Prophecy",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0476990"
+    "url": "https://www.imdb.com/title/tt0476990",
+    "year": 2005
   },
   {
     "element": 26,
@@ -1096,7 +1218,8 @@ const db = [
     "img": "http://coverartarchive.org/release/b6f19f8a-1413-45f2-bdc5-454d06fcdc1c/7847042180-250.jpg",
     "title": "Iron Maiden",
     "type": "music",
-    "url": "http://www.ironmaiden.com/"
+    "url": "http://www.ironmaiden.com/",
+    "year": 1980
   },
   {
     "element": 26,
@@ -1104,7 +1227,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Iron Man",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0371746"
+    "url": "https://www.imdb.com/title/tt0371746",
+    "year": 2008
   },
   {
     "color": "964B00",
@@ -1112,15 +1236,17 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNmY5ODRmYTItNWU0Ni00MWE3LTgyYzUtYjZlN2Q5YTcyM2NmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Jackie Brown",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0119396"
+    "url": "https://www.imdb.com/title/tt0119396",
+    "year": 1997
   },
   {
     "found_title": "JAY\u2010Z",
-    "img": "http://coverartarchive.org/release/d0148e89-61e3-4474-ac90-946070834100/31644433313-250.jpg",
+    "img": "http://coverartarchive.org/release/e9a5f123-447f-4430-8efb-0921e1761ddf/1585893879-250.jpg",
     "letter": "Z",
     "title": "Jay-Z",
     "type": "music",
-    "url": "http://www.jay-z.com/"
+    "url": "http://www.jay-z.com/",
+    "year": 1996
   },
   {
     "found_title": "John Q",
@@ -1128,7 +1254,8 @@ const db = [
     "letter": "q",
     "title": "John Q",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0251160"
+    "url": "https://www.imdb.com/title/tt0251160",
+    "year": 2002
   },
   {
     "found_title": "K-19: The Widowmaker",
@@ -1137,7 +1264,8 @@ const db = [
     "number": 19,
     "title": "K-19: The Widowmaker",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0267626"
+    "url": "https://www.imdb.com/title/tt0267626",
+    "year": 2002
   },
   {
     "found_title": "K-PAX",
@@ -1145,7 +1273,8 @@ const db = [
     "letter": "k",
     "title": "K-PAX",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0272152"
+    "url": "https://www.imdb.com/title/tt0272152",
+    "year": 2001
   },
   {
     "found_title": "KRS\u2010One",
@@ -1153,7 +1282,8 @@ const db = [
     "number": 1,
     "title": "KRS-One",
     "type": "music",
-    "url": "https://www.krs-one.com/"
+    "url": "https://www.krs-one.com/",
+    "year": 1988
   },
   {
     "found_title": "L7",
@@ -1162,7 +1292,8 @@ const db = [
     "number": 7,
     "title": "L7",
     "type": "music",
-    "url": "http://l7official.com/"
+    "url": "http://l7official.com/",
+    "year": 1985
   },
   {
     "color": "C8A2C8",
@@ -1170,7 +1301,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNmVlMGJiMTItMjZlNy00ZTExLWFiMDMtMGE1YmMyMzZlNWYzXkEyXkFqcGdeQXVyNjc0MzMzNjA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Lilac Time",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0019098"
+    "url": "https://www.imdb.com/title/tt0019098",
+    "year": 1928
   },
   {
     "element": 3,
@@ -1178,7 +1310,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZjUxYzU1NmYtMjJlNy00ZGUwLWJjODYtNDQ4OGE2NzZiNDM1XkEyXkFqcGdeQXVyMTQzMjU1NjE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Lithivm",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0133927"
+    "url": "https://www.imdb.com/title/tt0133927",
+    "year": 1998
   },
   {
     "found_title": "M",
@@ -1186,7 +1319,8 @@ const db = [
     "letter": "m",
     "title": "M (1931)",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0022100"
+    "url": "https://www.imdb.com/title/tt0022100",
+    "year": 1931
   },
   {
     "element": 80,
@@ -1194,7 +1328,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BODA2NmY4NDEtNjk1Yi00NmI1LTgwMjEtYWZmMjRmMDUyMTlkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Mercury Rising",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0120749"
+    "url": "https://www.imdb.com/title/tt0120749",
+    "year": 1998
   },
   {
     "found_title": "Million Dollar Baby",
@@ -1203,7 +1338,8 @@ const db = [
     "price": "1000000 USD",
     "title": "Million Dollar Baby",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0405159"
+    "url": "https://www.imdb.com/title/tt0405159",
+    "year": 2004
   },
   {
     "color": "3F00FF",
@@ -1211,7 +1347,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMjk0OTU1MzM2Nl5BMl5BanBnXkFtZTgwNzY4MjQ4MTE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Mood Indigo",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2027140"
+    "url": "https://www.imdb.com/title/tt2027140",
+    "year": 2013
   },
   {
     "found_title": "Movie 43",
@@ -1219,7 +1356,8 @@ const db = [
     "number": 43,
     "title": "Movie 43",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1333125"
+    "url": "https://www.imdb.com/title/tt1333125",
+    "year": 2013
   },
   {
     "element": 10,
@@ -1227,22 +1365,26 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYjY1Y2ZmNDctZWQ3Yy00MTE3LTk2M2QtMjQ0MDA5ODVjMDEyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Neon Genesis Evangelion",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0112159"
+    "url": "https://www.imdb.com/title/tt0112159",
+    "year": 1995
   },
   {
     "found_title": "Nickelback",
+    "img": "http://coverartarchive.org/release/26374035-ce6e-4eb9-a78e-69f313319f04/2192507364-250.jpg",
     "price": "0.05 USD",
     "title": "Nickelback",
     "type": "music",
-    "url": "http://www.nickelback.com/"
+    "url": "http://www.nickelback.com/",
+    "year": 1995
   },
   {
     "distance": "9 inches",
     "found_title": "Nine Inch Nails",
-    "img": "http://coverartarchive.org/release/60a04a88-3956-49f5-9d0f-b2603be9f612/8270653258-250.jpg",
+    "img": "http://coverartarchive.org/release/8b05324a-5205-42c6-8016-8eab77e5bb76/17882593492-250.jpg",
     "title": "Nine Inch Nails",
     "type": "music",
-    "url": "https://www.nin.com/"
+    "url": "https://www.nin.com/",
+    "year": 1988
   },
   {
     "distance": "9 miles",
@@ -1251,7 +1393,8 @@ const db = [
     "number": 9,
     "title": "Nine Miles Down",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0812352"
+    "url": "https://www.imdb.com/title/tt0812352",
+    "year": 2009
   },
   {
     "found_title": "Ocean's Eleven",
@@ -1259,7 +1402,8 @@ const db = [
     "number": 11,
     "title": "Ocean's Eleven",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0240772"
+    "url": "https://www.imdb.com/title/tt0240772",
+    "year": 2001
   },
   {
     "color": "808000",
@@ -1273,7 +1417,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYWNlM2FlNzctYmE5OS00MjhhLTgwNWEtMDUyYWYzNzg3ZDYyXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "On the Nickel",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0081277"
+    "url": "https://www.imdb.com/title/tt0081277",
+    "year": 1980
   },
   {
     "duration": "1d",
@@ -1282,7 +1427,8 @@ const db = [
     "number": 1,
     "title": "One Day",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1563738"
+    "url": "https://www.imdb.com/title/tt1563738",
+    "year": 2011
   },
   {
     "duration": "1h",
@@ -1290,7 +1436,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYWVkMjAzY2QtZTA4Yi00OWZmLTliMzctZTkyODU4NTc3MmRjL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "One Hour Photo",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0265459"
+    "url": "https://www.imdb.com/title/tt0265459",
+    "year": 2002
   },
   {
     "found_title": "One Hundred and One Dalmatians",
@@ -1298,7 +1445,8 @@ const db = [
     "number": 101,
     "title": "One Hundred and One Dalmatians",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0055254"
+    "url": "https://www.imdb.com/title/tt0055254",
+    "year": 1961
   },
   {
     "found_title": "OSS 117: Cairo, Nest of Spies",
@@ -1306,7 +1454,8 @@ const db = [
     "number": 117,
     "title": "OSS 117: Cairo, Nest of Spies",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0464913"
+    "url": "https://www.imdb.com/title/tt0464913",
+    "year": 2006
   },
   {
     "element": 8,
@@ -1314,7 +1463,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Oxygen",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt6341832"
+    "url": "https://www.imdb.com/title/tt6341832",
+    "year": 2021
   },
   {
     "found_title": "Penny Dreadful",
@@ -1322,7 +1472,8 @@ const db = [
     "price": "0.01 GBP",
     "title": "Penny Dreadful",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt2628232"
+    "url": "https://www.imdb.com/title/tt2628232",
+    "year": 2014
   },
   {
     "found_title": "Pi",
@@ -1330,7 +1481,8 @@ const db = [
     "number": 3.141592653589793,
     "title": "Pi",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0138704"
+    "url": "https://www.imdb.com/title/tt0138704",
+    "year": 1998
   },
   {
     "found_title": "Planet 51",
@@ -1338,7 +1490,8 @@ const db = [
     "number": 51,
     "title": "Planet 51",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0762125"
+    "url": "https://www.imdb.com/title/tt0762125",
+    "year": 2009
   },
   {
     "color": "000000",
@@ -1346,7 +1499,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMjhiYmViMDYtN2E2Yi00NjkxLTk5MjctZWYyMTFjYmQ4MWE5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Black Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt1731222"
+    "url": "https://www.imdb.com/title/tt1731222",
+    "year": 2010
   },
   {
     "color": "0000FF",
@@ -1354,7 +1508,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOGQ1NWVjMTItZjQ2ZS00MjIyLTkxZjQtMGIyODMwYzNjOWM4XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Blue Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0217729"
+    "url": "https://www.imdb.com/title/tt0217729",
+    "year": 1996
   },
   {
     "color": "50C878",
@@ -1362,7 +1517,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZWYyMjcwZTgtZjYyNC00ZTE0LTljNDItYjVkZTQ5M2JlZDgyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Emerald Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0478230"
+    "url": "https://www.imdb.com/title/tt0478230",
+    "year": 2004
   },
   {
     "color": "FFD700",
@@ -1371,7 +1527,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZGNmZDY1ZTctNzAwZS00YjNiLTg5M2EtY2Y4ZTI4MGY4ZjkzXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Gold Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0310011"
+    "url": "https://www.imdb.com/title/tt0310011",
+    "year": 1999
   },
   {
     "color": "00FF00",
@@ -1379,7 +1536,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYTE4ZTMyOWEtZDUwZS00ODFlLWI0YzgtZmI3NDZhZWNhMzkyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Green Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0217731"
+    "url": "https://www.imdb.com/title/tt0217731",
+    "year": 1996
   },
   {
     "color": "EAE0C8",
@@ -1387,7 +1545,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOWVjY2JjMjAtNjg3MS00MmM3LWE5MTEtOWRlMGU5ZDg2YmI2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Pearl Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt2016972"
+    "url": "https://www.imdb.com/title/tt2016972",
+    "year": 2006
   },
   {
     "color": "E5E4E2",
@@ -1395,7 +1554,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BODU5OTA3ODktOWFhMy00NTBmLTljM2UtMzVmNTgyZjk3YWNjXkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Platinum Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt1293615"
+    "url": "https://www.imdb.com/title/tt1293615",
+    "year": 2008
   },
   {
     "color": "FF0000",
@@ -1403,7 +1563,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZDljNDgwOGItYzQ3NC00ZWJiLWI0Y2UtYWYxZWI0MzIzYTVhXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Red Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0217733"
+    "url": "https://www.imdb.com/title/tt0217733",
+    "year": 1996
   },
   {
     "color": "E0115F",
@@ -1411,7 +1572,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BODM2MTFlNTAtNDYzYS00ZGU1LWE0NmQtMmY3YmExZWU2ZWVkXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Ruby Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0344215"
+    "url": "https://www.imdb.com/title/tt0344215",
+    "year": 2002
   },
   {
     "color": "0F52BA",
@@ -1419,7 +1581,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BY2Q2MTVjZTUtMTRjNS00OTA0LTljZDQtYWM5NTQ4M2U3Mzc0XkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Sapphire Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0344216"
+    "url": "https://www.imdb.com/title/tt0344216",
+    "year": 2002
   },
   {
     "color": "C0C0C0",
@@ -1428,7 +1591,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BY2RkMjM3NGYtMjFlMS00NmY4LTk3ZWEtYzgxYTAwYTA1YWFjXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Silver Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0217730"
+    "url": "https://www.imdb.com/title/tt0217730",
+    "year": 1999
   },
   {
     "color": "FFFFFF",
@@ -1436,7 +1600,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZjdlZDc0ZjYtNWJmMy00NTJmLThlMjgtNDFlMzZiMTRlYTcwXkEyXkFqcGdeQXVyNzQzOTQxMDc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon White Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt1731223"
+    "url": "https://www.imdb.com/title/tt1731223",
+    "year": 2010
   },
   {
     "color": "FFFF00",
@@ -1444,15 +1609,16 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTk0ZGE5MjItMzA2Mi00ODI0LTlkMGUtZmVmOWVkODFhZTM2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Yellow Version",
     "type": "video_game",
-    "url": "https://www.imdb.com/title/tt0217732"
+    "url": "https://www.imdb.com/title/tt0217732",
+    "year": 1998
   },
   {
     "found_title": "Po\u00e9sie Z\u00e9ro",
-    "img": "http://coverartarchive.org/release/8546ad4f-d9fa-4121-838a-9a2353828f80/9655370364-250.jpg",
     "number": 0,
     "title": "Po\u00e9sie Z\u00e9ro",
     "type": "music",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/Po%C3%A9sie+Z%C3%A9ro"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Po%C3%A9sie+Z%C3%A9ro",
+    "year": 2010
   },
   {
     "color": "FFC0CB",
@@ -1460,7 +1626,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOGE3ZmVjMzMtMDcxNi00YjM5LTg3NjMtZWMxYjlhNTk2MmZjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pretty in Pink",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0091790"
+    "url": "https://www.imdb.com/title/tt0091790",
+    "year": 1986
   },
   {
     "color": "800080",
@@ -1468,7 +1635,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYjQ4ZTgwODctY2IzYS00NWQzLWE5OTUtMTk4MWNiZmMxMjI3XkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Purple Rain",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0087957"
+    "url": "https://www.imdb.com/title/tt0087957",
+    "year": 1984
   },
   {
     "color": "FF0000",
@@ -1476,7 +1644,8 @@ const db = [
     "img": "http://coverartarchive.org/release/46b89aca-cecc-4c38-aba0-3ab369ff3462/5578647322-250.jpg",
     "title": "Red Hot Chili Peppers",
     "type": "music",
-    "url": "http://redhotchilipeppers.com/"
+    "url": "http://redhotchilipeppers.com/",
+    "year": 1983
   },
   {
     "color": "FA8072",
@@ -1484,7 +1653,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTYxMzA2NTU5MF5BMl5BanBnXkFtZTcwMjI0MDI0Nw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Salmon Fishing in the Yemen",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1441952"
+    "url": "https://www.imdb.com/title/tt1441952",
+    "year": 2011
   },
   {
     "color": "0F52BA",
@@ -1492,7 +1662,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMjk2MDg4YTEtNWExNC00MmRhLWE4NTEtOWY0OWQwYzhhOTZiXkEyXkFqcGdeQXVyMjE2NzMwMzg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Sapphire",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0053242"
+    "url": "https://www.imdb.com/title/tt0053242",
+    "year": 1959
   },
   {
     "found_title": "Se7en",
@@ -1500,7 +1671,8 @@ const db = [
     "number": 7,
     "title": "Se7en",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0114369"
+    "url": "https://www.imdb.com/title/tt0114369",
+    "year": 1995
   },
   {
     "found_title": "Second Noah",
@@ -1508,7 +1680,8 @@ const db = [
     "ordinal": 2,
     "title": "Second Noah",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0115349"
+    "url": "https://www.imdb.com/title/tt0115349",
+    "year": 1996
   },
   {
     "found_title": "Seven and a Half",
@@ -1516,7 +1689,8 @@ const db = [
     "number": 7.5,
     "title": "Seven and a Half",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0496226"
+    "url": "https://www.imdb.com/title/tt0496226",
+    "year": 2006
   },
   {
     "duration": "7d",
@@ -1525,7 +1699,8 @@ const db = [
     "number": 7,
     "title": "Seven Days in May",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0058576"
+    "url": "https://www.imdb.com/title/tt0058576",
+    "year": 1964
   },
   {
     "found_title": "Seven Pounds",
@@ -1535,7 +1710,8 @@ const db = [
     "price": "7 GBP",
     "title": "Seven Pounds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0814314"
+    "url": "https://www.imdb.com/title/tt0814314",
+    "year": 2008
   },
   {
     "found_title": "Seven Samurai",
@@ -1543,7 +1719,8 @@ const db = [
     "number": 7,
     "title": "Seven Samurai",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0047478"
+    "url": "https://www.imdb.com/title/tt0047478",
+    "year": 1954
   },
   {
     "duration": "7s",
@@ -1551,7 +1728,8 @@ const db = [
     "number": 7,
     "title": "Seven Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0332388"
+    "url": "https://www.imdb.com/title/tt0332388",
+    "year": 1999
   },
   {
     "duration": "7y",
@@ -1560,7 +1738,8 @@ const db = [
     "number": 7,
     "title": "Seven Years in Tibet",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0120102"
+    "url": "https://www.imdb.com/title/tt0120102",
+    "year": 1997
   },
   {
     "element": 14,
@@ -1568,7 +1747,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Silicon Valley",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt2575988"
+    "url": "https://www.imdb.com/title/tt2575988",
+    "year": 2014
   },
   {
     "color": "C0C0C0",
@@ -1577,7 +1757,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Silver Linings Playbook",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1045658"
+    "url": "https://www.imdb.com/title/tt1045658",
+    "year": 2012
   },
   {
     "distance": "6 feet",
@@ -1585,7 +1766,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BN2FmMjg0Y2YtYmMyYi00MTBjLTllYzMtN2VjYzRhOTVmNWRlXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Six Feet Under",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0248654"
+    "url": "https://www.imdb.com/title/tt0248654",
+    "year": 2001
   },
   {
     "found_title": "Sixteen Candles",
@@ -1593,7 +1775,8 @@ const db = [
     "number": 16,
     "title": "Sixteen Candles",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0088128"
+    "url": "https://www.imdb.com/title/tt0088128",
+    "year": 1984
   },
   {
     "color": "00ff00",
@@ -1601,7 +1784,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZmFlYmJhZWItMWYyZS00NjZjLTlhYzgtODkzY2U3ZTQ3ZGMzXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Soylent Green",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0070723"
+    "url": "https://www.imdb.com/title/tt0070723",
+    "year": 1973
   },
   {
     "found_title": "Sum 41",
@@ -1609,7 +1793,8 @@ const db = [
     "number": 41,
     "title": "Sum 41",
     "type": "music",
-    "url": "http://www.sum41.com/"
+    "url": "http://www.sum41.com/",
+    "year": 1996
   },
   {
     "found_title": "Super 8",
@@ -1617,7 +1802,8 @@ const db = [
     "number": 8,
     "title": "Super 8",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1650062"
+    "url": "https://www.imdb.com/title/tt1650062",
+    "year": 2011
   },
   {
     "found_title": "Tau",
@@ -1625,7 +1811,8 @@ const db = [
     "number": 6.283185307179586,
     "title": "TAU",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4357394"
+    "url": "https://www.imdb.com/title/tt4357394",
+    "year": 2018
   },
   {
     "duration": "10s",
@@ -1634,7 +1821,8 @@ const db = [
     "number": 10,
     "title": "Ten Seconds to Hell",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0053341"
+    "url": "https://www.imdb.com/title/tt0053341",
+    "year": 1959
   },
   {
     "found_title": "The 10th Kingdom",
@@ -1643,7 +1831,8 @@ const db = [
     "ordinal": 10,
     "title": "The 10th Kingdom",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0207275"
+    "url": "https://www.imdb.com/title/tt0207275",
+    "year": 2000
   },
   {
     "found_title": "The 11th Hour",
@@ -1652,7 +1841,8 @@ const db = [
     "ordinal": 11,
     "title": "The 11th Hour",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3004746"
+    "url": "https://www.imdb.com/title/tt3004746",
+    "year": 2014
   },
   {
     "found_title": "The 12th Man",
@@ -1661,7 +1851,8 @@ const db = [
     "ordinal": 12,
     "title": "The 12th Man",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3300980"
+    "url": "https://www.imdb.com/title/tt3300980",
+    "year": 2017
   },
   {
     "distance": "39 steps",
@@ -1670,7 +1861,8 @@ const db = [
     "number": 39,
     "title": "The 39 Steps",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0026029"
+    "url": "https://www.imdb.com/title/tt0026029",
+    "year": 1935
   },
   {
     "duration": "40y",
@@ -1679,7 +1871,8 @@ const db = [
     "number": 40,
     "title": "The 40 Year-Old Virgin",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0405422"
+    "url": "https://www.imdb.com/title/tt0405422",
+    "year": 2005
   },
   {
     "found_title": "The 400 Blows",
@@ -1687,7 +1880,8 @@ const db = [
     "number": 400,
     "title": "The 400 Blows",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0053198"
+    "url": "https://www.imdb.com/title/tt0053198",
+    "year": 1959
   },
   {
     "found_title": "The 51st State",
@@ -1705,7 +1899,8 @@ const db = [
     "ordinal": 601,
     "title": "The 601st Phone Call",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0865448"
+    "url": "https://www.imdb.com/title/tt0865448",
+    "year": 2006
   },
   {
     "color": "ACE5EE",
@@ -1713,7 +1908,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOWU2ZDIxY2UtNzM5NS00MWUwLTkxN2QtMmI3NDZkNTA2OTYxXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Blue Lagoon",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0080453"
+    "url": "https://www.imdb.com/title/tt0080453",
+    "year": 1980
   },
   {
     "color": "DC143C",
@@ -1721,7 +1917,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOGNmMDgxZTItYjNkNy00NDlhLTk2ZmItM2UwNDcwYzhmNDU2XkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Crimson Rivers",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0228786"
+    "url": "https://www.imdb.com/title/tt0228786",
+    "year": 2000
   },
   {
     "date": "d+2",
@@ -1729,7 +1926,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTM3NDU4NDA2Ml5BMl5BanBnXkFtZTYwNzcxNjY2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Day After Tomorrow",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0319262"
+    "url": "https://www.imdb.com/title/tt0319262",
+    "year": 2004
   },
   {
     "color": "74C365",
@@ -1737,7 +1935,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BYTk2NjZkN2QtY2MyMi00OGQ0LTk2ZjgtZWFiNjUzMTI4NDBiXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Deadly Mantis",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0050294"
+    "url": "https://www.imdb.com/title/tt0050294",
+    "year": 1957
   },
   {
     "found_title": "The Fifth Element",
@@ -1746,7 +1945,8 @@ const db = [
     "ordinal": 5,
     "title": "The Fifth Element",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0119116"
+    "url": "https://www.imdb.com/title/tt0119116",
+    "year": 1997
   },
   {
     "number": 5,
@@ -1762,7 +1962,8 @@ const db = [
     "ordinal": 4,
     "title": "The Fourth Protocol",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0093044"
+    "url": "https://www.imdb.com/title/tt0093044",
+    "year": 1987
   },
   {
     "color": "00ff00",
@@ -1771,7 +1972,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Green Mile",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0120689"
+    "url": "https://www.imdb.com/title/tt0120689",
+    "year": 1999
   },
   {
     "color": "808080",
@@ -1779,7 +1981,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNDY4MTQwMzc1MV5BMl5BanBnXkFtZTcwNzcwNTM5Ng@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Grey",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1601913"
+    "url": "https://www.imdb.com/title/tt1601913",
+    "year": 2011
   },
   {
     "found_title": "The Knot",
@@ -1787,7 +1990,8 @@ const db = [
     "speed": "1 M h",
     "title": "The Knot",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1877797"
+    "url": "https://www.imdb.com/title/tt1877797",
+    "year": 2012
   },
   {
     "found_title": "The Lord of the Rings: The Two Towers",
@@ -1795,7 +1999,8 @@ const db = [
     "number": 2,
     "title": "The Lord of the Rings: The Two Towers",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0167261"
+    "url": "https://www.imdb.com/title/tt0167261",
+    "year": 2002
   },
   {
     "color": "FF007F",
@@ -1803,7 +2008,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BZjEyZTdhNDMtMWFkMS00ZmRjLWEyNmEtZDU3MWFkNDEzMDYwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Name of the Rose",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0091605"
+    "url": "https://www.imdb.com/title/tt0091605",
+    "year": 1986
   },
   {
     "duration": "3d",
@@ -1812,7 +2018,8 @@ const db = [
     "number": 3,
     "title": "The Next Three Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1458175"
+    "url": "https://www.imdb.com/title/tt1458175",
+    "year": 2010
   },
   {
     "found_title": "The Ninth Gate",
@@ -1821,7 +2028,8 @@ const db = [
     "ordinal": 9,
     "title": "The Ninth Gate",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0142688"
+    "url": "https://www.imdb.com/title/tt0142688",
+    "year": 1999
   },
   {
     "found_title": "The Number 23",
@@ -1829,7 +2037,8 @@ const db = [
     "number": 23,
     "title": "The Number 23",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0481369"
+    "url": "https://www.imdb.com/title/tt0481369",
+    "year": 2007
   },
   {
     "color": "FF2400",
@@ -1837,7 +2046,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTkxOWQ0OWMtY2E5YS00YjkzLWFjODQtZGY4NTQ5YmE2OGIzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Scarlet Letter",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0114345"
+    "url": "https://www.imdb.com/title/tt0114345",
+    "year": 1995
   },
   {
     "found_title": "The Seventh Seal",
@@ -1846,7 +2056,8 @@ const db = [
     "ordinal": 7,
     "title": "The Seventh Seal",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0050976"
+    "url": "https://www.imdb.com/title/tt0050976",
+    "year": 1957
   },
   {
     "found_title": "The Six Million Dollar Man",
@@ -1855,7 +2066,8 @@ const db = [
     "price": "6000000 USD",
     "title": "The Six Million Dollar Man",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0071054"
+    "url": "https://www.imdb.com/title/tt0071054",
+    "year": 1974
   },
   {
     "found_title": "The Sixth Sense",
@@ -1864,7 +2076,8 @@ const db = [
     "ordinal": 6,
     "title": "The Sixth Sense",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0167404"
+    "url": "https://www.imdb.com/title/tt0167404",
+    "year": 1999
   },
   {
     "found_title": "The Third Man",
@@ -1873,7 +2086,8 @@ const db = [
     "ordinal": 3,
     "title": "The Third Man",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0041959"
+    "url": "https://www.imdb.com/title/tt0041959",
+    "year": 1949
   },
   {
     "number": 2,
@@ -1894,7 +2108,8 @@ const db = [
     "number": 12,
     "title": "Thirteen Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0146309"
+    "url": "https://www.imdb.com/title/tt0146309",
+    "year": 2000
   },
   {
     "duration": "3s",
@@ -1903,7 +2118,8 @@ const db = [
     "number": 3,
     "title": "Three Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt5987402"
+    "url": "https://www.imdb.com/title/tt5987402",
+    "year": 2017
   },
   {
     "found_title": "THX 1138",
@@ -1911,7 +2127,8 @@ const db = [
     "number": 1138,
     "title": "THX 1138",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0066434"
+    "url": "https://www.imdb.com/title/tt0066434",
+    "year": 1971
   },
   {
     "element": 50,
@@ -1919,7 +2136,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BOGZhMWY4OTUtMTQ2Ni00NzE3LTk1ZTMtNzdkOGFmZTQ4NjY1XkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Tin Men",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0094155"
+    "url": "https://www.imdb.com/title/tt0094155",
+    "year": 1987
   },
   {
     "element": 22,
@@ -1927,7 +2145,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNGJlMTVlYWQtYmM5OC00MDgwLTk3NzAtMGViY2VjOGU0YjlkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Titanium",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt10944760"
+    "url": "https://www.imdb.com/title/tt10944760",
+    "year": 2021
   },
   {
     "date": "d+1",
@@ -1935,7 +2154,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTQ4OTgzNTkwNF5BMl5BanBnXkFtZTgwMzI3MDE3NDE@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Tomorrowland",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1964418"
+    "url": "https://www.imdb.com/title/tt1964418",
+    "year": 2015
   },
   {
     "found_title": "Two and a Half Men",
@@ -1943,15 +2163,17 @@ const db = [
     "number": 2.5,
     "title": "Two and a Half Men",
     "type": "tv_show",
-    "url": "https://www.imdb.com/title/tt0369179"
+    "url": "https://www.imdb.com/title/tt0369179",
+    "year": 2003
   },
   {
     "found_title": "Two Fingers",
-    "img": "http://coverartarchive.org/release/bc9991dc-4fb3-491c-960e-f58442ac239e/31570613679-250.jpg",
+    "img": "http://coverartarchive.org/release/a09fb1d5-2482-4b7a-9474-713adbb4c9b9/31603798812-250.jpg",
     "number": 2,
     "title": "Two Fingers",
     "type": "music",
-    "url": "http://www.twofingersmusic.com/"
+    "url": "http://www.twofingersmusic.com/",
+    "year": 2007
   },
   {
     "duration": "2s",
@@ -1960,7 +2182,8 @@ const db = [
     "number": 2,
     "title": "Two Seconds",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0023629"
+    "url": "https://www.imdb.com/title/tt0023629",
+    "year": 1932
   },
   {
     "duration": "2w",
@@ -1969,7 +2192,8 @@ const db = [
     "number": 2,
     "title": "Two Weeks Notice",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0313737"
+    "url": "https://www.imdb.com/title/tt0313737",
+    "year": 2002
   },
   {
     "color": "7F00FF",
@@ -1977,7 +2201,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BNWE1YzEwYjItMDNjNS00Y2M5LWI2MjAtNzhhYjNjYjk2NmZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Ultraviolet",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0370032"
+    "url": "https://www.imdb.com/title/tt0370032",
+    "year": 2006
   },
   {
     "found_title": "V for Vendetta",
@@ -1985,7 +2210,8 @@ const db = [
     "letter": "v",
     "title": "V for Vendetta",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0434409"
+    "url": "https://www.imdb.com/title/tt0434409",
+    "year": 2005
   },
   {
     "found_title": "W.",
@@ -1993,7 +2219,8 @@ const db = [
     "letter": "w",
     "title": "W. (2008)",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1175491"
+    "url": "https://www.imdb.com/title/tt1175491",
+    "year": 2008
   },
   {
     "found_title": "WALL\u00b7E",
@@ -2001,7 +2228,8 @@ const db = [
     "letter": "e",
     "title": "WALL-E",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0910970"
+    "url": "https://www.imdb.com/title/tt0910970",
+    "year": 2008
   },
   {
     "found_title": "Weightless",
@@ -2009,7 +2237,8 @@ const db = [
     "mass": "0g",
     "title": "Weightless",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt3745058"
+    "url": "https://www.imdb.com/title/tt3745058",
+    "year": 2017
   },
   {
     "found_title": "X-Men: First Class",
@@ -2017,7 +2246,8 @@ const db = [
     "ordinal": 1,
     "title": "X: First Class",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1270798"
+    "url": "https://www.imdb.com/title/tt1270798",
+    "year": 2011
   },
   {
     "date": "0001",
@@ -2025,7 +2255,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMTQyMTU3NTI3N15BMl5BanBnXkFtZTcwMzkzMjU2Mg@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Year One",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1045778"
+    "url": "https://www.imdb.com/title/tt1045778",
+    "year": 2009
   },
   {
     "color": "FFFF00",
@@ -2033,7 +2264,8 @@ const db = [
     "img": "https://m.media-amazon.com/images/M/MV5BMGExODFmMjQtZTgxOC00ZDE0LWJmM2MtOTQzM2YzNDZlMzNmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Yellow Submarine",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0063823"
+    "url": "https://www.imdb.com/title/tt0063823",
+    "year": 1968
   },
   {
     "found_title": "Z",
@@ -2041,7 +2273,8 @@ const db = [
     "letter": "Z",
     "title": "Z",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0065234"
+    "url": "https://www.imdb.com/title/tt0065234",
+    "year": 1969
   },
   {
     "found_title": "Zero for Conduct",
@@ -2049,6 +2282,7 @@ const db = [
     "number": 0,
     "title": "Zero for Conduct",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0199461"
+    "url": "https://www.imdb.com/title/tt0199461",
+    "year": 1949
   }
 ];
