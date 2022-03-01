@@ -65,7 +65,8 @@ class Entry:
             assert(isinstance(speed, str))
 
     async def fetch_json(self, url):
-        sleep(1)
+        if "musicbrainz.org" in url:
+            sleep(1)
         return requests.get(url).json()
 
     def to_json(self):
