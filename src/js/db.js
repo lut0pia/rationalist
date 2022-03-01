@@ -10,15 +10,6 @@ const db = [
     "year": 2014
   },
   {
-    "found_title": "Ms .45",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjI1MDU1NjYzOV5BMl5BanBnXkFtZTgwOTk3MjY2MDE@._V1_UY64_0,0,64,64_AL_.jpg",
-    "number": 0.45,
-    "title": ".45",
-    "type": "movie",
-    "url": "https://www.imdb.com/title/tt0082776",
-    "year": 1981
-  },
-  {
     "distance": "0.5 mm",
     "found_title": "0.5 mm",
     "img": "https://m.media-amazon.com/images/M/MV5BYzNhNmIzODQtOWFiMC00ZDdlLWE4NGYtNTM4NjFlNmFjZGVhXkEyXkFqcGdeQXVyMjQ2MTk1OTE@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -637,11 +628,11 @@ const db = [
   {
     "duration": "65d",
     "found_title": "65daysofstatic",
-    "img": "http://coverartarchive.org/release/e7ef4d98-d448-4691-8441-2b7e5649d09f/7725790762-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/65daysofstatic_%28Logo%29.png/800px-65daysofstatic_%28Logo%29.png",
     "number": 65,
     "title": "65daysofstatic",
     "type": "music",
-    "url": "http://65daysofstatic.com/",
+    "url": "https://open.spotify.com/artist/6DVVsQAnpHdJjb1nYuOQ6g",
     "year": 2001
   },
   {
@@ -745,11 +736,11 @@ const db = [
   },
   {
     "found_title": "alt\u2010J",
-    "img": "http://coverartarchive.org/release/fca9d159-8a1f-4a60-b2ad-1ab60b27ce64/21266432230-250.jpg",
+    "img": "http://coverartarchive.org/release/064fb15d-a667-48e5-9eaa-c8e9b8efcb8c/28074141914-250.jpg",
     "letter": "J",
     "title": "alt-J",
     "type": "music",
-    "url": "http://www.altjband.com/",
+    "url": "https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5",
     "year": 2007
   },
   {
@@ -859,27 +850,29 @@ const db = [
   },
   {
     "found_title": "blink\u2010182",
-    "img": "http://coverartarchive.org/release/e38e2042-6843-442b-94e5-7c774c2dc2c4/4063353058-250.jpg",
+    "img": "http://coverartarchive.org/release/bc2669d8-735a-341a-8b52-4cf218196a9d/15549327880-250.jpg",
     "number": 182,
     "title": "blink-182",
     "type": "music",
-    "url": "https://www.blink182.com/",
+    "url": "https://listen.tidal.com/artist/29850",
     "year": 1992
   },
   {
     "color": "C63927",
     "found_title": "Blood Orange",
+    "img": "http://coverartarchive.org/release/4741a4e6-e9e7-44c0-a340-45ac6f2245d9/19238873765-250.jpg",
     "title": "Blood Orange",
     "type": "music",
-    "url": "http://bloodorange.nyc/",
+    "url": "https://open.spotify.com/artist/6LEeAFiJF8OuPx747e1wxR",
     "year": 2011
   },
   {
     "color": "660000",
     "found_title": "Blood Red Shoes",
+    "img": "http://coverartarchive.org/release/3f5e1695-24d4-4b3b-8723-b8f460022a47/9465470022-250.jpg",
     "title": "Blood Red Shoes",
     "type": "music",
-    "url": "http://www.bloodredshoes.co.uk/",
+    "url": "https://www.deezer.com/artist/75312",
     "year": 2006
   },
   {
@@ -903,10 +896,10 @@ const db = [
   {
     "color": "0000FF",
     "found_title": "Blue \u00d6yster Cult",
-    "img": "http://coverartarchive.org/release/d962dbb6-a033-38a4-a112-fe90531c68ff/2736362954-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Hook-and-cross_white.svg/350px-Hook-and-cross_white.svg.png",
     "title": "Blue \u00d6yster Cult",
     "type": "music",
-    "url": "http://www.blueoystercult.com/",
+    "url": "https://open.spotify.com/artist/00tVTdpEhQQw1bqdu8RCx2",
     "year": 1967
   },
   {
@@ -940,7 +933,7 @@ const db = [
   {
     "date": "3030",
     "found_title": "Deltron 3030",
-    "img": "http://coverartarchive.org/release/040d0f9f-2178-4322-bd70-2b5cd84834d1/16418296786-250.jpg",
+    "img": "http://coverartarchive.org/release/8f118f74-22ea-41dd-9e3d-3186203487f9/9783932475-250.jpg",
     "number": 3030,
     "title": "Deltron 3030",
     "type": "music",
@@ -976,11 +969,11 @@ const db = [
   },
   {
     "found_title": "Eiffel 65",
-    "img": "http://coverartarchive.org/release/1b65231b-1ab8-4eef-848b-283011310fad/28251910517-250.jpg",
+    "img": "http://coverartarchive.org/release/c0cb5d9b-b019-3abb-8336-762311f14b14/16156034668-250.jpg",
     "number": 65,
     "title": "Eiffel 65",
     "type": "music",
-    "url": "http://www.eiffel65.com/",
+    "url": "https://open.spotify.com/artist/64rxQRJsLgZwHHyWKB8fiF",
     "year": 1998
   },
   {
@@ -1082,7 +1075,7 @@ const db = [
     "number": 4,
     "title": "Four Tet",
     "type": "music",
-    "url": "http://www.fourtet.net/",
+    "url": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh",
     "year": 1999
   },
   {
@@ -1142,10 +1135,10 @@ const db = [
   {
     "color": "00FF00",
     "found_title": "Green Day",
-    "img": "http://coverartarchive.org/release/c1bea9b6-2aa2-4ae9-b1ac-c8d99c0e04fd/8608640150-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Green_Day_%C2%A1Tr%C3%A9%21_Logo.png",
     "title": "Green Day",
     "type": "music",
-    "url": "http://www.greenday.com/",
+    "url": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY",
     "year": 1989
   },
   {
@@ -1215,10 +1208,10 @@ const db = [
   {
     "element": 26,
     "found_title": "Iron Maiden",
-    "img": "http://coverartarchive.org/release/b6f19f8a-1413-45f2-bdc5-454d06fcdc1c/7847042180-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_iron_maiden.png",
     "title": "Iron Maiden",
     "type": "music",
-    "url": "http://www.ironmaiden.com/",
+    "url": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao",
     "year": 1980
   },
   {
@@ -1241,11 +1234,11 @@ const db = [
   },
   {
     "found_title": "JAY\u2010Z",
-    "img": "http://coverartarchive.org/release/e9a5f123-447f-4430-8efb-0921e1761ddf/1585893879-250.jpg",
+    "img": "http://coverartarchive.org/release/d0148e89-61e3-4474-ac90-946070834100/31644433313-250.jpg",
     "letter": "Z",
     "title": "Jay-Z",
     "type": "music",
-    "url": "http://www.jay-z.com/",
+    "url": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB",
     "year": 1996
   },
   {
@@ -1282,7 +1275,7 @@ const db = [
     "number": 1,
     "title": "KRS-One",
     "type": "music",
-    "url": "https://www.krs-one.com/",
+    "url": "https://open.spotify.com/artist/2gINJ8xw86xawPyGvx1bla",
     "year": 1988
   },
   {
@@ -1292,7 +1285,7 @@ const db = [
     "number": 7,
     "title": "L7",
     "type": "music",
-    "url": "http://l7official.com/",
+    "url": "https://open.spotify.com/artist/2zMQOJ4Cyl4BYbw6WqaO3h",
     "year": 1985
   },
   {
@@ -1360,6 +1353,15 @@ const db = [
     "year": 2013
   },
   {
+    "found_title": "Ms .45",
+    "img": "https://m.media-amazon.com/images/M/MV5BMjI1MDU1NjYzOV5BMl5BanBnXkFtZTgwOTk3MjY2MDE@._V1_UY64_0,0,64,64_AL_.jpg",
+    "number": 0.45,
+    "title": "Ms .45",
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0082776",
+    "year": 1981
+  },
+  {
     "element": 10,
     "found_title": "Neon Genesis Evangelion",
     "img": "https://m.media-amazon.com/images/M/MV5BYjY1Y2ZmNDctZWQ3Yy00MTE3LTk2M2QtMjQ0MDA5ODVjMDEyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -1370,20 +1372,20 @@ const db = [
   },
   {
     "found_title": "Nickelback",
-    "img": "http://coverartarchive.org/release/26374035-ce6e-4eb9-a78e-69f313319f04/2192507364-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nickelback_%28Logo%29.png/800px-Nickelback_%28Logo%29.png",
     "price": "0.05 USD",
     "title": "Nickelback",
     "type": "music",
-    "url": "http://www.nickelback.com/",
+    "url": "https://listen.tidal.com/artist/10672",
     "year": 1995
   },
   {
     "distance": "9 inches",
     "found_title": "Nine Inch Nails",
-    "img": "http://coverartarchive.org/release/8b05324a-5205-42c6-8016-8eab77e5bb76/17882593492-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Nine_Inch_Nails_logo.svg/512px-Nine_Inch_Nails_logo.svg.png",
     "title": "Nine Inch Nails",
     "type": "music",
-    "url": "https://www.nin.com/",
+    "url": "https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO",
     "year": 1988
   },
   {
@@ -1407,9 +1409,12 @@ const db = [
   },
   {
     "color": "808000",
+    "found_title": "Love Under the Olive Tree",
+    "img": "https://m.media-amazon.com/images/M/MV5BOThkMDVjMTEtYWVlYS00MmQzLThiYTUtNWFhZjI3NzY2MTZkXkEyXkFqcGdeQXVyODMwMzc1MjU@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Olive",
     "type": "movie",
-    "url": "https://www.imdb.com/find?q=Olive"
+    "url": "https://www.imdb.com/title/tt10782366",
+    "year": 2020
   },
   {
     "element": 28,
@@ -1614,6 +1619,7 @@ const db = [
   },
   {
     "found_title": "Po\u00e9sie Z\u00e9ro",
+    "img": "http://coverartarchive.org/release/8546ad4f-d9fa-4121-838a-9a2353828f80/9655370364-250.jpg",
     "number": 0,
     "title": "Po\u00e9sie Z\u00e9ro",
     "type": "music",
@@ -1641,10 +1647,10 @@ const db = [
   {
     "color": "FF0000",
     "found_title": "Red Hot Chili Peppers",
-    "img": "http://coverartarchive.org/release/46b89aca-cecc-4c38-aba0-3ab369ff3462/5578647322-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Red_Hot_Chili_Peppers_logo.svg/175px-Red_Hot_Chili_Peppers_logo.svg.png",
     "title": "Red Hot Chili Peppers",
     "type": "music",
-    "url": "http://redhotchilipeppers.com/",
+    "url": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5",
     "year": 1983
   },
   {
@@ -1789,11 +1795,11 @@ const db = [
   },
   {
     "found_title": "Sum 41",
-    "img": "http://coverartarchive.org/release/3944abb0-dfb3-46b0-914c-a1117f568c7d/1742364517-250.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sum_41_logo.jpeg",
     "number": 41,
     "title": "Sum 41",
     "type": "music",
-    "url": "http://www.sum41.com/",
+    "url": "https://open.spotify.com/artist/0qT79UgT5tY4yudH9VfsdT",
     "year": 1996
   },
   {
@@ -2168,11 +2174,11 @@ const db = [
   },
   {
     "found_title": "Two Fingers",
-    "img": "http://coverartarchive.org/release/a09fb1d5-2482-4b7a-9474-713adbb4c9b9/31603798812-250.jpg",
+    "img": "http://coverartarchive.org/release/bc9991dc-4fb3-491c-960e-f58442ac239e/31570613679-250.jpg",
     "number": 2,
     "title": "Two Fingers",
     "type": "music",
-    "url": "http://www.twofingersmusic.com/",
+    "url": "https://open.spotify.com/artist/2AminfyJLRagEeHO6H6bCS",
     "year": 2007
   },
   {
@@ -2214,12 +2220,12 @@ const db = [
     "year": 2005
   },
   {
-    "found_title": "W.",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTkzMzg3NjM3OV5BMl5BanBnXkFtZTcwNTY1MzUzMw@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Tropic Thunder",
+    "img": "https://m.media-amazon.com/images/M/MV5BNDE5NjQzMDkzOF5BMl5BanBnXkFtZTcwODI3ODI3MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "w",
     "title": "W. (2008)",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt1175491",
+    "url": "https://www.imdb.com/title/tt0942385",
     "year": 2008
   },
   {
