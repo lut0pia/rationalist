@@ -165,7 +165,7 @@ class Music(Entry):
         wikidata_id = None
 
         url_score = inf
-        url_types = ["official homepage", "free streaming", "streaming"]
+        url_types = ["free streaming", "streaming"]
         for relation in artist_query["relations"]:
             if relation["type"] == "wikidata":
                 wikidata_id = relation["url"]["resource"].split("/")[-1]
