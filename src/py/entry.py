@@ -114,6 +114,28 @@ class Entry:
 
         return out
 
+    async def to_json_wikidata(self, id):
+        image_properties = [
+            "P154",  # Logo
+            # "P18",  # Image
+        ]
+        out = {}
+
+        data = await self.fetch_json(f"https://www.wikidata.org/wiki/Special:EntityData/{id}.json")
+        data = data["entities"][id]
+
+        for prop in image_properties:
+            if prop in data["claims"]:
+                for claim in data["claims"][prop]:
+                    if claim["mainsnak"]["datatype"] == "commonsMedia":
+                        img_info = await self.fetch_json(f"https://api.wikimedia.org/core/v1/commons/file/File:{claim['mainsnak']['datavalue']['value']}")
+                        out["img"] = img_info["preferred"]["url"]
+                        break
+            if "img" in out:
+                break
+
+        return out
+
 
 class Book(Entry):
     async def to_json(self):
@@ -164,10 +186,6 @@ class Music(Entry):
         elif first_release_group:
             out["year"] = int(first_release_group["first-release-date"][:4])
 
-        # Follow wikidata to find info
-        if wikidata_id != None:
-            pass
-
         # Use first album cover as img
         if len(artist_query["release-groups"]) > 0:
             release_group = artist_query["release-groups"][0]
@@ -177,6 +195,10 @@ class Music(Entry):
                     out["img"] = cover_query["images"][0]["thumbnails"]["small"]
             except:
                 pass
+
+        # Follow wikidata to find info
+        if wikidata_id != None:
+            out = {**out, **await self.to_json_wikidata(wikidata_id)}
 
         return out
 
