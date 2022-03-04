@@ -1,9 +1,11 @@
 import json
+import re
 from math import inf
 from time import sleep
 from urllib import parse
+
 import requests
-import re
+from requests.structures import CaseInsensitiveDict
 
 criteria = [
     "color", "date", "distance", "duration",
@@ -67,7 +69,9 @@ class Entry:
     async def fetch_json(self, url):
         if "musicbrainz.org" in url:
             sleep(1)
-        return requests.get(url).json()
+        headers = CaseInsensitiveDict()
+        headers["Accept"] = "application/json"
+        return requests.get(url, headers=headers).json()
 
     def to_json(self):
         out = {
