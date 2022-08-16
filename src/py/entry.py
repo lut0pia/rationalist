@@ -97,9 +97,8 @@ class Entry:
         var_safe_title = re.sub("\\W", "", self.title.replace(" ", "_"))
         first_letter = var_safe_title[0].lower()
         request_url = f"https://sg.media-imdb.com/suggests/{first_letter}/{var_safe_title}.json"
-        func_name = 'imdb$' + var_safe_title
         imdb = requests.get(request_url).text
-        imdb = imdb.replace(func_name + "(", "")[:-1]
+        imdb = imdb[imdb.find("(")+1:-1]
         imdb = json.loads(imdb)
 
         def keep_letters(t):
