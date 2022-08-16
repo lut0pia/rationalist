@@ -67,11 +67,15 @@ class Entry:
             assert(isinstance(speed, str))
 
     async def fetch_json(self, url):
-        if "musicbrainz.org" in url:
+        if "musicbrainz.org" in url or "wikidata.org" in url:
             sleep(1)
         headers = CaseInsensitiveDict()
         headers["Accept"] = "application/json"
         return requests.get(url, headers=headers).json()
+
+    async def wikidata_query(self, query):
+        results = await self.fetch_json(f"https://query.wikidata.org/sparql?query={parse.quote_plus(query)}")
+        return results["results"]["bindings"]
 
     def to_json(self):
         out = {
@@ -119,25 +123,51 @@ class Entry:
 
         return out
 
-    async def to_json_wikidata(self, id):
-        image_properties = [
-            "P154",  # Logo
-            # "P18",  # Image
-        ]
+    async def to_json_wikidata(
+            self, instance_of,
+            image_props=[
+                "P154",  # Logo
+                "P18",  # Image
+            ]):
         out = {}
+
+        safe_title = self.title.replace("'", "\\'")
+        query = "SELECT * WHERE {{"
+        query += f"?entity rdfs:label '{safe_title}'@en;"
+        query += "wdt:P31 ?instanceOf;"
+        query += f"filter({' || '.join(map(lambda i: f'?instanceOf = wd:{i}',instance_of))})"
+        query += "}}"
+
+        results = await self.wikidata_query(query)
+
+        if len(results) == 0:
+            print(f"Could not find {self.title} in Wikidata")
+            return out
+
+        id = results[0]["entity"]["value"].split("/")[-1]
 
         data = await self.fetch_json(f"https://www.wikidata.org/wiki/Special:EntityData/{id}.json")
         data = data["entities"][id]
 
-        for prop in image_properties:
-            if prop in data["claims"]:
-                for claim in data["claims"][prop]:
-                    if claim["mainsnak"]["datatype"] == "commonsMedia":
-                        img_info = await self.fetch_json(f"https://api.wikimedia.org/core/v1/commons/file/File:{claim['mainsnak']['datavalue']['value']}")
-                        out["img"] = img_info["preferred"]["url"]
-                        break
-            if "img" in out:
-                break
+        def find_prop_value(props, type):
+            for prop in props:
+                if prop in data["claims"]:
+                    for claim in data["claims"][prop]:
+                        if claim["mainsnak"]["datatype"] == type:
+                            return claim['mainsnak']['datavalue']['value']
+            return None
+
+        image_value = find_prop_value(image_props, "commonsMedia")
+        if image_value:
+            img_info = await self.fetch_json(f"https://api.wikimedia.org/core/v1/commons/file/File:{image_value}")
+            out["img"] = img_info["preferred"]["url"]
+
+        year_value = find_prop_value([
+            "P577",  # Publication date
+            "P571",  # Inception
+        ], "time")
+        if year_value:
+            out["year"] = int(year_value["time"][1:5])
 
         return out
 
@@ -146,7 +176,11 @@ class Book(Entry):
     async def to_json(self):
         out = Entry.to_json(self)
         out["type"] = "book"
-        return out
+        return {**out, **await self.to_json_wikidata([
+            "Q7725634",  # Literary work
+            "Q47461344",  # Written work
+            "Q17537576",  # Creative work
+        ])}
 
 
 class Movie(Entry):
@@ -203,7 +237,14 @@ class Music(Entry):
 
         # Follow wikidata to find info
         if wikidata_id != None:
-            out = {**out, **await self.to_json_wikidata(wikidata_id)}
+            out = {**out, **await self.to_json_wikidata(
+                instance_of=[
+                    "Q215380",  # Musical group
+                    "Q5741069",
+                ],
+                image_props=[
+                    "P154",  # Logo
+                ])}
 
         return out
 
