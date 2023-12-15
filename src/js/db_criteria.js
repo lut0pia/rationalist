@@ -102,9 +102,13 @@ const db_criteria = {
     print: function(value, node) {
       const date = this.unpack_date(value);
       if(value >= 0) {
-        node.innerText = date.d.toString().padStart(2, '0')
-          + '/' + date.m.toString().padStart(2, '0')
-          + '/' + date.y.toString();
+        if(date.d == date.m == 1) {
+          node.innerText = date.y.toString()
+        } else {
+          node.innerText = date.d.toString().padStart(2, '0')
+            + '/' + date.m.toString().padStart(2, '0')
+            + '/' + date.y.toString();
+        }
       } else {
         node.innerText = Math.abs(date.y) + ' BC';
       }
