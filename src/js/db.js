@@ -10,7 +10,7 @@ const db = [
     "year": 2014
   },
   {
-    "distance": "0.5 mm",
+    "distance": "0.5mm",
     "found_title": "0.5 mm",
     "img": "https://m.media-amazon.com/images/M/MV5BYzNhNmIzODQtOWFiMC00ZDdlLWE4NGYtNTM4NjFlNmFjZGVhXkEyXkFqcGdeQXVyMjQ2MTk1OTE@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 0.5,
@@ -68,7 +68,7 @@ const db = [
     "year": 1999
   },
   {
-    "distance": "100 feet",
+    "distance": "100ft",
     "found_title": "100 Feet",
     "img": "https://m.media-amazon.com/images/M/MV5BYTAwMjQ3MTEtMWRkMi00OGI4LWIyNmYtNGIyZWI4YTQ3MmY4XkEyXkFqcGdeQXVyNDQwMTQ5ODk@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 100,
@@ -270,7 +270,7 @@ const db = [
     "year": 2005
   },
   {
-    "distance": "20 feet",
+    "distance": "20ft",
     "found_title": "20 Feet from Stardom",
     "img": "https://m.media-amazon.com/images/M/MV5BMTQxNDY2NjMwNF5BMl5BanBnXkFtZTcwNzExMDg0OQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 20,
@@ -280,7 +280,7 @@ const db = [
     "year": 2013
   },
   {
-    "distance": "20000000 miles",
+    "distance": "20000000mi",
     "found_title": "20 Million Miles to Earth",
     "img": "https://m.media-amazon.com/images/M/MV5BZDQ5OGZmMTUtNzBhZS00M2YzLTk3YWEtMDhjMWU3ZjU0MzZmXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 20000000,
@@ -290,7 +290,7 @@ const db = [
     "year": 1957
   },
   {
-    "distance": "20000 leagues",
+    "distance": "20000leagues",
     "found_title": "20,000 Leagues Under the Sea",
     "img": "https://m.media-amazon.com/images/M/MV5BODYxOTMyM2EtNzUzNC00Yjg2LTg3MjYtZTIyNjhiYzc1NTlkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 20000,
@@ -649,7 +649,7 @@ const db = [
     "year": 2009
   },
   {
-    "distance": "57000 km",
+    "distance": "57000km",
     "found_title": "57000 km entre nous",
     "img": "https://m.media-amazon.com/images/M/MV5BNTgzMWQ3NmMtMDI1OC00M2E4LWIzYjUtYmUzOTFlZDk3N2NiXkEyXkFqcGdeQXVyNTMzMTg5NjY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 57000,
@@ -679,7 +679,7 @@ const db = [
     "year": 2001
   },
   {
-    "distance": "8 miles",
+    "distance": "8mi",
     "found_title": "8 Mile",
     "img": "https://m.media-amazon.com/images/M/MV5BZDE3NDZmMGUtZjhjOS00MmIyLTkyMzAtMzM4ZjNhZThiY2ViXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 8,
@@ -1121,7 +1121,7 @@ const db = [
     "year": 1970
   },
   {
-    "distance": "5 feet",
+    "distance": "5ft",
     "found_title": "Five Feet Apart",
     "img": "https://m.media-amazon.com/images/M/MV5BNzVmMjJlN2MtNWQ4Ny00Zjc2LWJjYTgtYjJiNGM5MTM1ZTlkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 5,
@@ -1188,7 +1188,7 @@ const db = [
     "year": 1996
   },
   {
-    "distance": "384400 km",
+    "distance": "384400km",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/From_the_Earth_to_the_Moon_Jules_Verne.jpg/417px-From_the_Earth_to_the_Moon_Jules_Verne.jpg",
     "title": "From the Earth to the Moon",
     "type": "book",
@@ -1442,7 +1442,7 @@ const db = [
     "year": 1931
   },
   {
-    "distance": "42.195 km",
+    "distance": "42.195km",
     "found_title": "Marathon Man",
     "img": "https://m.media-amazon.com/images/M/MV5BYTcwNGYwNzgtNDBlZC00NTI4LTlmNDEtZmU1NTIxMGZmMDIwXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Marathon Man",
@@ -1521,7 +1521,7 @@ const db = [
     "year": 1995
   },
   {
-    "distance": "9 inches",
+    "distance": "9in",
     "found_title": "Nine Inch Nails",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Nine_Inch_Nails_logo.svg/512px-Nine_Inch_Nails_logo.svg.png",
     "title": "Nine Inch Nails",
@@ -1530,7 +1530,7 @@ const db = [
     "year": 1988
   },
   {
-    "distance": "9 miles",
+    "distance": "9mi",
     "found_title": "9 Miles Down",
     "img": "https://m.media-amazon.com/images/M/MV5BZTZhZGRkMWItMTE3NC00ZTkxLThlMWQtYzIzMDVkY2Y3MTdmXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 9,
@@ -1961,7 +1961,7 @@ const db = [
     "year": 1921
   },
   {
-    "distance": "6 feet",
+    "distance": "6ft",
     "found_title": "Six Feet Under",
     "img": "https://m.media-amazon.com/images/M/MV5BN2FmMjg0Y2YtYmMyYi00MTBjLTllYzMtN2VjYzRhOTVmNWRlXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Six Feet Under",
@@ -2055,7 +2055,7 @@ const db = [
     "year": 2017
   },
   {
-    "distance": "39 steps",
+    "distance": "39steps",
     "found_title": "The 39 Steps",
     "img": "https://m.media-amazon.com/images/M/MV5BMTY5ODAzMTcwOF5BMl5BanBnXkFtZTcwMzYxNDYyNA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 39,
@@ -2198,7 +2198,7 @@ const db = [
   },
   {
     "color": "00ff00",
-    "distance": "1 miles",
+    "distance": "1mi",
     "found_title": "The Green Mile",
     "img": "https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Green Mile",

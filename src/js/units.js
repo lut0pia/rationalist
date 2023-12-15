@@ -4,12 +4,14 @@ const dist_units = [
   {sym:'in', mul:0.0254},
   {sym:'inch', mul:0.0254},
   {sym:'inches', mul:0.0254},
+  {sym:'ft', mul:0.3048},
   {sym:'feet', mul:0.3048},
   {sym:'step', mul:0.74},
   {sym:'steps', mul:0.74}, // https://en.wikipedia.org/wiki/Step_(unit)
   {sym:'m', mul:1, display:true},
   {sym:'meters', mul:1},
   {sym:'km', mul:1000, display:true},
+  {sym:'mi', mul:1609.344},
   {sym:'miles', mul:1609.344},
   {sym:'M', mul:1852}, // https://en.wikipedia.org/wiki/Nautical_mile
   {sym:'leagues', mul:5556}, // 5.556 kilometres for the english league https://en.wikipedia.org/wiki/League_(unit)

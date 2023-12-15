@@ -21,53 +21,51 @@ class Entry:
                  ordinal=None, price=None, speed=None,
                  year_hint=None):
         self.title = title
-
-        self.color = color
-        self.date = date
-        self.distance = distance
-        self.duration = duration
-        self.element = element
-        self.letter = letter
-        self.mass = mass
-        self.number = number
-        self.ordinal = ordinal
-        self.price = price
-        self.speed = speed
-
         self.year_hint = year_hint
 
         if color != None:
             assert(isinstance(color, str) and len(color) == 6)
+            self.color = color
 
         if date != None:
             assert(isinstance(date, str))
+            self.date = date
 
         if distance != None:
-            assert(isinstance(distance, str))
+            assert(isinstance(distance, str) and not " " in distance)
+            self.distance = distance
 
         if duration != None:
             assert(isinstance(duration, str))
+            self.duration = duration
 
         if element != None:
             assert(isinstance(element, int))
+            self.element = element
 
         if letter != None:
             assert(isinstance(letter, str) and len(letter) == 1)
+            self.letter = letter
 
         if mass != None:
             assert(isinstance(mass, str))
+            self.mass = mass
 
         if number != None:
             assert(isinstance(number, int) or isinstance(number, float))
+            self.number = number
 
         if ordinal != None:
             assert(isinstance(ordinal, int))
+            self.ordinal = ordinal
 
         if price != None:
             assert(isinstance(price, str))
+            self.price = price
 
         if speed != None:
             assert(isinstance(speed, str))
+            self.speed = speed
 
     async def fetch_json(self, url):
         if "musicbrainz.org" in url or "wikidata.org" in url:

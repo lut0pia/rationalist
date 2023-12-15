@@ -116,7 +116,7 @@ const db_criteria = {
   },
   distance: {
     icon: '📏',
-    regex: new RegExp(/([\d\.]+)\s*(\S+)/i),
+    regex: new RegExp(/([\d\.]+)(\S+)/i),
     sanitation: function(str) {
       const value_unit = this.regex.exec(str);
       return parseFloat(value_unit[1]) * unit_mul(dist_units, value_unit[2]);
