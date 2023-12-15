@@ -114,7 +114,7 @@ entries = [
     Movie('8 Seconds', duration='8s', number=8),
     Movie('88 Minutes', duration='88m', number=88),
     Movie('8mm', number=8, distance='8mm'),
-    Movie('9/11', number=911, date='September 11, 2001'),
+    Movie('9/11', number=911, date='September 11, 2001', year_hint=2002),
     Movie('9½ Weeks', number=9.5, duration='9.5w'),
     Movie('99 Francs', number=99, price='99 FRF'),
     Movie('A Clockwork Orange', color='ffa500'),
