@@ -107,7 +107,7 @@ const db = [
     "year": 2013
   },
   {
-    "found_title": "BPM (Beats Per Minute)",
+    "found_title": "120 BPM",
     "img": "https://m.media-amazon.com/images/M/MV5BZWM2NTcxM2QtOTYxMC00OTllLWJhN2MtODBjNjA2Y2FjYmU1XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 120,
     "title": "120 BPM",
@@ -118,7 +118,7 @@ const db = [
   {
     "duration": "125y",
     "found_title": "125 Years Memory",
-    "img": "https://m.media-amazon.com/images/M/MV5BNTFkNTc1ZGEtNDcwNS00MmM5LTlmODEtZTk2NThhMjUzYWFlXkEyXkFqcGdeQXVyOTM0ODgyOTg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BOWZlZGZlYTQtNTM5MC00YzNmLTgyNzMtMTIyNWJkOWRhYWZlXkEyXkFqcGdeQXVyOTM0ODgyOTg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 125,
     "title": "125 Years Memory",
     "type": "movie",
@@ -147,7 +147,7 @@ const db = [
   },
   {
     "found_title": "13 Reasons Why",
-    "img": "https://m.media-amazon.com/images/M/MV5BMDYzZTRlNGEtZDc2Mi00ZGNjLTlmZDAtMmVjMDZkOThiODEwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYmRhZjkyMjEtNjRkMS00MDQ0LTg2NGMtMTQ3ZjE0NjJmMjM2L2ltYWdlXkEyXkFqcGdeQXVyNTY0MTkxMTg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 13,
     "title": "13 Reasons Why",
     "type": "tv_show",
@@ -167,7 +167,7 @@ const db = [
   {
     "date": "1492",
     "found_title": "1492: Conquest of Paradise",
-    "img": "https://m.media-amazon.com/images/M/MV5BZDViYzU4ZGUtN2IyMi00YzljLWJiMGUtNDljZTk4MGUxOWI4L2ltYWdlXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNmVlMWNhMmEtZjc5ZS00NmZjLTg3ZjctNTkwMWYwY2EzOGJhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 1492,
     "title": "1492: Conquest of Paradise",
     "type": "movie",
@@ -177,7 +177,7 @@ const db = [
   {
     "duration": "15m",
     "found_title": "15 Minutes",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTI3MzQ1MzIwNl5BMl5BanBnXkFtZTYwMTAxODc5._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYWFkZDE5Y2EtYjQ2Ni00OWY2LTgyOGMtN2I5NzEzYWZiNmVlXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 15,
     "title": "15 Minutes",
     "type": "movie",
@@ -233,6 +233,13 @@ const db = [
     "year": 2019
   },
   {
+    "date": "1919",
+    "number": 1919,
+    "title": "1919",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/1919"
+  },
+  {
     "date": "1941",
     "found_title": "1941",
     "img": "https://m.media-amazon.com/images/M/MV5BNDVkYWM4YTktNGE3My00NDlkLTllMTAtNWQyOTZjYzEzNzg5XkEyXkFqcGdeQXVyMzExODEzNDA@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -254,7 +261,7 @@ const db = [
   },
   {
     "distance": "20cm",
-    "found_title": "20 Centimeters",
+    "found_title": "20 cent\u00edmetros",
     "img": "https://m.media-amazon.com/images/M/MV5BMTg0OTA1NDE3NV5BMl5BanBnXkFtZTcwMTcwNjczMQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 20,
     "title": "20 Centimeters",
@@ -284,12 +291,13 @@ const db = [
   },
   {
     "distance": "20000 leagues",
-    "found_title": "20, 000 Leagues Under the Sea",
-    "img": "https://m.media-amazon.com/images/M/MV5BNTAyMjYxNDE5N15BMl5BanBnXkFtZTgwMDUwODM4MTE@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "20,000 Leagues Under the Sea",
+    "img": "https://m.media-amazon.com/images/M/MV5BODYxOTMyM2EtNzUzNC00Yjg2LTg3MjYtZTIyNjhiYzc1NTlkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 20000,
     "title": "20, 000 Leagues Under the Sea",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt2566204"
+    "url": "https://www.imdb.com/title/tt0046672",
+    "year": 1954
   },
   {
     "found_title": "200 Cigarettes",
@@ -302,13 +310,22 @@ const db = [
   },
   {
     "found_title": "200 Pounds Beauty",
-    "img": "https://m.media-amazon.com/images/M/MV5BZTU4MDY4NGEtNGNjMC00ZGJkLWI0NGYtYzFhZTgxYjc2OGYwXkEyXkFqcGdeQXVyNTMyMDkwMTE@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYWQ1Y2M0NjItMTcxYy00YjU4LTgyZjctMjNlNmI4MjgxN2JmXkEyXkFqcGdeQXVyNzY4NDQzNTg@._V1_UY64_0,0,64,64_AL_.jpg",
     "mass": "200lb",
     "number": 200,
     "title": "200 Pounds Beauty",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0940642",
-    "year": 2006
+    "url": "https://www.imdb.com/title/tt18691722",
+    "year": 2023
+  },
+  {
+    "date": "2001",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2001_A_Space_Odyssey_movie_black_logo.png/800px-2001_A_Space_Odyssey_movie_black_logo.png",
+    "number": 2001,
+    "title": "2001: A Space Odyssey",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/2001: A Space Odyssey",
+    "year": 1968
   },
   {
     "date": "2001",
@@ -343,7 +360,7 @@ const db = [
   {
     "date": "2046",
     "found_title": "2046",
-    "img": "https://m.media-amazon.com/images/M/MV5BOTkyN2NlOGYtN2Q5OS00MDJkLTljYjMtOWQ3MzM3OGYzODM3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BM2NlYjY5N2QtZWIxNS00MWY3LTk5YTEtYWZkZTc3NTExZjI3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2046,
     "title": "2046",
     "type": "movie",
@@ -409,8 +426,15 @@ const db = [
     "year": 2012
   },
   {
+    "number": 2666,
+    "title": "2666",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/2666",
+    "year": 2004
+  },
+  {
     "found_title": "27 Dresses",
-    "img": "https://m.media-amazon.com/images/M/MV5BMzI5OTM0OTg2MF5BMl5BanBnXkFtZTcwNjAyMTU1MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZjgwODVmMjItMTk4Mi00ZTUxLWE5OTgtYzUxMDJmODBhNmYxXkEyXkFqcGdeQXVyMTUyOTc1NDYz._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 27,
     "title": "27 Dresses",
     "type": "movie",
@@ -420,7 +444,7 @@ const db = [
   {
     "date": "d+28",
     "duration": "28d",
-    "found_title": "28 Days Later...",
+    "found_title": "28 Days Later",
     "img": "https://m.media-amazon.com/images/M/MV5BYTFkM2ViMmQtZmI5NS00MjQ2LWEyN2EtMTI1ZmNlZDU3MTZjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 28,
     "title": "28 Days Later",
@@ -432,7 +456,7 @@ const db = [
     "date": "w+28",
     "duration": "28w",
     "found_title": "28 Weeks Later",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjA5NjE2NDI0OF5BMl5BanBnXkFtZTgwNzU0NzQyMTI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTUxMjc2MTcxNV5BMl5BanBnXkFtZTcwMzgzOTY0MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 28,
     "title": "28 Weeks Later",
     "type": "movie",
@@ -481,7 +505,7 @@ const db = [
   },
   {
     "found_title": "300",
-    "img": "https://m.media-amazon.com/images/M/MV5BNWMxYTZlOTUtZDExMi00YzZmLTkwYTMtZmM2MmRjZmQ3OGY4XkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMjc4OTc0ODgwNV5BMl5BanBnXkFtZTcwNjM1ODE0MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 300,
     "title": "300",
     "type": "movie",
@@ -498,9 +522,18 @@ const db = [
     "year": 2016
   },
   {
+    "found_title": "35 Shots of Rum",
+    "img": "https://m.media-amazon.com/images/M/MV5BZDM4OGFlZGEtNTQyNy00NDFhLTk3OGEtZWVmNmFmNTNhNDJkXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "number": 35,
+    "title": "35 Shots of Rum",
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1100048",
+    "year": 2008
+  },
+  {
     "duration": "365d",
     "found_title": "365 Days",
-    "img": "https://m.media-amazon.com/images/M/MV5BODljZTM3ODAtMDc0YS00NmI4LTlmZTUtM2I5MDAzNTQxZmMxXkEyXkFqcGdeQXVyMTEwMTY3NDI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMDdhYzNkOWQtYWNlNi00NDdjLWJlZDMtMjJjZDYyNjAxM2U1XkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 365,
     "title": "365 Days",
     "type": "movie",
@@ -579,7 +612,7 @@ const db = [
   },
   {
     "found_title": "50 Cent: Blood on the Sand",
-    "img": "https://m.media-amazon.com/images/M/MV5BYmQzODE0ZjUtYzZmMC00Y2JjLWE4NGEtNmIzMzYzODcwODFmXkEyXkFqcGdeQXVyNTEwNDY2MjU@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNWVhNTRkM2UtNTg5NC00MzllLWFkNTctMzE3ZDcwYzk3NWRiXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 50,
     "price": "0.50 USD",
     "title": "50 Cent: Blood on the Sand",
@@ -616,6 +649,16 @@ const db = [
     "year": 2009
   },
   {
+    "distance": "57000 km",
+    "found_title": "57000 km entre nous",
+    "img": "https://m.media-amazon.com/images/M/MV5BNTgzMWQ3NmMtMDI1OC00M2E4LWIzYjUtYmUzOTFlZDk3N2NiXkEyXkFqcGdeQXVyNTMzMTg5NjY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "number": 57000,
+    "title": "57000 km entre nous",
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1173683",
+    "year": 2008
+  },
+  {
     "duration": "59s",
     "found_title": "59 Seconds",
     "img": "https://m.media-amazon.com/images/M/MV5BMTkxODQ0NjI2Nl5BMl5BanBnXkFtZTgwNzA4MjUzNTE@._V1_UY64_0,0,64,64_AL_.jpg",
@@ -638,7 +681,7 @@ const db = [
   {
     "distance": "8 miles",
     "found_title": "8 Mile",
-    "img": "https://m.media-amazon.com/images/M/MV5BOWI3MDIzZmYtN2Y3MC00YTljLWFiYmYtNWIzMjg1ZWQ1ODlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZDE3NDZmMGUtZjhjOS00MmIyLTkyMzAtMzM4ZjNhZThiY2ViXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 8,
     "title": "8 Mile",
     "type": "movie",
@@ -687,16 +730,16 @@ const db = [
   },
   {
     "date": "September 11, 2001",
-    "found_title": "9/11",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTYxODcyODY4NV5BMl5BanBnXkFtZTgwNzA0NTc5MjI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "11:14",
+    "img": "https://m.media-amazon.com/images/M/MV5BODVmZGQxYjgtOGRhMi00NTg4LTk4NzMtNzU1NjE2NzU1MmZjXkEyXkFqcGdeQXVyMjc5MjU2MDk@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 911,
     "title": "9/11",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt4917224",
-    "year": 2017
+    "url": "https://www.imdb.com/title/tt0331811",
+    "year": 2003
   },
   {
-    "found_title": "99 francs",
+    "found_title": "99 Francs",
     "img": "https://m.media-amazon.com/images/M/MV5BM2IyOGQ2OGYtODZiZC00ODVhLTliMTAtODlmNDA0ODRiMGYwXkEyXkFqcGdeQXVyMjc1NDA2OA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 99,
     "price": "99 FRF",
@@ -708,12 +751,19 @@ const db = [
   {
     "duration": "9.5w",
     "found_title": "9\u00bd Weeks",
-    "img": "https://m.media-amazon.com/images/M/MV5BYzE4ZjMxMzUtZDQxZS00MjhhLWE2MmUtOTg0N2NkMTkxMzdhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYzVmYWNjNGMtNzc1NC00NDU0LWFkZGYtNDlhOGEzZDViYzUyXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 9.5,
     "title": "9\u00bd Weeks",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0091635",
     "year": 1986
+  },
+  {
+    "color": "FF8000",
+    "title": "A Clockwork Orange",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/A Clockwork Orange",
+    "year": 1962
   },
   {
     "color": "ffa500",
@@ -723,6 +773,21 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0066921",
     "year": 1971
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/A_Tale_of_Two_Cities_title_page.png/357px-A_Tale_of_Two_Cities_title_page.png",
+    "number": 2,
+    "title": "A Tale of Two Cities",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/A Tale of Two Cities",
+    "year": 1859
+  },
+  {
+    "number": 1000,
+    "title": "A Thousand Acres",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/A Thousand Acres",
+    "year": 1991
   },
   {
     "found_title": "Mille milliards de dollars",
@@ -735,13 +800,13 @@ const db = [
     "year": 1982
   },
   {
-    "found_title": "alt\u2010J",
+    "found_title": "alt-J",
     "img": "http://coverartarchive.org/release/064fb15d-a667-48e5-9eaa-c8e9b8efcb8c/28074141914-250.jpg",
     "letter": "J",
     "title": "alt-J",
     "type": "music",
     "url": "https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5",
-    "year": 2007
+    "year": 2008
   },
   {
     "element": 6,
@@ -763,7 +828,7 @@ const db = [
   },
   {
     "found_title": "Apollo 13",
-    "img": "https://m.media-amazon.com/images/M/MV5BNjEzYjJmNzgtNDkwNy00MTQ4LTlmMWMtNzA4YjE2NjI0ZDg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 13,
     "title": "Apollo 13",
     "type": "movie",
@@ -783,13 +848,13 @@ const db = [
     "distance": "40075km",
     "duration": "80d",
     "found_title": "Around the World in 80 Days",
-    "img": "https://m.media-amazon.com/images/M/MV5BNjRhNjVlYTgtODZiOS00OTVhLWE4ZTItZjc3MTFiYWY1YjI5L2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BOGI2ODRiYzctMzA4YS00ZThhLWI5NzYtZDRhOGQyNDQyYmE3XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 80,
     "speed": "40075km 80d",
     "title": "Around the World in 80 Days",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0048960",
-    "year": 1956
+    "url": "https://www.imdb.com/title/tt0327437",
+    "year": 2004
   },
   {
     "element": 33,
@@ -798,7 +863,7 @@ const db = [
     "title": "Arsenic and Old Lace",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0036613",
-    "year": 1943
+    "year": 1944
   },
   {
     "found_title": "Avengers: Infinity War",
@@ -812,7 +877,7 @@ const db = [
   {
     "date": "1942",
     "found_title": "Battlefield 1942",
-    "img": "https://m.media-amazon.com/images/M/MV5BNjEzOWJhNzktNzkzZC00Y2Y1LWJjMGItMTc4NmY1YjQ5NmJmXkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNGFiZjNiYWQtMzUyMS00MWMyLTlhOGYtMjYxNjQwOWFlZjhhXkEyXkFqcGdeQXVyMTY3NTgwODk5._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 1942,
     "title": "Battlefield 1942",
     "type": "video_game",
@@ -822,7 +887,7 @@ const db = [
   {
     "date": "2142",
     "found_title": "Battlefield 2142",
-    "img": "https://m.media-amazon.com/images/M/MV5BOGNlMDcwMDgtZGUxYS00NGM2LWJlYWMtMTA3OTc5YmJlZWU0XkEyXkFqcGdeQXVyMjU3MzI1NzI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMDFkZTFhMTEtZjk2MC00MTE0LTllYjEtYmYwNjc0OWM2OGM1XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2142,
     "title": "Battlefield 2142",
     "type": "video_game",
@@ -850,12 +915,12 @@ const db = [
   },
   {
     "found_title": "blink\u2010182",
-    "img": "http://coverartarchive.org/release/bc2669d8-735a-341a-8b52-4cf218196a9d/15549327880-250.jpg",
+    "img": "http://coverartarchive.org/release/b237e335-1858-425b-b6e0-92489a5831ec/21122149164-250.jpg",
     "number": 182,
     "title": "blink-182",
     "type": "music",
-    "url": "https://listen.tidal.com/artist/29850",
-    "year": 1992
+    "url": "https://open.spotify.com/artist/6FBDaR13swtiWwGhX1WQsP",
+    "year": 1993
   },
   {
     "color": "C63927",
@@ -872,8 +937,8 @@ const db = [
     "img": "http://coverartarchive.org/release/3f5e1695-24d4-4b3b-8723-b8f460022a47/9465470022-250.jpg",
     "title": "Blood Red Shoes",
     "type": "music",
-    "url": "https://www.deezer.com/artist/75312",
-    "year": 2006
+    "url": "https://open.spotify.com/artist/3r6Sk3pYxdJk7MekhBGgMR",
+    "year": 2004
   },
   {
     "color": "0000ff",
@@ -912,6 +977,14 @@ const db = [
     "year": 2013
   },
   {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/A_Catch_22_Situation_%28Unsplash%29.jpg/800px-A_Catch_22_Situation_%28Unsplash%29.jpg",
+    "number": 22,
+    "title": "Catch-22",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Catch-22",
+    "year": 1961
+  },
+  {
     "found_title": "Catch-22",
     "img": "https://m.media-amazon.com/images/M/MV5BZjM2M2IzY2QtMWU4My00NmFlLWIwNDUtZmNiZjNmMDhmYThjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 22,
@@ -938,7 +1011,7 @@ const db = [
     "title": "Deltron 3030",
     "type": "music",
     "url": "https://open.spotify.com/artist/2efzHZrUGhawnSOTpyAHOQ",
-    "year": 2000
+    "year": 1999
   },
   {
     "found_title": "Dial M for Murder",
@@ -974,7 +1047,7 @@ const db = [
     "title": "Eiffel 65",
     "type": "music",
     "url": "https://open.spotify.com/artist/64rxQRJsLgZwHHyWKB8fiF",
-    "year": 1998
+    "year": 1997
   },
   {
     "found_title": "Eighth Grade",
@@ -987,6 +1060,14 @@ const db = [
     "year": 2018
   },
   {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/12/Fahrenheit451HUNcover.jpg",
+    "number": 451,
+    "title": "Fahrenheit 451",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Fahrenheit 451",
+    "year": 1953
+  },
+  {
     "found_title": "Fahrenheit 451",
     "img": "https://m.media-amazon.com/images/M/MV5BZmM1ZGJkZDgtNzBlNS00YjkyLTk3NGEtZTIxMGVkMTk2Yjg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 451,
@@ -997,13 +1078,13 @@ const db = [
   },
   {
     "date": "September 11, 2001",
-    "found_title": "Fahrenheit 9/11",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjAyODU1NzM0NF5BMl5BanBnXkFtZTcwNjI1MjYyMQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Ocean's Eleven",
+    "img": "https://m.media-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 911,
     "title": "Fahrenheit 9/11",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0361596",
-    "year": 2004
+    "url": "https://www.imdb.com/title/tt0240772",
+    "year": 2001
   },
   {
     "found_title": "Fantasia 2000",
@@ -1025,12 +1106,19 @@ const db = [
   },
   {
     "found_title": "8\u00bd",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTQ4MTA0NjEzMF5BMl5BanBnXkFtZTgwMDg4NDYxMzE@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNTkzZTZjOTgtYjgzMS00MTdkLWE2NDAtNTVmM2I3MGYyM2I0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 8.5,
     "title": "Federico Fellini's 8\u00bd",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0056801",
     "year": 1963
+  },
+  {
+    "ordinal": 5,
+    "title": "Fifth Business",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Fifth Business",
+    "year": 1970
   },
   {
     "distance": "5 feet",
@@ -1064,10 +1152,12 @@ const db = [
   },
   {
     "duration": "5w",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Cinq_Semaines_en_ballon_001.png/357px-Cinq_Semaines_en_ballon_001.png",
     "number": 5,
     "title": "Five Weeks in a Balloon",
     "type": "book",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/Five+Weeks+in+a+Balloon"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Five Weeks in a Balloon",
+    "year": 1863
   },
   {
     "found_title": "Four Tet",
@@ -1080,13 +1170,13 @@ const db = [
   },
   {
     "found_title": "Friday the 13th",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTQ5ODI5NTMzN15BMl5BanBnXkFtZTcwNzY4MTYxMg@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNWMxYTYzYWQtNGZmNy00MTg5LTk1N2MtNzQ5NjQxYjQ5NTJhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 13,
     "ordinal": 13,
     "title": "Friday the 13th",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0758746",
-    "year": 2009
+    "url": "https://www.imdb.com/title/tt0080761",
+    "year": 1980
   },
   {
     "duration": "12h",
@@ -1099,9 +1189,11 @@ const db = [
   },
   {
     "distance": "384400 km",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/From_the_Earth_to_the_Moon_Jules_Verne.jpg/417px-From_the_Earth_to_the_Moon_Jules_Verne.jpg",
     "title": "From the Earth to the Moon",
     "type": "book",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/From+the+Earth+to+the+Moon"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/From the Earth to the Moon",
+    "year": 1865
   },
   {
     "found_title": "G-Force",
@@ -1111,6 +1203,13 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0436339",
     "year": 2009
+  },
+  {
+    "letter": "G",
+    "title": "G.",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/G.",
+    "year": 1972
   },
   {
     "color": "FFD700",
@@ -1138,8 +1237,8 @@ const db = [
     "img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Green_Day_%C2%A1Tr%C3%A9%21_Logo.png",
     "title": "Green Day",
     "type": "music",
-    "url": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY",
-    "year": 1989
+    "url": "https://music.migu.cn/v3/music/artist/20343",
+    "year": 1987
   },
   {
     "element": 2,
@@ -1154,7 +1253,7 @@ const db = [
     "found_title": "House of D",
     "img": "https://m.media-amazon.com/images/M/MV5BMjE4OTQzOTM4Ml5BMl5BanBnXkFtZTcwNzE1MzgyMQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "d",
-    "title": "House of D (2004)",
+    "title": "House of D",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0372334",
     "year": 2004
@@ -1179,6 +1278,21 @@ const db = [
     "year": 2011
   },
   {
+    "letter": "I",
+    "title": "I, Claudius",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/I, Claudius",
+    "year": 1934
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Amazing_stories_193901.jpg/424px-Amazing_stories_193901.jpg",
+    "letter": "I",
+    "title": "I, Robot",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/I, Robot",
+    "year": 1939
+  },
+  {
     "found_title": "I, Robot",
     "img": "https://m.media-amazon.com/images/M/MV5BNmE1OWI2ZGItMDUyOS00MmU5LWE0MzUtYTQ0YzA1YTE5MGYxXkEyXkFqcGdeQXVyMDM5ODIyNw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "i",
@@ -1186,6 +1300,12 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0343818",
     "year": 2004
+  },
+  {
+    "ordinal": 1,
+    "title": "In the First Circle",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/In the First Circle"
   },
   {
     "date": "July 4, 1776",
@@ -1199,7 +1319,7 @@ const db = [
   {
     "color": "3F00FF",
     "found_title": "Indigo Prophecy",
-    "img": "https://m.media-amazon.com/images/M/MV5BOTA1ZTdlMGItYjgxYy00MzExLTgwMjEtNmIwOThlZjEyMmFlXkEyXkFqcGdeQXVyMjM2MzYwNjU@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTRjMzE0YjMtNzA5NC00MGQ5LTk2NmMtYTVmMWU3NzQwNmRmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Indigo Prophecy",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0476990",
@@ -1212,7 +1332,7 @@ const db = [
     "title": "Iron Maiden",
     "type": "music",
     "url": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao",
-    "year": 1980
+    "year": 1975
   },
   {
     "element": 26,
@@ -1234,7 +1354,7 @@ const db = [
   },
   {
     "found_title": "JAY\u2010Z",
-    "img": "http://coverartarchive.org/release/d0148e89-61e3-4474-ac90-946070834100/31644433313-250.jpg",
+    "img": "http://coverartarchive.org/release/e9a5f123-447f-4430-8efb-0921e1761ddf/1585893879-250.jpg",
     "letter": "Z",
     "title": "Jay-Z",
     "type": "music",
@@ -1271,12 +1391,12 @@ const db = [
   },
   {
     "found_title": "KRS\u2010One",
-    "img": "http://coverartarchive.org/release/aae61563-08ed-4dd5-a577-c1ec13f98a58/30737054338-250.jpg",
+    "img": "http://coverartarchive.org/release/7d72a89d-8a2b-45a1-b3f9-3f5c216cce2a/30499104570-250.jpg",
     "number": 1,
     "title": "KRS-One",
     "type": "music",
     "url": "https://open.spotify.com/artist/2gINJ8xw86xawPyGvx1bla",
-    "year": 1988
+    "year": 1993
   },
   {
     "found_title": "L7",
@@ -1289,9 +1409,15 @@ const db = [
     "year": 1985
   },
   {
+    "number": 3.141592653589793,
+    "title": "Life of Pi",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Life of Pi"
+  },
+  {
     "color": "C8A2C8",
     "found_title": "Lilac Time",
-    "img": "https://m.media-amazon.com/images/M/MV5BNmVlMGJiMTItMjZlNy00ZTExLWFiMDMtMGE1YmMyMzZlNWYzXkEyXkFqcGdeQXVyNjc0MzMzNjA@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNjc2N2NhMGQtZDcwZS00OTNlLThmMDUtZjI1Njg3Yzc2NTM3XkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Lilac Time",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0019098",
@@ -1310,10 +1436,19 @@ const db = [
     "found_title": "M",
     "img": "https://m.media-amazon.com/images/M/MV5BODA4ODk3OTEzMF5BMl5BanBnXkFtZTgwMTQ2ODMwMzE@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "m",
-    "title": "M (1931)",
+    "title": "M - Eine Stadt sucht einen M\u00f6rder",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0022100",
     "year": 1931
+  },
+  {
+    "distance": "42.195 km",
+    "found_title": "Marathon Man",
+    "img": "https://m.media-amazon.com/images/M/MV5BYTcwNGYwNzgtNDBlZC00NTI4LTlmNDEtZmU1NTIxMGZmMDIwXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "title": "Marathon Man",
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0074860",
+    "year": 1976
   },
   {
     "element": 80,
@@ -1337,7 +1472,7 @@ const db = [
   {
     "color": "3F00FF",
     "found_title": "Mood Indigo",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjk0OTU1MzM2Nl5BMl5BanBnXkFtZTgwNzY4MjQ4MTE@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYTBiNWY1MTMtYjYzNi00YWEwLWE0ZWUtOGRhMDJjMDlkYTVkXkEyXkFqcGdeQXVyMzg3MjUzNTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Mood Indigo",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt2027140",
@@ -1362,9 +1497,15 @@ const db = [
     "year": 1981
   },
   {
+    "color": "FF0000",
+    "title": "My Name is Red",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/My Name is Red"
+  },
+  {
     "element": 10,
     "found_title": "Neon Genesis Evangelion",
-    "img": "https://m.media-amazon.com/images/M/MV5BYjY1Y2ZmNDctZWQ3Yy00MTE3LTk2M2QtMjQ0MDA5ODVjMDEyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Neon Genesis Evangelion",
     "type": "tv_show",
     "url": "https://www.imdb.com/title/tt0112159",
@@ -1372,11 +1513,11 @@ const db = [
   },
   {
     "found_title": "Nickelback",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nickelback_%28Logo%29.png/800px-Nickelback_%28Logo%29.png",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Nickelback_-_Logo.svg/800px-Nickelback_-_Logo.svg.png",
     "price": "0.05 USD",
     "title": "Nickelback",
     "type": "music",
-    "url": "https://listen.tidal.com/artist/10672",
+    "url": "https://music.migu.cn/v3/music/artist/33094",
     "year": 1995
   },
   {
@@ -1399,6 +1540,22 @@ const db = [
     "year": 2009
   },
   {
+    "number": 9,
+    "title": "Nine Stories",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Nine Stories",
+    "year": 1953
+  },
+  {
+    "date": "1984",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Nineteen_Eighty-Four_cover_Soviet_1984.jpg/402px-Nineteen_Eighty-Four_cover_Soviet_1984.jpg",
+    "number": 1984,
+    "title": "Nineteen Eighty-Four",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Nineteen Eighty-Four",
+    "year": 1949
+  },
+  {
     "found_title": "Ocean's Eleven",
     "img": "https://m.media-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 11,
@@ -1409,12 +1566,12 @@ const db = [
   },
   {
     "color": "808000",
-    "found_title": "Love Under the Olive Tree",
-    "img": "https://m.media-amazon.com/images/M/MV5BOThkMDVjMTEtYWVlYS00MmQzLThiYTUtNWFhZjI3NzY2MTZkXkEyXkFqcGdeQXVyODMwMzc1MjU@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Olive, the Other Reindeer",
+    "img": "https://m.media-amazon.com/images/M/MV5BMzA5NTYzNDc3MV5BMl5BanBnXkFtZTcwNzE5NzUxMQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Olive",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt10782366",
-    "year": 2020
+    "url": "https://www.imdb.com/title/tt0227173",
+    "year": 1999
   },
   {
     "element": 28,
@@ -1436,9 +1593,16 @@ const db = [
     "year": 2011
   },
   {
+    "number": 1,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/One Flew Over the Cuckoo's Nest",
+    "year": 1962
+  },
+  {
     "duration": "1h",
     "found_title": "One Hour Photo",
-    "img": "https://m.media-amazon.com/images/M/MV5BYWVkMjAzY2QtZTA4Yi00OWZmLTliMzctZTkyODU4NTc3MmRjL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYjdmMjcwMWMtOGRmOC00NWQwLWE2YTYtOTllOWM5MTNlZGEwXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "One Hour Photo",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0265459",
@@ -1452,6 +1616,22 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0055254",
     "year": 1961
+  },
+  {
+    "duration": "100y",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cien_a%C3%B1os_de_soledad.png/436px-Cien_a%C3%B1os_de_soledad.png",
+    "number": 100,
+    "title": "One Hundred Years of Solitude",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/One Hundred Years of Solitude",
+    "year": 1967
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sughrat.jpg/506px-Sughrat.jpg",
+    "number": 1001,
+    "title": "One Thousand and One Nights",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/One Thousand and One Nights"
   },
   {
     "found_title": "OSS 117: Cairo, Nest of Spies",
@@ -1482,7 +1662,7 @@ const db = [
   },
   {
     "found_title": "Pi",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjYzNTA4YzItYTQ2Yy00NDQwLWI2OGItN2JmMjZhZTVhMzI5L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTk3MThhNGEtY2E4NS00MWMwLTg4MzQtMTk4ZTcwYzRlNDNiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 3.141592653589793,
     "title": "Pi",
     "type": "movie",
@@ -1501,7 +1681,7 @@ const db = [
   {
     "color": "000000",
     "found_title": "Pok\u00e9mon Black Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BMjhiYmViMDYtN2E2Yi00NjkxLTk5MjctZWYyMTFjYmQ4MWE5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMjRjNzA4M2UtNzE5MC00NWZlLWI1MWQtN2M3NzQxNTk5YTJlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Black Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt1731222",
@@ -1509,8 +1689,8 @@ const db = [
   },
   {
     "color": "0000FF",
-    "found_title": "Pok\u00e9mon Blue Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BOGQ1NWVjMTItZjQ2ZS00MjIyLTkxZjQtMGIyODMwYzNjOWM4XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Pok\u00e9mon: Blue Version",
+    "img": "https://m.media-amazon.com/images/M/MV5BMDQyMzIxNTctMTAwZC00YTQ2LTgzMTYtM2QxM2Y2ZGRlODdjXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Blue Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217729",
@@ -1519,7 +1699,7 @@ const db = [
   {
     "color": "50C878",
     "found_title": "Pok\u00e9mon Emerald Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BZWYyMjcwZTgtZjYyNC00ZTE0LTljNDItYjVkZTQ5M2JlZDgyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMDVhZTFiNDgtM2JhOC00YzMzLWFlYTUtN2Q5ODQ0ZmZmOGVmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Emerald Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0478230",
@@ -1529,7 +1709,7 @@ const db = [
     "color": "FFD700",
     "element": 79,
     "found_title": "Pok\u00e9mon Gold Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BZGNmZDY1ZTctNzAwZS00YjNiLTg5M2EtY2Y4ZTI4MGY4ZjkzXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNzQ3ZGFiYWEtYWU3Yy00NDFjLTgyNmQtN2MzNDhjNDJlNTZhXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Gold Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0310011",
@@ -1537,8 +1717,8 @@ const db = [
   },
   {
     "color": "00FF00",
-    "found_title": "Pok\u00e9mon Green Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BYTE4ZTMyOWEtZDUwZS00ODFlLWI0YzgtZmI3NDZhZWNhMzkyXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Poketto Monsut\u00e2 Midori",
+    "img": "https://m.media-amazon.com/images/M/MV5BOGM4ODU4NTctNzhjNS00NDliLWFjNzgtNmY2MjQ1NTE1MTFmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Green Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217731",
@@ -1547,7 +1727,7 @@ const db = [
   {
     "color": "EAE0C8",
     "found_title": "Pok\u00e9mon Pearl Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BOWVjY2JjMjAtNjg3MS00MmM3LWE5MTEtOWRlMGU5ZDg2YmI2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYjA2ZjA1OTYtYmNiMS00OTlkLWI2OWEtZTEwY2ZlZTZiM2E0XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Pearl Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt2016972",
@@ -1556,7 +1736,7 @@ const db = [
   {
     "color": "E5E4E2",
     "found_title": "Pok\u00e9mon Platinum Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BODU5OTA3ODktOWFhMy00NTBmLTljM2UtMzVmNTgyZjk3YWNjXkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BM2ZkYjVjODAtMmJhZi00NmFlLWI5NjUtZGI0YzgwNWI5ODAyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Platinum Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt1293615",
@@ -1564,8 +1744,8 @@ const db = [
   },
   {
     "color": "FF0000",
-    "found_title": "Pok\u00e9mon Red Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BZDljNDgwOGItYzQ3NC00ZWJiLWI0Y2UtYWYxZWI0MzIzYTVhXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Pok\u00e9mon: Red Version",
+    "img": "https://m.media-amazon.com/images/M/MV5BNDE2MmE1ZTQtNjQ1YS00YzQ2LTk5YTktMWViNzg4ZTA0ZmQwXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Red Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217733",
@@ -1574,7 +1754,7 @@ const db = [
   {
     "color": "E0115F",
     "found_title": "Pok\u00e9mon Ruby Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BODM2MTFlNTAtNDYzYS00ZGU1LWE0NmQtMmY3YmExZWU2ZWVkXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BOTRiZjllMzYtYTRlMS00YzczLWExMmItYjFiY2Y1YmM5ZjYzXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Ruby Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0344215",
@@ -1583,7 +1763,7 @@ const db = [
   {
     "color": "0F52BA",
     "found_title": "Pok\u00e9mon Sapphire Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BY2Q2MTVjZTUtMTRjNS00OTA0LTljZDQtYWM5NTQ4M2U3Mzc0XkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYTdhNGFiODMtMzBiZi00ZTU1LTk4MzMtYTExNTE2ZWE0ZDdiXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Sapphire Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0344216",
@@ -1593,7 +1773,7 @@ const db = [
     "color": "C0C0C0",
     "element": 47,
     "found_title": "Pok\u00e9mon Silver Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BY2RkMjM3NGYtMjFlMS00NmY4LTk3ZWEtYzgxYTAwYTA1YWFjXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNGJjMmNhOTYtZjJiZi00OWJiLTk3NWUtYjllNWQyMzAyMzFkXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Silver Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217730",
@@ -1602,7 +1782,7 @@ const db = [
   {
     "color": "FFFFFF",
     "found_title": "Pok\u00e9mon White Version",
-    "img": "https://m.media-amazon.com/images/M/MV5BZjdlZDc0ZjYtNWJmMy00NTJmLThlMjgtNDFlMzZiMTRlYTcwXkEyXkFqcGdeQXVyNzQzOTQxMDc@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZGEzMWE4YWYtZWJiMS00N2QzLWJiOTQtYWE4ZDM4MDQxZTYyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon White Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt1731223",
@@ -1610,8 +1790,8 @@ const db = [
   },
   {
     "color": "FFFF00",
-    "found_title": "Pok\u00e9mon Yellow Version: Special Pikachu Edition",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTk0ZGE5MjItMzA2Mi00ODI0LTlkMGUtZmVmOWVkODFhZTM2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY64_0,0,64,64_AL_.jpg",
+    "found_title": "Pok\u00e9mon: Yellow Version - Special Pikachu Edition",
+    "img": "https://m.media-amazon.com/images/M/MV5BNTE1ZTI4YjItNDg2MS00OWQ1LWJmYzUtNTUyMWEyNzBhN2EzXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Pok\u00e9mon Yellow Version",
     "type": "video_game",
     "url": "https://www.imdb.com/title/tt0217732",
@@ -1623,7 +1803,7 @@ const db = [
     "number": 0,
     "title": "Po\u00e9sie Z\u00e9ro",
     "type": "music",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/Po%C3%A9sie+Z%C3%A9ro",
+    "url": "https://open.spotify.com/artist/35yJOJwlZ36xiU1OWkPRAk",
     "year": 2010
   },
   {
@@ -1638,7 +1818,7 @@ const db = [
   {
     "color": "800080",
     "found_title": "Purple Rain",
-    "img": "https://m.media-amazon.com/images/M/MV5BYjQ4ZTgwODctY2IzYS00NWQzLWE5OTUtMTk4MWNiZmMxMjI3XkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNjQyZDI0NGYtZjkyYy00NzlkLWFkNmMtOTIxZjg2NmVhN2U1XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Purple Rain",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0087957",
@@ -1651,7 +1831,7 @@ const db = [
     "title": "Red Hot Chili Peppers",
     "type": "music",
     "url": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5",
-    "year": 1983
+    "year": 1982
   },
   {
     "color": "FA8072",
@@ -1690,6 +1870,12 @@ const db = [
     "year": 1996
   },
   {
+    "number": 7,
+    "title": "Seven against Thebes",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Seven against Thebes"
+  },
+  {
     "found_title": "Seven and a Half",
     "img": "https://m.media-amazon.com/images/M/MV5BNWY0Mjg1ZDEtZWQwZi00ZThkLWFlMDItM2RiMTBkNmI3YzNlXkEyXkFqcGdeQXVyNDU2ODI0Njg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 7.5,
@@ -1721,7 +1907,7 @@ const db = [
   },
   {
     "found_title": "Seven Samurai",
-    "img": "https://m.media-amazon.com/images/M/MV5BOWE4ZDdhNmMtNzE5ZC00NzExLTlhNGMtY2ZhYjYzODEzODA1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNTkwY2I5NWMtMjNlNi00ZThjLWI4NzQtNDI4M2I4OGM1YjAzXkEyXkFqcGdeQXVyNzYxODE3NTQ@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 7,
     "title": "Seven Samurai",
     "type": "movie",
@@ -1740,7 +1926,7 @@ const db = [
   {
     "duration": "7y",
     "found_title": "Seven Years in Tibet",
-    "img": "https://m.media-amazon.com/images/M/MV5BYmM4ZDhhNmItMDEyZi00NDUyLTk3MzUtMzE5NTE1ZWM0N2UyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYTNkMDMxMDMtMDlhNi00MzQxLTk4NTAtODc0YTFmNGVlNDAyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 7,
     "title": "Seven Years in Tibet",
     "type": "movie",
@@ -1765,6 +1951,14 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt1045658",
     "year": 2012
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/db/Luigi_Pirandello_1923.jpg",
+    "number": 6,
+    "title": "Six Characters in Search of an Author",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Six Characters in Search of an Author",
+    "year": 1921
   },
   {
     "distance": "6 feet",
@@ -1832,7 +2026,7 @@ const db = [
   },
   {
     "found_title": "The 10th Kingdom",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTc4NTcyNzgwMV5BMl5BanBnXkFtZTcwMTU4NjUyMQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYmE5YmM1ODItODBmYy00Y2QwLTg3ZTYtMzJmMjM3ZDFmMzgzXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 10,
     "ordinal": 10,
     "title": "The 10th Kingdom",
@@ -1873,7 +2067,7 @@ const db = [
   {
     "duration": "40y",
     "found_title": "The 40-Year-Old Virgin",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTNjYTA1NDMtZGZmZi00MTdiLThjZTMtZWU1MGYyZjZkNzgxXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNWY1NDI0ZTQtMjJiNS00ODY4LWE1NmUtYTkwNzY3NWQ0ZDZjXkEyXkFqcGdeQXVyMTM0NTc2NDgw._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 40,
     "title": "The 40 Year-Old Virgin",
     "type": "movie",
@@ -1882,12 +2076,21 @@ const db = [
   },
   {
     "found_title": "The 400 Blows",
-    "img": "https://m.media-amazon.com/images/M/MV5BYTQ4MjA4NmYtYjRhNi00MTEwLTg0NjgtNjk3ODJlZGU4NjRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNzUwYzU2YjctOGM3YS00YjdiLTk1YjctZjdmMDY4ZTE1YWZkXkEyXkFqcGdeQXVyNzYxODE3NTQ@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 400,
     "title": "The 400 Blows",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0053198",
     "year": 1959
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/John_dos_Passos.jpg/476px-John_dos_Passos.jpg",
+    "number": 42,
+    "ordinal": 42,
+    "title": "The 42nd Parallel",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The 42nd Parallel",
+    "year": 1930
   },
   {
     "found_title": "The 51st State",
@@ -1899,7 +2102,7 @@ const db = [
     "url": "https://www.imdb.com/title/tt5866122"
   },
   {
-    "found_title": "The 601st Phone Call",
+    "found_title": "Di liu ling yi ge dian hua",
     "img": "https://m.media-amazon.com/images/M/MV5BODdjZmRjYWYtNDU0Yi00MTk2LThmMDEtMmNjNjEwODdjNjlkXkEyXkFqcGdeQXVyNTAwNzc3ODg@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 601,
     "ordinal": 601,
@@ -1909,13 +2112,27 @@ const db = [
     "year": 2006
   },
   {
+    "color": "0000FF",
+    "title": "The Blue Flower",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Blue Flower",
+    "year": 1995
+  },
+  {
     "color": "ACE5EE",
     "found_title": "The Blue Lagoon",
-    "img": "https://m.media-amazon.com/images/M/MV5BOWU2ZDIxY2UtNzM5NS00MWUwLTkxN2QtMmI3NDZkNTA2OTYxXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZWY0OGFkMGQtYzBjOS00MTQyLWI4MmUtMzcyYzkxYzdjOWIwXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Blue Lagoon",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0080453",
     "year": 1980
+  },
+  {
+    "color": "800080",
+    "title": "The Color Purple",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Color Purple",
+    "year": 1982
   },
   {
     "color": "DC143C",
@@ -1929,7 +2146,7 @@ const db = [
   {
     "date": "d+2",
     "found_title": "The Day After Tomorrow",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTM3NDU4NDA2Ml5BMl5BanBnXkFtZTYwNzcxNjY2._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BNWNkNzljZjktY2MwNi00OWExLTliNTMtOTk0NGU2ZDQ3ZTEyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Day After Tomorrow",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0319262",
@@ -1959,7 +2176,8 @@ const db = [
     "ordinal": 5,
     "title": "The Fifth Elephant",
     "type": "book",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/The+Fifth+Elephant"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Fifth Elephant",
+    "year": 1999
   },
   {
     "found_title": "The Fourth Protocol",
@@ -1970,6 +2188,13 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0093044",
     "year": 1987
+  },
+  {
+    "color": "FFD700",
+    "title": "The Golden Notebook",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Golden Notebook",
+    "year": 1962
   },
   {
     "color": "00ff00",
@@ -1991,6 +2216,14 @@ const db = [
     "year": 2011
   },
   {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/The_House_of_the_Seven_Gables.jpg/369px-The_House_of_the_Seven_Gables.jpg",
+    "number": 7,
+    "title": "The House of the Seven Gables",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The House of the Seven Gables",
+    "year": 1851
+  },
+  {
     "found_title": "The Knot",
     "img": "https://m.media-amazon.com/images/M/MV5BY2QzMTQ4ZTItNDEyNy00MzliLTgyNWItMzEyMDJkODhlMmMzXkEyXkFqcGdeQXVyNzQ5MzY0NjM@._V1_UY64_0,0,64,64_AL_.jpg",
     "speed": "1 M h",
@@ -2007,6 +2240,14 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0167261",
     "year": 2002
+  },
+  {
+    "color": "FF0080",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/9788412451207-scaled-e1636366124330.jpg/436px-9788412451207-scaled-e1636366124330.jpg",
+    "title": "The Name of the Rose",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Name of the Rose",
+    "year": 1980
   },
   {
     "color": "FF007F",
@@ -2026,6 +2267,13 @@ const db = [
     "type": "movie",
     "url": "https://www.imdb.com/title/tt1458175",
     "year": 2010
+  },
+  {
+    "number": 9,
+    "title": "The Nine Tailors",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Nine Tailors",
+    "year": 1934
   },
   {
     "found_title": "The Ninth Gate",
@@ -2048,6 +2296,14 @@ const db = [
   },
   {
     "color": "FF2400",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/75/Title_page_for_The_Scarlet_Letter.jpg",
+    "title": "The Scarlet Letter",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Scarlet Letter",
+    "year": 1850
+  },
+  {
+    "color": "FF2400",
     "found_title": "The Scarlet Letter",
     "img": "https://m.media-amazon.com/images/M/MV5BMTkxOWQ0OWMtY2E5YS00YjkzLWFjODQtZGY4NTQ5YmE2OGIzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "The Scarlet Letter",
@@ -2057,7 +2313,7 @@ const db = [
   },
   {
     "found_title": "The Seventh Seal",
-    "img": "https://m.media-amazon.com/images/M/MV5BM2I1ZWU4YjMtYzU0My00YmMzLWFmNTAtZDJhZGYwMmI3YWQ5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BOWM3MmE0OGYtOGVlNC00OWE1LTk5ZTAtYmUwMDIwM2ZlNWJiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 7,
     "ordinal": 7,
     "title": "The Seventh Seal",
@@ -2096,16 +2352,46 @@ const db = [
     "year": 1949
   },
   {
-    "number": 2,
-    "title": "The Two Sources of Morality and Religion",
+    "ordinal": 3,
+    "title": "The Third Policeman",
     "type": "book",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/The+Two+Sources+of+Morality+and+Religion"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Third Policeman",
+    "year": 1967
+  },
+  {
+    "ordinal": 3,
+    "title": "The Third Wedding",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Third Wedding"
+  },
+  {
+    "number": 39,
+    "title": "The Thirty-Nine Steps",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Thirty-Nine Steps"
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Dartagnan-musketeers.jpg/573px-Dartagnan-musketeers.jpg",
+    "number": 3,
+    "title": "The Three Musketeers",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Three Musketeers",
+    "year": 1844
   },
   {
     "number": 2,
+    "title": "The Two Sources of Morality and Religion",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Two Sources of Morality and Religion",
+    "year": 1932
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Morannon.jpg/800px-Morannon.jpg",
+    "number": 2,
     "title": "The Two Towers",
     "type": "book",
-    "url": "https://en.wikipedia.org/wiki/Special:Search/The+Two+Towers"
+    "url": "https://en.wikipedia.org/wiki/Special:Search/The Two Towers",
+    "year": 1954
   },
   {
     "duration": "13d",
@@ -2129,7 +2415,7 @@ const db = [
   },
   {
     "found_title": "THX 1138",
-    "img": "https://m.media-amazon.com/images/M/MV5BYzRiY2I3M2EtODJkMy00NTEyLTgxNmYtYzYwYjk1ZDE1MDE1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZDI3MDRjMzMtMDA1ZS00NDdmLWEwZWUtYzJmMzQyYmIxN2E4XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 1138,
     "title": "THX 1138",
     "type": "movie",
@@ -2164,6 +2450,12 @@ const db = [
     "year": 2015
   },
   {
+    "ordinal": 12,
+    "title": "Twelfth Night",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Twelfth Night"
+  },
+  {
     "found_title": "Two and a Half Men",
     "img": "https://m.media-amazon.com/images/M/MV5BOTI2MjIzN2ItZDg0OS00MTlhLWIzMTMtYWI4ZTA0NGE4NDJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY64_0,0,64,64_AL_.jpg",
     "number": 2.5,
@@ -2179,7 +2471,16 @@ const db = [
     "title": "Two Fingers",
     "type": "music",
     "url": "https://open.spotify.com/artist/2AminfyJLRagEeHO6H6bCS",
-    "year": 2007
+    "year": 2008
+  },
+  {
+    "duration": "200y",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/32/%D0%94%D0%B2%D0%B5%D1%81%D1%82%D0%B8_%D0%BB%D0%B5%D1%82_%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5.jpg",
+    "number": 200,
+    "title": "Two Hundred Years Together",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Two Hundred Years Together",
+    "year": 2001
   },
   {
     "duration": "2s",
@@ -2204,7 +2505,7 @@ const db = [
   {
     "color": "7F00FF",
     "found_title": "Ultraviolet",
-    "img": "https://m.media-amazon.com/images/M/MV5BNWE1YzEwYjItMDNjNS00Y2M5LWI2MjAtNzhhYjNjYjk2NmZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BZWY4ZjQyOWQtYWZiNS00MTcyLWIzZTEtNDQxOWMxNTkwMmU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Ultraviolet",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0370032",
@@ -2220,19 +2521,27 @@ const db = [
     "year": 2005
   },
   {
-    "found_title": "Tropic Thunder",
-    "img": "https://m.media-amazon.com/images/M/MV5BNDE5NjQzMDkzOF5BMl5BanBnXkFtZTcwODI3ODI3MQ@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/V._%281963_1st_ed_cover%29.jpg/420px-V._%281963_1st_ed_cover%29.jpg",
+    "letter": "V",
+    "title": "V.",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/V.",
+    "year": 1963
+  },
+  {
+    "found_title": "W.",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTkzMzg3NjM3OV5BMl5BanBnXkFtZTcwNTY1MzUzMw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "w",
-    "title": "W. (2008)",
+    "title": "W.",
     "type": "movie",
-    "url": "https://www.imdb.com/title/tt0942385",
+    "url": "https://www.imdb.com/title/tt1175491",
     "year": 2008
   },
   {
     "found_title": "WALL\u00b7E",
     "img": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_UY64_0,0,64,64_AL_.jpg",
     "letter": "e",
-    "title": "WALL-E",
+    "title": "WALL\u00b7E",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt0910970",
     "year": 2008
@@ -2247,6 +2556,20 @@ const db = [
     "year": 2017
   },
   {
+    "color": "FFFFFF",
+    "title": "White Teeth",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/White Teeth",
+    "year": 2001
+  },
+  {
+    "number": 0,
+    "title": "Woman at Point Zero",
+    "type": "book",
+    "url": "https://en.wikipedia.org/wiki/Special:Search/Woman at Point Zero",
+    "year": 1975
+  },
+  {
     "found_title": "X-Men: First Class",
     "img": "https://m.media-amazon.com/images/M/MV5BMTg5OTMxNzk4Nl5BMl5BanBnXkFtZTcwOTk1MjAwNQ@@._V1_UY64_0,0,64,64_AL_.jpg",
     "ordinal": 1,
@@ -2258,7 +2581,7 @@ const db = [
   {
     "date": "0001",
     "found_title": "Year One",
-    "img": "https://m.media-amazon.com/images/M/MV5BMTQyMTU3NTI3N15BMl5BanBnXkFtZTcwMzkzMjU2Mg@@._V1_UY64_0,0,64,64_AL_.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMDkyMTMyZjYtZTZkYi00ZjE2LTkxYjUtZGVlMDZhN2FmNzAzXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_UY64_0,0,64,64_AL_.jpg",
     "title": "Year One",
     "type": "movie",
     "url": "https://www.imdb.com/title/tt1045778",

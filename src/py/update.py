@@ -11,7 +11,9 @@ async def update():
 
     for entry in db.entries:
         print(f"Processing {entry.title}...")
-        output.append(await entry.to_json())
+        entry_json = await entry.to_json()
+        print(f"\tFound {entry_json.get('found_title', '???')} ({entry_json.get('year', '????')})")
+        output.append(entry_json)
 
     with open("src/js/db.js", "w") as db_out:
         db_out.write("const db = ")

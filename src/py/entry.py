@@ -18,7 +18,8 @@ class Entry:
     def __init__(self, title,
                  color=None, date=None, distance=None, duration=None,
                  element=None, letter=None, mass=None, number=None,
-                 ordinal=None, price=None, speed=None):
+                 ordinal=None, price=None, speed=None,
+                 year_hint=None):
         self.title = title
 
         self.color = color
@@ -32,6 +33,8 @@ class Entry:
         self.ordinal = ordinal
         self.price = price
         self.speed = speed
+
+        self.year_hint = year_hint
 
         if color != None:
             assert(isinstance(color, str) and len(color) == 6)
@@ -80,7 +83,7 @@ class Entry:
     def to_json(self):
         out = {
             "title": self.title,
-            "url": f"https://en.wikipedia.org/wiki/Special:Search/{parse.quote_plus(self.title)}",
+            "url": f"https://en.wikipedia.org/wiki/Special:Search/{self.title}",
         }
 
         for criterion in criteria:
@@ -94,7 +97,9 @@ class Entry:
         out = {
             "url": f"https://www.imdb.com/find?q={parse.quote_plus(self.title)}"
         }
-        var_safe_title = re.sub("\\W", "", self.title.replace(" ", "_"))
+        var_safe_title = self.title.replace(" ", "_")
+        if self.year_hint:
+            var_safe_title += "_" + str(self.year_hint)
         first_letter = var_safe_title[0].lower()
         request_url = f"https://sg.media-imdb.com/suggests/{first_letter}/{var_safe_title}.json"
         imdb = requests.get(request_url).text
@@ -106,6 +111,7 @@ class Entry:
 
         def content_score(c):
             score = ((c["l"].lower() == self.title.lower()) * 2
+                     + ("y" in c and c["y"] == self.year_hint) * 2
                      + (keep_letters(c["l"]) == keep_letters(self.title))
                      + ("i" in c))
             return score
