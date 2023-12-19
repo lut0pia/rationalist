@@ -2404,6 +2404,16 @@ const db = [
     "year": 2000
   },
   {
+    "duration": "30s",
+    "found_title": "Thirty Seconds to Mars",
+    "img": "http://coverartarchive.org/release/c3e10dbb-c74c-414d-9a90-35c004cbbdc5/23638424884-250.jpg",
+    "number": 30,
+    "title": "Thirty Seconds to Mars",
+    "type": "music",
+    "url": "https://open.spotify.com/artist/0RqtSIYZmd4fiBKVFqyIqD",
+    "year": 1998
+  },
+  {
     "duration": "3s",
     "found_title": "Three Seconds",
     "img": "https://m.media-amazon.com/images/M/MV5BMmVmNmUwZDItMjQyMy00NGRjLTgyNWEtMTBhZjIzOWZiNDEzXkEyXkFqcGdeQXVyMjczMzE1NDQ@._V1_UY64_0,0,64,64_AL_.jpg",
